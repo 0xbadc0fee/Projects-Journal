@@ -1,0 +1,176 @@
+#+title: Project Journal: OpenSyde Plugins (J1939)
+#+setupfile: /home/scurfman/org/gtd/theme-readtheorg.setup
+
+* 2024
+** 2024-01 January
+*** 2024-01-17 Wednesday
+**** J1939 Roadmap Review 2 [2024-01-18 Thu 10:00] Teams Meeting
+***** DONE Introductory Tasks [3/4]
+CLOSED: [2024-01-22 Mon 10:14]
+- [X] Teams meeting
+- [X] Download resources
+- [X] Install toolchain(s)
+- [ ] Open and test compile current project state
+*** 2024-01-18 Thursday
+**** J1939 Onboarding continued
+***** DONE Continued setup tasks [3/3]
+CLOSED: [2024-01-22 Mon 10:15]
+- [X] Open and test compile current project state
+- [X] Explore structure of openSYDE master project via Qt
+- [X] Explore structure of J1939 plugin project via Qt
+*** 2024-01-22 Monday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-01-22 Mon 13:14]
+| Headline                                 | Time   |   |      |      |      |
+|------------------------------------------+--------+---+------+------+------|
+| *Total time*                             | *7:01* |   |      |      |      |
+|------------------------------------------+--------+---+------+------+------|
+| \_    2024-01-22 Monday                  |        |   | 7:01 |      |      |
+| \_      Qt Creator Onboarding continued  |        |   |      | 7:01 |      |
+| \_        30,000ft Flyby                 |        |   |      |      | 2:00 |
+| \_        NOTES: Existing Code Review... |        |   |      |      | 5:01 |
+#+END:
+
+**** Qt Creator Onboarding continued
+***** 30,000ft Flyby
+:LOGBOOK:
+CLOCK: [2024-01-22 Mon 06:00]--[2024-01-22 Mon 08:00] =>  2:00
+:END:
+1. Problem to solve?
+   1. Stock gmbh openSYDE J1939 functionality does not include things we need for our customers
+2. Solution?
+   1. The software is open source, we have the resources, we will make a plugin to openSYDE with the features our customers need.
+***** NOTE: BE SURE TO REVIEW CONTENTS OF ALL KNOWN PROJECT RESOURCES
++ STW Jira Tracker: [[https://stwtechnic.atlassian.net/jira/software/projects/OPSYD/boards/27/timeline][Project Link]]
++ STW Google Drive: [[https://drive.google.com/drive/folders/1LQMNFF7mvlYptHVTjCt1jj7cozGVKKne?usp=drive_link][G Drive link]]
++ STW Teams Chat Log: see Teams
++ Github J1939 project: [[https://github.com/STW-Technic-LP/J1939Plugin][Github link]]
+***** Current Project State [2024-01-22 Mon 08:25]
++ Epic OPSYD-16 MVP CLOSED
++ Epic OPSYD-17 2.0 OPEN
++ Primary is TG.  SC has been added to project and onboarding.
+  + Currently TG is on PTO until [2024-01-24 Wed] .  SC will review Qt project, J1939 code so far, and J1939 standards while TG is out.
+***** TODO Qt Creator 12 STW [4/5] [2024-01-22 Mon 07:53]
+- [X] Review Jira status (Backlog tab) for OpenSyde Plugins (J1939) [[https://stwtechnic.atlassian.net/jira/software/projects/OPSYD/boards/27/backlog][jira task]]
+- [X] 30,000 ft code review of J1939 plugin code
+- [X] Create running Question & Answer list (QnA)
+- [X] Do a light review of built-in openCAN message handling using Qt Creator IDE.
+- [ ] Select and begin viewing a Qt Creator tutorial playlist to familiarize with the IDE
+  - special attention to SLOTS, SIGNALS, [[https://www.youtube.com/watch?v=xHd5Ga8uihE][signals and slots]] example.
+    - will look something like:
+     #+begin_src C++
+       QObject::connect (slider, &QSlider::valueChanged, spinBox, &QSpinBox::setValue);
+     #+end_src
+    - 'connect' = method,
+    - 'slider' = sender of the message
+    - '&QSlider::valueChanged' = the specific signal the sender will transmit 
+    - 'spinBox' = reciever of the message
+    - '&QSpinBox::setValue' = the specific slot opened up by the reciever to store the signal
+    - you can connect multiple signals to one slot, you can also connect one signal to multiple slots.  Neither object needs to know anything about the other object to work this way.
+  - take close look at j1939dbc.cpp, parsing J1939 DBC text from xml?
+***** TODO QnA List [1/2]
+- [ ] QSTRING, going to be a major function used here?
+- [X] Jira, what is the current sprint for this project right now?
+  - tasks = small portions completable by one person, in a day?
+  - stories = larger scope, can be multiple team, multiple people,
+  - hierarchy = Initiative or Project -> Epic(s) -> Stories -> Tasks -> Subtasks -> *Bugs
+  - Jira Docs [[https://confluence.atlassian.com/advancedroadmapsserver0329/configuring-initiatives-and-other-hierarchy-levels-1021218664.html][hierarchy]]
+  - Currently on Epic OPSYD-17 2.0
+***** NOTES: Existing Code Review (fleeting, unsorted):  
+:LOGBOOK:
+CLOCK: [2024-01-22 Mon 08:09]--[2024-01-22 Mon 13:10] =>  5:01
+:END:
++ Current Epic has 9/17 issues in Backlog.
+  + most issues fall under either UI or features to finish in the plugin code
+  + otherwise tasks fall under J1939 hierarchy of DBC, PGN, or SPN related tasks.
+  + Q?: While TG is out, review stock openCAN message handling inside Qt Creator as reference for J1939?
+  + Qt docs are good, but also some 3rd party tutorials available, see [[https://www.cleanqt.io/blog/crash-course-in-qt-for-c%2B%2B-developers,-part-1][cleanqt.io]]
+  + other frequently used Qt methods in the J1939 plug-in:
+    + QFile, QIODevice, QDomNodeList, QDomElement, QDomDocument, QObject, QDir, QFileDialog
+  + OpenSYDE canOpen tools in 'bus_edit' section.  Reviews Signals methods in bus_edit.
+***** NOTES: Qt Creator onboarding, walk-thru(s)  
+:LOGBOOK:
+CLOCK: [2024-01-22 Mon 14:40]--[2024-01-22 Mon 15:20] =>  0:40
+:END:
++ Refer to built in example files in Qt Creator, select a widget based application example
+  + Example 1: Building and Running an Example
+    - [X] Test install by opening an example
+  + Example 2: Build a widget based project
+    - [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
+*** 2024-01-23 Tuesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-01-23 Tue 15:32]
+| Headline                                    | Time   |   |      |      |      |
+|---------------------------------------------+--------+---+------+------+------|
+| *Total time*                                | *7:11* |   |      |      |      |
+|---------------------------------------------+--------+---+------+------+------|
+| \_    2024-01-23 Tuesday                    |        |   | 7:11 |      |      |
+| \_      Qt Creator review continued.        |        |   |      | 5:49 |      |
+| \_        Qt Creator Examples: continued    |        |   |      |      | 0:30 |
+| \_      J1939 Plugin Code Review continued: |        |   |      | 1:22 |      |
+#+END:
+
+**** Qt Creator review continued.  
+:LOGBOOK:
+CLOCK: [2024-01-23 Tue 12:10]--[2024-01-23 Tue 12:32] =>  0:22
+CLOCK: [2024-01-23 Tue 08:37]--[2024-01-23 Tue 11:26] =>  2:49
+CLOCK: [2024-01-23 Tue 06:15]--[2024-01-23 Tue 08:23] =>  2:08
+:END:
+***** Focus on Qt Creator 12 today
++ Very robust documentation.  Lots of tutorials, examples, help files, etc.  Also many third party learning resources.
++ Primary: start with Qt internal documentation.
+  + Find 3-4 tutorial or example projects suitable for STW (desktop application, xml / csv parsing, file handling, etc)
+  + Track notes on Qt examples here in .org file.
+  + Create a running list of QnA for TG / JG / AR as progress through the documentation
+  + MAYBE? Try to identify Qt elements used by stock openSYDE canOPEN signals UI.
++ Secondary resource, pay special attention to YT channel @KDABtv and @VoidRealms.
++ NOTE: Qt Creator installation necessary for J1939 plugin does not include resources used in the built in examples.  To follow examples, may need to install more components.
++ NOTE: So many learning tools require latest Qt.  Leaving 5.15.2 installed on STW laptop for production, co-installing 6.6 on personal laptop, + all tools for training.
+***** Qt Creator Example 1: (on hold while setting up training laptop)
+****** INTERMEDIATE PROJECT: Find info on string parsing DBC if possible.
++ Web based DBC editing tool by CSS [[https://www.csselectronics.com/pages/dbc-editor-can-bus-database][link]]
++ Find a source of sample DBC files to test with off line, off IDE, just use regex to experiment.
++ Good info from copperhill media as well
+***** Qt Creator Examples: continued
+:LOGBOOK:
+CLOCK: [2024-01-23 Tue 13:40]--[2024-01-23 Tue 14:10] =>  0:30
+:END:
++ Qt built in tutorials and examples now running on training laptop (Qt v. 6.6)
++ Selected some built in examples that relate in some way to the J1939 plugin project.
+****** CONTAINER EXTENSION EXAMPLE [[https://doc.qt.io/qt-6/qtdesigner-containerextension-example.html#:~:text=The%20Container%20Extension%20example%20consists,MultiPageWidget%20class%20to%20Qt%20Designer.][link]]
+****** TASK MENU EXTENSION EXAMPLE [[https://doc.qt.io/qt-6/qtdesigner-containerextension-example.html#:~:text=The%20Container%20Extension%20example%20consists,MultiPageWidget%20class%20to%20Qt%20Designer.][link]]
+****** QREGULAR EXPRESSION EXAMPLE [[https://doc.qt.io/qt-6/qtwidgets-tools-regularexpression-example.html][link]]
+****** ECHO PLUGIN EXAMPLE [[https://doc.qt.io/qt-6/qtwidgets-tools-echoplugin-example.html][link]]
+****** NETWORK CHAT EXAMPLE [[https://doc.qt.io/qt-6/qtnetwork-network-chat-example.html][link]]
+****** FFT SPECTRUM EXAMPLE [[https://doc.qt.io/qt-5/qtmultimedia-multimedia-spectrum-example.htmli][link]]
+***** "Qt Group" Official Video Tutorials.  "Tutorials" Playlist (YT)
+**** J1939 Plugin Code Review continued:
+:LOGBOOK:
+CLOCK: [2024-01-23 Tue 14:10]--[2024-01-23 Tue 15:32] =>  1:22
+:END:
++ Went back to our code after getting more familiar with Qt.
++ Compiled and ran most recent J1939, this time kept console window open while navigating openSYDE.
++ Noticed Qt errors when in trying to define new system.  Half dozen missing .svg icon elements.  Didn't notice first time compiling.
++ Found matching name .svg's in a previous .zip project.  Copied them over the the folder structure in the Qt Warning / Errors.
++ Recompiled and ran.  No problems.  Continued to define a system, add node, add bus, enable J1939 datapool, and edit J1939 message from Bus interface.
++ stopped here.
+*** 2024-01-24 Wednesday
+**** Revisit running J1939 plugin after adding missing SVG's  
+:LOGBOOK:
+CLOCK: [2024-01-24 Wed 06:06]
+:END:
+***** Recap missing SVG's
++ Problem: Qt Creator Application Output:
+  - qt.svg: Cannot open file 'C:/stw/qtProjects/J1939Plugin/openSYDE-master/opensyde_tool/result/utilities/J1939_openSYDE/images/IconNodeInactive.svg', because: The system cannot find the file specified.
+  - same error for maybe 4-6 other images.  i.e. IconNode.svg, IconImportFile.svg, IconMessage.svg etc.
++ Solution: did file search and copy from the other .zip version of the Qt J1939 project (the one that compiled to v. 1.6.x).
+***** Experiment with running J1939 plugin
+****** General Testing Steps [0/5]:
+- [ ] Make new project
+- [ ] Add a node (i.e. ESX-4CS-GW)
+- [ ] Add a CAN bus and connect to node
+- [ ] Save project
+- [ ] Open Node in System Definition and Import TSP (confirm datablocks added)
+  - BREAK:  When exploring J1939 UI in Bus Edit and going back to Node edit got error "Extremely Nasty Error..."  Qt closed the application.
+  - APPLICATION OUTPUT: Warning: File for bus not found:  "C:/stw/qtProjects/J1939Plugin/openSYDE-master/opensyde_tool/Demo4/system_definition/Buses/NewCANBus.xml"
+  - APPLICATION OUTPUT: 06:23:07: C:\stw\qtProjects\J1939Plugin\openSYDE-master\opensyde_tool\result\tool\openSYDE.exe crashed
