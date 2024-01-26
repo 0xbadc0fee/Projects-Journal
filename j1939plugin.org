@@ -1,5 +1,6 @@
 #+title: Project Journal: OpenSyde Plugins (J1939)
 #+setupfile: /home/scurfman/org/gtd/theme-readtheorg.setup
+#+options: ^:nil
 
 * 2024
 ** 2024-01 January
@@ -155,9 +156,20 @@ CLOCK: [2024-01-23 Tue 14:10]--[2024-01-23 Tue 15:32] =>  1:22
 + Recompiled and ran.  No problems.  Continued to define a system, add node, add bus, enable J1939 datapool, and edit J1939 message from Bus interface.
 + stopped here.
 *** 2024-01-24 Wednesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-01-24 Wed 19:39]
+| Headline                                      | Time   |   |      |      |
+|-----------------------------------------------+--------+---+------+------|
+| *Total time*                                  | *9:47* |   |      |      |
+|-----------------------------------------------+--------+---+------+------|
+| \_    2024-01-24 Wednesday                    |        |   | 9:47 |      |
+| \_      Revisit running J1939 plugin after... |        |   |      | 4:17 |
+| \_      Known Good Release of J1939plugin     |        |   |      | 5:30 |
+#+END:
+
 **** Revisit running J1939 plugin after adding missing SVG's  
 :LOGBOOK:
-CLOCK: [2024-01-24 Wed 06:06]
+CLOCK: [2024-01-24 Wed 06:06]--[2024-01-24 Wed 10:23] =>  4:17
 :END:
 ***** Recap missing SVG's
 + Problem: Qt Creator Application Output:
@@ -174,3 +186,86 @@ CLOCK: [2024-01-24 Wed 06:06]
   - BREAK:  When exploring J1939 UI in Bus Edit and going back to Node edit got error "Extremely Nasty Error..."  Qt closed the application.
   - APPLICATION OUTPUT: Warning: File for bus not found:  "C:/stw/qtProjects/J1939Plugin/openSYDE-master/opensyde_tool/Demo4/system_definition/Buses/NewCANBus.xml"
   - APPLICATION OUTPUT: 06:23:07: C:\stw\qtProjects\J1939Plugin\openSYDE-master\opensyde_tool\result\tool\openSYDE.exe crashed
+***** Teams Meeting Today
++ Export copy of this journal to html on github [[https://github.com/0xbadc0fee/Projects-Journal/blob/master/j1939plugin.html][link]]
++ Teams test call, (re-check audio and mic every time.)
++ Go over list of any questions re: Qt Creator, J1939 Plugin, etc
+  + 
+**** Known Good Release of J1939plugin
+:LOGBOOK:
+CLOCK: [2024-01-24 Wed 17:30]--[2024-01-24 Wed 19:38] =>  2:08
+CLOCK: [2024-01-24 Wed 11:31]--[2024-01-24 Wed 12:32] =>  1:01
+CLOCK: [2024-01-24 Wed 14:24]--[2024-01-24 Wed 16:45] =>  2:21
+:END:
+***** TODO From scratch setup [0/7]
+- [ ] Clone git repo
+- [ ] blank task
+- [ ] download Extras / non-git assets
+- [ ] Test compile openSYDE.pro using Qt 5.15.2
+  - process will create a couple directories we'll need
+- [ ] copy Extras / non-git assets to sub directories
+- [ ] Test compile j1939plugin.pro in Qt 5.15.2
+- [ ] Confirm new .a file generated and stored in correct build directory
+***** BACKFILL NOTES TOMORROW MORNING!
++ ADD TREE STRUCTURE SNAPSHOTS
++ ADD NOTES ABOUT SCRAPPING AND REBUILDING
+  + PROBLEM: j1939 portion was not creating .dll file when building.
+  + PROBLEM: when running in openSYDE, j1939 plugin tasks triggered "widget not found" in application output
+    + SOLUTION: changed build from DEBUG to RELEASE
+*** 2024-01-25 Thursday
+**** Test / Explore state of latest GIT published plugin project
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-01-25 Thu 15:48]
+| Headline                                          | Time   |   |   |      |      |
+|---------------------------------------------------+--------+---+---+------+------|
+| *Total time*                                      | *6:28* |   |   |      |      |
+|---------------------------------------------------+--------+---+---+------+------|
+| \_      Test / Explore state of latest GIT...     |        |   |   | 6:28 |      |
+| \_        Create & run new minimal openSYDE...    |        |   |   |      | 2:20 |
+| \_        Teams Meeting "J1939 Review Jira Items" |        |   |   |      | 1:51 |
+| \_        OPSYD-76 library xml file missing       |        |   |   |      | 2:17 |
+#+END:
+
+***** Create & run new minimal openSYDE project for J1939 messaging
++ Application and Widget running, OK
++ New project from scractch, OK
++ PROBLEM: AppOutput Error when interacting with J1939 message U/I
+  + ERROR: Error opening j1939_library.xml file.Error opening j1939_library.xml file.Error opening j1939_library.xml file.
+  + NOTE: no j1939_library.xml file in project as built.  There IS a j1939_library.xml file in the earlier non-GIT build.
+  + SOLUTION: TG is adding default copy to the project repo on GIT.  Will not need to be an EXTRAs asset.
+:LOGBOOK:
+CLOCK: [2024-01-25 Thu 08:30]--[2024-01-25 Thu 09:20] =>  0:50
+CLOCK: [2024-01-25 Thu 06:00]--[2024-01-25 Thu 07:30] =>  1:30
+:END:
+***** Teams Meeting "J1939 Review Jira Items"
+:LOGBOOK:
+CLOCK: [2024-01-25 Thu 09:54]--[2024-01-25 Thu 11:45] =>  1:51
+:END:
+***** OPSYD-76 library xml file missing
+:LOGBOOK:
+CLOCK: [2024-01-25 Thu 13:30]--[2024-01-25 Thu 15:47] =>  2:17
+:END:
++ See J1939PGNLibrary.cpp:182 Add file creation if file check fails
++ Possible to use saveMessageXML() via J1939Messages.cpp?
++ On creation of default file use this structure:
+  #+begin_src nxml
+    <?xml version='1.0'?>
+    <ArrayOfJ1939_PGN xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+     <J1939_PGN>
+  
+     </J1939_PGN>
+    </ArrayOfJ1939_PGN>
+  #+end_src
++ CODE STEP THROUGH, J1939PGNLibrary.cpp:
+  + 179: makes new string variable named 'fileName' by concatenating the path and the file name
+  + 181: creates new memory allocation based on the 'sizeOf' QFile(fileName)
+  + 182: *GUARD CLAUSE* if statement.
+    + if condition tests for FAIL to open file in modes:ReadOnly and Text
+    + if test FAILS, 'return false' (do nothing, no error to report)
+    + if test PASSES (did in fact NOT open), then report the error below
+    + qDebug() << "Read fail: " << xmlFile->fileName();
+  + 189: save new bus file *BUT FILE MUST EXIST AT THIS POINT OR NOTHING TO SAVE*  [2024-01-25 Thu 16:34]  
+***** Review my OPSYD Tasks
+****** OPSYD-70 TX Method options added
+****** OPSYD-71 SPN Scaling and offset options added
+****** OPSYD-72 Configurable CANID
