@@ -259,8 +259,8 @@ CLOCK: [2024-01-25 Thu 13:30]--[2024-01-25 Thu 15:47] =>  2:17
 + CODE STEP THROUGH, J1939PGNLibrary.cpp:
   + 179: makes new string variable named 'fileName' by concatenating the path and the file name
   + 181: creates new memory allocation based on the 'sizeOf' QFile(fileName)
-  + 182: *GUARD CLAUSE* if statement.
-    + if condition tests for FAIL to open file in modes:ReadOnly and Text
+  + 182: *GUARD CLAUSE* if statement. (also see "multiple readers single writer" lock) 
+    + if condition tests for FAIL to open
     + if test FAILS, 'return false' (do nothing, no error to report)
     + if test PASSES (did in fact NOT open), then report the error below
     + qDebug() << "Read fail: " << xmlFile->fileName();
@@ -269,3 +269,154 @@ CLOCK: [2024-01-25 Thu 13:30]--[2024-01-25 Thu 15:47] =>  2:17
 ****** OPSYD-70 TX Method options added
 ****** OPSYD-71 SPN Scaling and offset options added
 ****** OPSYD-72 Configurable CANID
+*** 2024-01-26 Friday
+**** Working on OPSYD-76 Library xml file missing
+***** Continued from prev day, see above.
+:LOGBOOK:
+CLOCK: [2024-01-26 Fri 06:30]--[2024-01-26 Fri 09:51] =>  3:21
+:END:
++ Qt recommended QFile usage:
+  #+begin_src C++
+         QFile file("in.txt");
+     if (!file.open(QIODevice::ReadOnly | QIODevice::Text))
+         return;
+
+     while (!file.atEnd()) {
+         QByteArray line = file.readLine();
+         process_line(line);
+     }
+
+  #+end_src
++ NOTE:  tested addition of following code for file exists test 
++ RESULTS: No change.  Should have shown a message in QDebug, but no new message ???
++ NEXT ACTION: Verify behavior in application is coming from same area as code.  Insert a break point at the function and debug.
+  + make sure Qt Creator has necessary debug symbols, etc.  See online installer tool
++ BACKFILL NOTES HERE:
+  + RE: wrong .cpp source of error, moved to J1939Messages.cpp
+  + Retested with debug messages to make sure in right spot
+  + after confirmed right spot, compared known good code see J1939Messages::findXMLBus function.
+  + test ability to make new xml file on fail of exist test
+  + test ability to open and close new xml file
+  + test write out to new xml file.
+*** 2024-01-29 Monday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-01-31 Wed 06:21]
+| Headline                | Time    |   |       |       |
+|-------------------------+---------+---+-------+-------|
+| *Total time*            | *11:01* |   |       |       |
+|-------------------------+---------+---+-------+-------|
+| \_    2024-01-29 Monday |         |   | 11:01 |       |
+| \_      [[file:~/org/roam/20231031064611-programming.org::*C++ NOTES][C++ NOTES]]       |         |   |       | 11:01 |
+#+END:
+
+****   [[file:~/org/roam/20231031064611-programming.org::*C++ NOTES][C++ NOTES]]
++ see org roam notes and paste in here.
+:LOGBOOK:
+CLOCK: [2024-01-29 Mon 06:43]--[2024-01-29 Mon 17:44] => 11:01
+:END:
+*** 2024-01-30 Tuesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-01-31 Wed 06:21]
+| Headline                                         | Time   |   |      |      |
+|--------------------------------------------------+--------+---+------+------|
+| *Total time*                                     | *5:00* |   |      |      |
+|--------------------------------------------------+--------+---+------+------|
+| \_    2024-01-30 Tuesday                         |        |   | 5:00 |      |
+| \_      Finished testing...                      |        |   |      | 2:00 |
+| \_      Teams Call, SC & TG; J1939 Plugin...     |        |   |      | 1:30 |
+| \_      Finished bug fix OPSYD-76 missing xml... |        |   |      | 1:30 |
+#+END:
+
+**** Finished testing J1939Message::saveMessageXML()
+:LOGBOOK:
+CLOCK: [2024-01-30 Tue 06:18]--[2024-01-30 Tue 08:18] =>  2:00
+:END:
+**** Teams Call, SC & TG; J1939 Plugin Code Review
+:LOGBOOK:
+CLOCK: [2024-01-30 Tue 08:30]--[2024-01-30 Tue 10:00] =>  1:30
+:END:
+**** Finished bug fix OPSYD-76 missing xml file
+:LOGBOOK:
+CLOCK: [2024-01-30 Tue 10:30]--[2024-01-30 Tue 12:00] =>  1:30
+:END:
++ used TG's file save class J1939Message::saveMessageXML
++ code was changed in J1939PGNLibrary.cpp
++ Ideally would have included xml header url, but had trouble parsing the string text of url in C++ / Qt Creator.
+  + per section 2.8 of the XML 1.0 Standard, adding declaration (header) is _optional_, so leaving out.
+  + NOTE: per section 2.8 of XML 1.1 Standard, declaration is mandatory, so if possilb should be ready?
+    #+begin_src C++
+    QString fileName = pluginDirectorySave + "j1939_library.xml" ;
+    //SGC CODE HERE: Check that lib exists if not, make one
+    QFile *xmlFile = new QFile(fileName);
+    if (!xmlFile->exists()){
+        vector <J1939Message> emptyMessage = {};
+        J1939Message * emptyXml = new J1939Message();
+        if(emptyMessage.empty())
+        {
+            std::vector<std::string> lines = { "<?xml version=\"1.0\"?>",
+                                              "<ArrayOfJ1939_PGN>",
+                                              };
+            lines.push_back("</ArrayOfJ1939_PGN>");
+            emptyXml->SaveToFile( lines, fileName.toStdString());
+        }
+        emptyXml->saveMessageXML(emptyMessage,fileName, pluginDirectorySave);
+        return false;
+    }
+    #+end_src
+  + pushed to github and closed bug story in Jira   [2024-01-30 Tue 12:00]
+*** 2024-01-31 Wednesday
+**** Begin OPSYD-37 Add PGN Update Fields
+***** TODO PGN Updates [0/3]
+- [ ] TX Methods:
+  - [ ] Cyclic
+  - [ ] On Change
+  - [ ] On Event
+  - [ ] Update Generated C files
+- [ ] SPN scaling and offset, Update Generated C files.
+- [ ] Configurable CANID
+***** Change Notes:
++ Look for var mappings in three groups *xmlFile <-> Database <-> UI*
+  + use Qt advanced find regex for variable pairs, i.e. regex = .*?pgnUpdate\b.*?\bPGNNumber
++ target sections of code, used search "NewMessage"
+  + see J1939PGNLibrary.cpp for *->setPlaceholderText("NewMessage")*
+  + see J1939plugin.cpp for *pgnUpdate = new J1939EditMessage(emTable,...,emFormGroupBoxAdd);*
+  + see *QGroupBox *J1939PGNLibrary::PGNFormGroup(pgnEdit * pgnUpdate)*
++ PGN Update UI form variables
+  + pgnUpdate->PGNName 
+  + pgnUpdate->PGNNumber
+  + pgnUpdate->dlcSB
+  + pgnUpdate-<txRate
+  + Group Box = QgroupBox *J1939PGNLibrary::PGNFormGroup(...)
++ PGN Update DB form variables
+  + PGNname
+  + PGNnum
+  + PGNDLC
+  + PGNTXRate
+  + CLASS = pgnLib
+    + setters, i.e. = void setPGNname(...) {...};
+    + getters, i.e. = string getSPGNname(...) {...};
++ SPN Update UI form variables (look for addSPNSet)
+  + addSPNSet->emSPNName
+  + addSPNSet->emSPNNumber
+  + addSPNSet->emSPNDataFormatCB
+  + addSPNSet->emSPNHighVV
+  + addSPNSet->emSPNStartBytes
+  + Group Box = QGroupBox* J1939PGNLibrary::SPNFormGroup(...)
++ SPN Update DB form variables
+  + SPNName
+  + SPNNumber
+  + SPNDataFormatCB
+  + SPNHighVV
+  + mSPNStartByte
+  + CLASS = spnLib
+    + setters, i.e. = void setSPNName(...) {...};
+    + getters, i.e. = string getSPNName(..) {...};
++ XML Load PGN variables
+  + vector <pgnLib> pgnList;
+  + string PGNName = "",PGNNumber = "", DLC "", 
++ XML Load SPN variables
+  + vector <spnLib> spnList = {}; //reading XML file initally creates empty vector for storing SPN's into on read
+  + string SPNName = "",SPNNumber = "", DataFormat = "", HighestVV = "", StartingByte = "";
++ XML Read / Write
+  + basic read in flow is [ XML -> QXmlStreamReader -> QString variable -> Std String variable -> PGNName (UI) ]
+    + ?? on save, PGNName (UI) mapped to PGNname (DB) 
