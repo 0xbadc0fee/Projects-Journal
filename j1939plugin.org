@@ -366,6 +366,9 @@ CLOCK: [2024-01-30 Tue 10:30]--[2024-01-30 Tue 12:00] =>  1:30
   + pushed to github and closed bug story in Jira   [2024-01-30 Tue 12:00]
 *** 2024-01-31 Wednesday
 **** Begin OPSYD-37 Add PGN Update Fields
+:LOGBOOK:
+CLOCK: [2024-01-31 Wed 06:05]
+:END:
 ***** TODO PGN Updates [0/3]
 - [ ] TX Methods:
   - [ ] Cyclic
@@ -420,3 +423,19 @@ CLOCK: [2024-01-30 Tue 10:30]--[2024-01-30 Tue 12:00] =>  1:30
 + XML Read / Write
   + basic read in flow is [ XML -> QXmlStreamReader -> QString variable -> Std String variable -> PGNName (UI) ]
     + ?? on save, PGNName (UI) mapped to PGNname (DB) 
+:variableMappingTable:
+| Descriptive Name        | UI                | DB              | XML          | DP |
+|-------------------------+-------------------+-----------------+--------------+----|
+| PGN Name                | PGNName           | PGNname         | Name         |    |
+| PGN Number              | PGNNumber         | PGNnum          | Number       |    |
+| PGN DLC                 | dlcSB             | PGNDLC          | DLC          |    |
+| PGN Tx Rate             | txRate            | PGNTXRate       | TXRate       |    |
+| *PGN Tx Method*         |                   |                 |              |    |
+| SPN Name                | emSPNName         | SPNName         | SPNName      |    |
+| SPN Number              | emSPNNumber       | SPNNumber       | SPNNumber    |    |
+| SPN Data Format         | emSPNDataFormatCB | SPNDataFormatCB | Data Format  |    |
+| SPN Highest Valid Value | emSPNHighVV       | SPNHighVV       | HighestVV    |    |
+| SPN Start Position Bit  | emSPNStartBytes   | mSPNStartByte   | StartingByte |    |
+| *SPN Offset Value*      |                   |                 |              |    |
+| *SPN Scale Value*       |                   |                 |              |    |
+:END:
