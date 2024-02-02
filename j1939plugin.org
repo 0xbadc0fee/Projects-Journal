@@ -365,9 +365,20 @@ CLOCK: [2024-01-30 Tue 10:30]--[2024-01-30 Tue 12:00] =>  1:30
     #+end_src
   + pushed to github and closed bug story in Jira   [2024-01-30 Tue 12:00]
 *** 2024-01-31 Wednesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-02 Fri 14:39]
+| Headline                                     | Time   |   |      |      |
+|----------------------------------------------+--------+---+------+------|
+| *Total time*                                 | *7:55* |   |      |      |
+|----------------------------------------------+--------+---+------+------|
+| \_    2024-01-31 Wednesday                   |        |   | 7:55 |      |
+| \_      Begin OPSYD-37 Add PGN Update Fields |        |   |      | 7:55 |
+#+END:
+
 **** Begin OPSYD-37 Add PGN Update Fields
 :LOGBOOK:
-CLOCK: [2024-01-31 Wed 06:05]
+CLOCK: [2024-01-31 Wed 11:00]--[2024-01-31 Wed 15:00] =>  4:00
+CLOCK: [2024-01-31 Wed 06:05]--[2024-01-31 Wed 10:00] =>  3:55
 :END:
 ***** TODO PGN Updates [0/3]
 - [ ] TX Methods:
@@ -414,6 +425,7 @@ CLOCK: [2024-01-31 Wed 06:05]
   + CLASS = spnLib
     + setters, i.e. = void setSPNName(...) {...};
     + getters, i.e. = string getSPNName(..) {...};
++ C File Generate
 + XML Load PGN variables
   + vector <pgnLib> pgnList;
   + string PGNName = "",PGNNumber = "", DLC "", 
@@ -439,3 +451,86 @@ CLOCK: [2024-01-31 Wed 06:05]
 | *SPN Offset Value*      |                   |                 |              |    |
 | *SPN Scale Value*       |                   |                 |              |    |
 :END:
+***** TODO Running Questions [0/2]
+- [ ] Q: J1939Generate is writing to C from both XML and plugin memory (DB)?
+  - A: J1939Generate outputting to 6 files and inputting from XML
+    - WriteCInitFile()
+    - WriteHInitFile()
+    - WriteCFile()
+    - WriteCFileNewPGN()
+    - WriteHFileNewPGN()
+    - LoadFromXML()
+- [ ] Q: lookup QObject, when to use with class and when not.
+*** 2024-01-01 Thursday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-02 Fri 14:40]
+| Headline                                    | Time   |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| *Total time*                                | *5:45* |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| \_    2024-01-01 Thursday                   |        |   | 5:45 |      |
+| \_      Fix bugs in last commit of OPSYD-76 |        |   |      | 5:45 |
+#+END:
+
+**** Fix bugs in last commit of OPSYD-76
+:LOGBOOK:
+CLOCK: [2024-02-01 Thu 11:00]--[2024-02-01 Thu 13:00] =>  2:00
+CLOCK: [2024-02-01 Thu 05:45]--[2024-02-01 Thu 09:30] =>  3:45
+:END:
+**** Move definition of new function to J1939Message.cpp
+** 2024-02 February
+*** 2024-02-02 Friday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-02 Fri 14:40]
+| Headline                   | Time   |   |      |      |
+|----------------------------+--------+---+------+------|
+| *Total time*               | *7:30* |   |      |      |
+|----------------------------+--------+---+------+------|
+| \_    2024-02-02 Friday    |        |   | 7:30 |      |
+| \_      OPSYD-76 continued |        |   |      | 7:30 |
+#+END:
+
+**** OPSYD-76 continued
+:LOGBOOK:
+CLOCK: [2024-02-02 Fri 11:30]--[2024-02-02 Fri 14:30] =>  3:00
+CLOCK: [2024-02-02 Fri 06:00]--[2024-02-02 Fri 10:30] =>  4:30
+:END:
+***** TODO Correct OPSYD-76 commits [5/6]
+- [X] Restructure in to new function per TG commit messsage
+- [X] Move new function makeLibPGN() FROM J1939PGNLibrary TO J1939Message
+- [X] Test within J1939PGNLibrary usage via openSYDE
+- [ ] Test with possible call from DBC section (also looking for xml library)
+- [X] Comment and push to git repo
+- [X] Comment and ask for review in Jira ticket.
+***** EXTRA: Improved xml maker, flexible tags parameter
++ Was seeing if I could get our method to work with the full length XML declaration including special char's.  Found what to change in the string info for it to work.
++ While working on XML parsing anyway, tested option to input desired XML tag, would allow same make function to be used in other places.
++ See below, this code snippet works
+  #+begin_src C++
+    #include <iostream>
+    #include <string>
+    #include <vector>
+
+    using namespace std;
+
+    int main()
+    {
+      string xmlTag = "J1939_PGN";
+      string beginXmlArray = "<ArrayOf";
+      string endXmlArray = "</ArrayOf";
+      beginXmlArray.append(xmlTag);
+      beginXmlArray.append(" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">");
+      endXmlArray.append(xmlTag);
+      endXmlArray.append(">");
+      cout << beginXmlArray << endl;
+      cout << endXmlArray << endl;
+      return 0;
+    }
+  #+end_src
+***** Style guide Q&A with TG
++ DO use camelCase and verbNounNoun style naming
++ DO group new methods to existing class by similar function, otherwise append to bottom of code
++ DO create new files for new classes
++ DO NOT exceed 1,000 lines per program / file.
++ DO include destructors on new classes
+**** Backfill notes for the week
