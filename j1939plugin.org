@@ -435,21 +435,22 @@ CLOCK: [2024-01-31 Wed 06:05]--[2024-01-31 Wed 10:00] =>  3:55
 + XML Read / Write
   + basic read in flow is [ XML -> QXmlStreamReader -> QString variable -> Std String variable -> PGNName (UI) ]
     + ?? on save, PGNName (UI) mapped to PGNname (DB) 
+#+NAME: VariableMap
 :variableMappingTable:
-| Descriptive Name        | UI                | DB              | XML          | DP |
-|-------------------------+-------------------+-----------------+--------------+----|
-| PGN Name                | PGNName           | PGNname         | Name         |    |
-| PGN Number              | PGNNumber         | PGNnum          | Number       |    |
-| PGN DLC                 | dlcSB             | PGNDLC          | DLC          |    |
-| PGN Tx Rate             | txRate            | PGNTXRate       | TXRate       |    |
-| *PGN Tx Method*         |                   |                 |              |    |
-| SPN Name                | emSPNName         | SPNName         | SPNName      |    |
-| SPN Number              | emSPNNumber       | SPNNumber       | SPNNumber    |    |
-| SPN Data Format         | emSPNDataFormatCB | SPNDataFormatCB | Data Format  |    |
-| SPN Highest Valid Value | emSPNHighVV       | SPNHighVV       | HighestVV    |    |
-| SPN Start Position Bit  | emSPNStartBytes   | mSPNStartByte   | StartingByte |    |
-| *SPN Offset Value*      |                   |                 |              |    |
-| *SPN Scale Value*       |                   |                 |              |    |
+| Descriptive Name        | UI                 | J1939Message    | XML          | DP                       |
+|-------------------------+--------------------+-----------------+--------------+--------------------------|
+| PGN Name                | PGNName            | PGNname         | Name         | CanPGNMessage.name       |
+| PGN Number              | PGNNumber          | PGNnum          | Number       | CanPGNMessage.id         |
+| PGN DLC                 | dlcSB              | PGNDLC          | DLC          | CanPGNMessage.DLC        |
+| PGN Tx Rate             | txRate             | PGNTXRate       | TXRate       | CanPGNMessage.txRate     |
+| *PGN Tx Method*         | *txMethod*         |                 |              | *CanPGNMessage.txMethod* |
+| SPN Name                | emSPNName          | SPNName         | SPNName      | CanSPN.name              |
+| SPN Number              | emSPNNumber        | SPNNumber       | SPNNumber    | CanSPN.id                |
+| SPN Data Format         | emSPNDataFormatCB  | SPNDataFormatCB | Data Format  | CanSPN.dataFormat        |
+| SPN Highest Valid Value | emSPNHighVV        | SPNHighVV       | HighestVV    | CanSPN.highestVV         |
+| SPN Start Position Bit  | emSPNStartBytes    | mSPNStartByte   | StartingByte | CanSPN.startingByte      |
+| *SPN Offset Value*      | *emSPNOffset*      |                 |              | CanSPN.offset            |
+| *SPN Scale Value*       | *emSPNScaleFactor* |                 |              | CanSPN.scaling_factor    |
 :END:
 ***** TODO Running Questions [0/2]
 - [ ] Q: J1939Generate is writing to C from both XML and plugin memory (DB)?
@@ -492,17 +493,21 @@ CLOCK: [2024-02-01 Thu 05:45]--[2024-02-01 Thu 09:30] =>  3:45
 
 **** OPSYD-76 continued
 :LOGBOOK:
-CLOCK: [2024-02-02 Fri 11:30]--[2024-02-02 Fri 14:30] =>  3:00
+CLOCK: [2024-02-02 Fri 11:30]--[2024-02-02 Fri 12:30] =>  1:00
 CLOCK: [2024-02-02 Fri 06:00]--[2024-02-02 Fri 10:30] =>  4:30
 :END:
-***** TODO Correct OPSYD-76 commits [5/6]
+***** DONE Correct OPSYD-76 commits [5/6]
+CLOSED: [2024-02-05 Mon 08:41]
 - [X] Restructure in to new function per TG commit messsage
 - [X] Move new function makeLibPGN() FROM J1939PGNLibrary TO J1939Message
 - [X] Test within J1939PGNLibrary usage via openSYDE
-- [ ] Test with possible call from DBC section (also looking for xml library)
+- [ ] +Test with possible call from DBC section (also looking for xml library)+
 - [X] Comment and push to git repo
 - [X] Comment and ask for review in Jira ticket.
 ***** EXTRA: Improved xml maker, flexible tags parameter
+:LOGBOOK:
+CLOCK: [2024-02-02 Fri 12:30]--[2024-02-02 Fri 15:00] =>  2:30
+:END:
 + Was seeing if I could get our method to work with the full length XML declaration including special char's.  Found what to change in the string info for it to work.
 + While working on XML parsing anyway, tested option to input desired XML tag, would allow same make function to be used in other places.
 + See below, this code snippet works
@@ -534,3 +539,123 @@ CLOCK: [2024-02-02 Fri 06:00]--[2024-02-02 Fri 10:30] =>  4:30
 + DO NOT exceed 1,000 lines per program / file.
 + DO include destructors on new classes
 **** Backfill notes for the week
+***** OPSYD-76 closed
++ TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
+*** 2024-02-05 Monday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-05 Mon 15:36]
+| Headline                               | Time   |   |      |      |      |
+|----------------------------------------+--------+---+------+------+------|
+| *Total time*                           | *8:36* |   |      |      |      |
+|----------------------------------------+--------+---+------+------+------|
+| \_    2024-02-05 Monday                |        |   | 8:36 |      |      |
+| \_      Continue OPSYD-37 PGN Updates  |        |   |      | 8:36 |      |
+| \_        PGN Update: TX Methods [3/5] |        |   |      |      | 8:36 |
+#+END:
+
+****  Continue OPSYD-37 PGN Updates
+***** TODO PGN Update: TX Methods [3/5]
+:LOGBOOK:
+CLOCK: [2024-02-05 Mon 12:00]--[2024-02-05 Mon 15:36] =>  3:36
+CLOCK: [2024-02-05 Mon 06:00]--[2024-02-05 Mon 11:00] =>  5:00
+:END:
+- [X] J1939Library.cpp
+  - [X] ADD QLabel *pgnTxMethod
+  - [X] ADD pgnTxMethodL label & link to stylesheet
+  - [X] ADD row for pgnTxMethodL
+  - [X] ADD row for pgnTxMethod
+- [X] J1939Library.h
+  - [X] ADD txMethod to pgnUpdate
+- [X] Update Generated C Files
+  - [X] ADD GETTER @J1939Message.h getPGNTXMethod()
+  - [X] ADD SETTER @J1939Message.h setPGNTXMethod()
+  - [X] ADD getPGNTXMethod TO J1939generate.cpp
+- [ ] Update XML reader and XML writer 
+  - [ ] J1939Message::saveMessageXML
+    - [ ] 
+  - [ ] J1939Message::loadMessageXML
+    - [ ] 
+  - [ ] J1939Message::LoadLibXML()
+    - [ ] 
+- [ ] Validate TXMethod updated in following XML Files:
+  - [ ] j1939_library.XML (START HERE)
+  - [ ] NewCANBus.xml (search code for " busName ")
+  - [ ] dp_j1939_newcanbus_core.xml
+***** TODO SPN Update [0/2]
+- [ ] J1939Library.cpp
+  - [ ] ADD Q Row for Offset
+  - [ ] ADD Q Row for Scale
+- [ ] Update Generated C Files (look for ..getPGN..())
+  -
+*** 2024-02-06 Tuesday
+**** UI Modifications, per JS, see Figma
+:LOGBOOK:
+CLOCK: [2024-02-06 Tue 06:00]--[2024-02-06 Tue 09:45] =>  3:45
+:END:
+***** NOTES:
++ See: [[https://purecss.io/forms/][PURE CSS forms]] 
++ Qt = Vanilla CSS
++ PGN Hierarchy:
+  1. WIDGET emAddPGN(): "Add PGN"
+     + setStyleSheet:groupBoxEditBGStyleSheet (default for code below)
+     1. QGroupBox
+     2. QFormLayout
+        1. Row 1: Addding PGN
+           1. QLabel pgnAdd
+           2. stylesheet: LabelHeaderAddStateStyleSheet
+           3. addRow(pgnAdd)
+        2. Row 2: Name
+           1. QLabel pgnNameL
+           2. stylesheet: editlabelStyleSheet 
+           3. addRow(pgnNameL)
+        3. Row 3: Number
+           1. QLabel pgnNumberL
+           2. stylesheet: editLineStyleSheet
+           3. addRow(pgnNumberL)
+        4. Row 4: DLC
+           1. QLabel DLC
+           2. stylesheet: editCBStyleSheet
+           3. addRow(pgnDLCL
+        5. Row 5: TX Rate
+           1. QLabel pgntxRateL
+           2. stylesheet: editlabelStyleSheet
+           3. addRow(pgntxRateL)
+        6. Row 6: TX Method
+           1. QLabel pgnTxMethodL
+           2. stylesheet: editCBStyleSheet
+           3. addRow(txMethod)
+**** Generate C code changes for PGN
+:LOGBOOK:
+CLOCK: [2024-02-06 Tue 09:45]--[2024-02-06 Tue 12:59] =>  3:14
+:END:
+***** see here: [[Continue OPSYD-37 PGN Updates]]
+***** see here: [[VariableMap]]
+***** TODO Continue PGN /SPN updates [3/5]
+- [X] J1939Library.cpp
+  - [X] ADD QLabel *pgnTxMethod
+  - [X] ADD pgnTxMethodL label & link to stylesheet
+  - [X] ADD row for pgnTxMethodL
+  - [X] ADD row for pgnTxMethod
+- [X] J1939Library.h
+  - [X] ADD txMethod to pgnUpdate
+- [X] Update Generated C Files
+  - [X] ADD GETTER @J1939Message.h getPGNTXMethod()
+  - [X] ADD SETTER @J1939Message.h setPGNTXMethod()
+  - [X] ADD getPGNTXMethod TO J1939generate.cpp
+- [ ] Update XML reader and XML writer 
+  - [ ] J1939Message::saveMessageXML
+    - [ ] 
+  - [ ] J1939Message::loadMessageXML
+    - [ ] 
+  - [ ] J1939Message::LoadLibXML()
+    - [ ] 
+- [ ] Validate TXMethod updated in following XML Files:
+  - [ ] j1939_library.XML (START HERE)
+  - [ ] NewCANBus.xml (search code for " busName ")
+  - [ ] dp_j1939_newcanbus_core.xml
+***** TODO SPN Update [0/2]
+- [ ] J1939Library.cpp
+  - [ ] ADD Q Row for Offset
+  - [ ] ADD Q Row for Scale
+- [ ] Update Generated C Files (look for ..getPGN..())
+  - 
