@@ -588,6 +588,17 @@ CLOCK: [2024-02-05 Mon 06:00]--[2024-02-05 Mon 11:00] =>  5:00
 - [ ] Update Generated C Files (look for ..getPGN..())
   -
 *** 2024-02-06 Tuesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-06 Tue 16:24]
+| Headline                                    | Time   |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| *Total time*                                | *8:23* |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| \_    2024-02-06 Tuesday                    |        |   | 8:23 |      |
+| \_      UI Modifications, per JS, see Figma |        |   |      | 3:45 |
+| \_      Generate C code changes for PGN     |        |   |      | 4:38 |
+#+END:
+
 **** UI Modifications, per JS, see Figma
 :LOGBOOK:
 CLOCK: [2024-02-06 Tue 06:00]--[2024-02-06 Tue 09:45] =>  3:45
@@ -596,7 +607,7 @@ CLOCK: [2024-02-06 Tue 06:00]--[2024-02-06 Tue 09:45] =>  3:45
 + See: [[https://purecss.io/forms/][PURE CSS forms]] 
 + Qt = Vanilla CSS
 + PGN Hierarchy:
-  1. WIDGET emAddPGN(): "Add PGN"
+  1. WIDGET emAddPGN(): "Add PGN" [J1939PGNLibrary.cpp]
      + setStyleSheet:groupBoxEditBGStyleSheet (default for code below)
      1. QGroupBox
      2. QFormLayout
@@ -626,6 +637,7 @@ CLOCK: [2024-02-06 Tue 06:00]--[2024-02-06 Tue 09:45] =>  3:45
            3. addRow(txMethod)
 **** Generate C code changes for PGN
 :LOGBOOK:
+CLOCK: [2024-02-06 Tue 15:00]--[2024-02-06 Tue 16:24] =>  1:24
 CLOCK: [2024-02-06 Tue 09:45]--[2024-02-06 Tue 12:59] =>  3:14
 :END:
 ***** see here: [[Continue OPSYD-37 PGN Updates]]
@@ -658,4 +670,46 @@ CLOCK: [2024-02-06 Tue 09:45]--[2024-02-06 Tue 12:59] =>  3:14
   - [ ] ADD Q Row for Offset
   - [ ] ADD Q Row for Scale
 - [ ] Update Generated C Files (look for ..getPGN..())
-  - 
+  -
+*** 2024-02-07 Wednesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-07 Wed 15:26]
+| Headline                                      | Time   |   |      |      |
+|-----------------------------------------------+--------+---+------+------|
+| *Total time*                                  | *6:42* |   |      |      |
+|-----------------------------------------------+--------+---+------+------|
+| \_    2024-02-07 Wednesday                    |        |   | 6:42 |      |
+| \_      Continue UI Edits to PGN / SPN        |        |   |      | 3:30 |
+| \_      Meeting with TG                       |        |   |      | 0:40 |
+| \_      Redo UI edits but OK to add Box to... |        |   |      | 2:32 |
+#+END:
+**** Continue UI Edits to PGN / SPN
+:LOGBOOK:
+CLOCK: [2024-02-07 Wed 06:00]--[2024-02-07 Wed 09:30] =>  3:30
+:END:
+***** DONE Wrap up 'Border Only' method [5/5]
+CLOSED: [2024-02-07 Wed 10:33]
+- [X] Finish PGN Menu
+- [X] Test PGN Menu
+- [X] Finish SPN Menu
+- [X] Test SPN Menu
+- [X] Save but DO NOT COMMIT
+  + run git diff and keep a local copy of changes for reference, but do not push.
+**** Meeting with TG
+:LOGBOOK:
+CLOCK: [2024-02-07 Wed 09:30]--[2024-02-07 Wed 10:10] =>  0:40
+:END:
++ NOTES: UI discussion
+  + OK to add box / frame element for split pane, don't have to do it all using border hack
++ NOTES: C code gen discussion
+  + DO use QT Creator debugger
+**** Redo UI edits but OK to add Box to layout this time.
+:LOGBOOK:
+CLOCK: [2024-02-07 Wed 12:53]--[2024-02-07 Wed 15:25] =>  2:32
+:END:
+***** TODO SPN / PGN UI updates [1/5]
+- [ ] Swap PGN and SPN menu tool tips, currently reversed
+- [X] Make notes about commit ID 611e77e
+- [ ] Identify where to change border-radius
+- [ ] Identify where to split SPN into 2 groups
+- [ ] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
