@@ -713,3 +713,31 @@ CLOCK: [2024-02-07 Wed 12:53]--[2024-02-07 Wed 15:25] =>  2:32
 - [ ] Identify where to change border-radius
 - [ ] Identify where to split SPN into 2 groups
 - [ ] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
+*** 2024-02-08 Thursday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-08 Thu 17:37]
+| Headline                                         | Time   |   |      |      |
+|--------------------------------------------------+--------+---+------+------|
+| *Total time*                                     | *9:54* |   |      |      |
+|--------------------------------------------------+--------+---+------+------|
+| \_    2024-02-08 Thursday                        |        |   | 9:54 |      |
+| \_      CSS Color Coded Debugging                |        |   |      | 5:35 |
+| \_      Qt UI Elements: Map what changes what    |        |   |      | 2:15 |
+| \_      Build and test lower pane of SPN Edit... |        |   |      | 2:04 |
+#+END:
+
+**** CSS Color Coded Debugging
+:LOGBOOK:
+CLOCK: [2024-02-08 Thu 05:40]--[2024-02-08 Thu 11:15] =>  5:35
+:END:
+****** NOTES:
+**** Qt UI Elements: Map what changes what
+:LOGBOOK:
+CLOCK: [2024-02-08 Thu 13:15]--[2024-02-08 Thu 15:30] =>  2:15
+:END:
+****** NOTES:
+**** Build and test lower pane of SPN Edit menu
+:LOGBOOK:
+CLOCK: [2024-02-08 Thu 15:30]--[2024-02-08 Thu 17:34] =>  2:04
+:END:
+****** NOTES:
