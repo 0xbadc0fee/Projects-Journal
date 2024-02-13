@@ -1,5 +1,6 @@
 #+title: Project Journal: OpenSyde Plugins (J1939)
 #+setupfile: /home/scurfman/org/gtd/theme-readtheorg.setup
+#+TODO: TODO(t) WAIT(w@/!) | DONE(d!) CANCELED(c@)
 #+options: ^:nil
 
 * 2024
@@ -462,14 +463,15 @@ CLOCK: [2024-01-31 Wed 06:05]--[2024-01-31 Wed 10:00] =>  3:55
     - WriteHFileNewPGN()
     - LoadFromXML()
 - [ ] Q: lookup QObject, when to use with class and when not.
-*** 2024-01-01 Thursday
+** 2024-02 February
+*** 2024-02-01 Thursday
 #+BEGIN: clocktable :scope subtree :maxlevel 5
 #+CAPTION: Clock summary at [2024-02-02 Fri 14:40]
 | Headline                                    | Time   |   |      |      |
 |---------------------------------------------+--------+---+------+------|
 | *Total time*                                | *5:45* |   |      |      |
 |---------------------------------------------+--------+---+------+------|
-| \_    2024-01-01 Thursday                   |        |   | 5:45 |      |
+| \_    2024-02-01 Thursday                  |        |   | 5:45 |      |
 | \_      Fix bugs in last commit of OPSYD-76 |        |   |      | 5:45 |
 #+END:
 
@@ -479,7 +481,6 @@ CLOCK: [2024-02-01 Thu 11:00]--[2024-02-01 Thu 13:00] =>  2:00
 CLOCK: [2024-02-01 Thu 05:45]--[2024-02-01 Thu 09:30] =>  3:45
 :END:
 **** Move definition of new function to J1939Message.cpp
-** 2024-02 February
 *** 2024-02-02 Friday
 #+BEGIN: clocktable :scope subtree :maxlevel 5
 #+CAPTION: Clock summary at [2024-02-02 Fri 14:40]
@@ -742,12 +743,197 @@ CLOCK: [2024-02-08 Thu 15:30]--[2024-02-08 Thu 17:34] =>  2:04
 :END:
 ****** NOTES:
 *** 2024-02-09 Friday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-09 Fri 17:14]
+| Headline                            | Time   |   |      |      |
+|-------------------------------------+--------+---+------+------|
+| *Total time*                        | *6:44* |   |      |      |
+|-------------------------------------+--------+---+------+------|
+| \_    2024-02-09 Friday             |        |   | 6:44 |      |
+| \_      Fix aborted Git merge       |        |   |      | 4:30 |
+| \_      Backfill Notes for SPN Menu |        |   |      | 2:14 |
+#+END:
+
 **** Fix aborted Git merge
-***** TODO Git repair [0/5]
-- [ ] Try git merge --abort
-- [ ] try git reset HEAD -soft
-- [ ] try git reset HEAD -hard
-- [ ] Rebuild from local back up.
-- [ ] Test and Push
+:LOGBOOK:
+CLOCK: [2024-02-09 Fri 06:30]--[2024-02-09 Fri 11:00] =>  4:30
+:END:
+***** DONE Git repair [5/5]
+CLOSED: [2024-02-09 Fri 16:21]
+- [X] Try git merge --abort
+- [X] try git reset HEAD -soft
+- [X] try git reset HEAD -hard
+- [X] Rebuild from local back up.
+- [X] Test and Push
 **** Backfill Notes for SPN Menu
+:LOGBOOK:
+CLOCK: [2024-02-09 Fri 15:00]--[2024-02-09 Fri 17:14] =>  2:14
+:END:
+***** Qt SPN Menu parent-child tree:
+1. QDockWidget * dockSPN // widget name = emFormGroupBoxMiddle()  // groupBoxStyleSheet
+   1. setWidget(pgnAddMessage->mainSPNGroupBox)
+2. QGroupBox * mainSPNGroupBox
+   1. setLayout(AddSPNlayout)
+3. QGridLayout * AddSPNlayout
+   1. addWidget(SPNFormGroup(pgnDLC),1,0)
+      1. J1939PGNLibrary::SPNFormGroup(string pgnDLC)
+         1. QGroupBox * formGroupBoxSPNForm
+         2. QLabel * spnAddL
+         3. QLabel * spnNameLabel
+         4. QLabel * spnNumberLabel
+         5. QLabel * spnDataFormatLabel
+         6. addSPNSet = new spnEdit()
+         7. QFormLayout * SPNLayoutBox
+            1. "Adding SPN"
+               1. spnAddL->addRow()
+            2. "Name"
+               1. SPNLayoutBox->addRow(spnNameLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNName)
+               3. spnNameLabel->  setFixedSize & setStyleSheet
+            3. "Number"
+               1. SPNLayoutBox->addRow(spnNumberLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNNumber)
+               3. spnNumberLabel-> setFixedSize & setStyleSheet
+            4. "Data Format"
+               1. SPNLayoutBox->addRow(spnDataFormatLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNDataFormatCB)
+               3. spnNumberLabel-> setFixedSize & setStyleSheet
+   2. addWidget(SPNFormGroupLower(pgnDLC),3,0)
+      1. J1939PGNLibrary::SPNFormGroupLower(pgnDLC),3,0)
+         1. QGroupBox * formGroupBoxSPNFormLower
+         2. QLabel * spnStartByteLabel
+         3. QLabel * spnLengthLabel
+         4. QLabel * spnScaleFactorLabel
+         5. QLabel * spnOffsetLabel
+         6. QLabel * spnHighVVLabel
+         7. addSPNSet = new spnEdit()
+         8. QFormLayout * SPNLayoutBoxLower
+            1. "Start Byte"
+               1. SPNLayoutBox->addRow(spnStartByteLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNStartBytes)
+               3. spnNameLabel->  setFixedSize & setStyleSheet
+            2. "Length"
+               1. SPNLayoutBox->addRow(spnLengthLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNLength)
+               3. spnNumberLabel-> setFixedSize & setStyleSheet
+            3. "Scale Factor"
+               1. SPNLayoutBox->addRow(spnDataScaleFactorLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNScaleFactor)
+               3. spnNumberLabel-> setFixedSize & setStyleSheet
+            4. "Offset"
+               1. SPNLayoutBox->addRow(spnOffsetLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNOffset)
+               3. spnNumberLabel-> setFixedSize & setStyleSheet
+            5. "Highest Valid Value"
+               1. SPNLayoutBox->addRow(spnDataHighVVLabel)
+               2. SPNLayoutBox->addRow(addSPNSet->emSPNHighVV)
+               3. spnNumberLabel-> setFixedSize & setStyleSheet
+***** J1939 Plugin NOTES:
+****** WAIT Remaining SPN / PGN Tasks [2/7]
+- State "WAIT"       from "DONE"       [2024-02-12 Mon 19:24] \\
+  moved to different tasks
+- [ ] Fix menu header color
+- [ ] Square up menu border radius
+- [X] add more padding / margin spacing between outer / inner panels
+- [X] clean up data entry code in fields
+- [ ] connect new fields to XML
+- [ ] connect new fields to C / h Code Generator
+- [ ] test code generator in logicad
+*** 2024-02-12 Monday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-12 Mon 19:26]
+| Headline                                      | Time   |   |      |      |
+|-----------------------------------------------+--------+---+------+------|
+| *Total time*                                  | *7:20* |   |      |      |
+|-----------------------------------------------+--------+---+------+------|
+| \_    2024-02-12 Monday                       |        |   | 7:20 |      |
+| \_      Continue SPN Menu Edits               |        |   |      | 3:30 |
+| \_      New PGN Menu Edits                    |        |   |      | 3:30 |
+| \_      XML Config updates for new PGN/SPN... |        |   |      | 0:20 |
+#+END:
+**** Continue SPN Menu Edits
+:LOGBOOK:
+CLOCK: [2024-02-12 Mon 08:00]--[2024-02-12 Mon 10:30] =>  2:30
+CLOCK: [2024-02-12 Mon 06:15]--[2024-02-12 Mon 07:15] =>  1:00
+:END:
+***** NOTES:
++ spent lot's of time trying to modify outermost menu via Qt stylesheets
++ messaged TG, suggested maybe outermost menu is inheriting style from OS, not Qt
++ TG said to put furth style changes on back burner and move on to XML updates
++ TG passed on new PGN menu edits to make, see below
+**** New PGN Menu Edits
+:LOGBOOK:
+CLOCK: [2024-02-12 Mon 15:00]--[2024-02-12 Mon 18:30] =>  3:30
+:END:
+***** DONE PGN Menu Additions [6/6]
+CLOSED: [2024-02-12 Mon 19:05]
+- [X] PGN: Extended Data Page field
+  - [X] confirm data type and accepted values
+  - [X] make new Qt UI elements for label and field
+- [X] PGN: Data Page field 
+  - [X] confirm data type and accepted values
+  - [X] make new Qt UI elements for label and field
+- [X] PGN: Default Priority Field
+  - [X] confirm data type and accepted values
+  - [X] make new Qt UI elements for label and field
+- [X] Test
+- [X] Split total fields over two separate panes, like SPN
+- [X] Test and push update to github
+**** XML Config updates for new PGN/SPN fields
+:LOGBOOK:
+CLOCK: [2024-02-12 Mon 19:05]--[2024-02-12 Mon 19:25] =>  0:20
+:END:
+***** TODO Update XML with new PGN/SPN Fields [0/3]
+- [ ] J1939PGNLibrary [0/2]
+  - [ ] ::saveJ1939LibPGN()
+    - [ ] pgnExtDataPage
+    - [ ] pgnDataPage
+    - [ ] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+  - [ ] ::saveJ1939LibSPN()
+    - [ ] pgnExtDataPage
+    - [ ] pgnDataPage
+    - [ ] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+- [ ] J1939editMessage [0/3]
+  - [ ] ::saveMessageXML()
+    - [ ] pgnExtDataPage
+    - [ ] pgnDataPage
+    - [ ] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+  - [ ] ::loadMessageXML()
+    - [ ] pgnExtDataPage
+    - [ ] pgnDataPage
+    - [ ] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+  - [ ] ::loadLibXML()
+    - [ ] pgnExtDataPage
+    - [ ] pgnDataPage
+    - [ ] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+- [ ] J1939Generate [0/1]
+  - [ ] ::LoadfromXML
+    - [ ] pgnExtDataPage
+    - [ ] pgnDataPage
+    - [ ] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+
 
