@@ -1,42 +1,45 @@
 
 # Table of Contents
 
-1.  [2024](#orgc9bfa78)
-    1.  [2024-01 January](#org7bb517e)
-        1.  [2024-01-17 Wednesday](#org4667467)
-        2.  [2024-01-18 Thursday](#orgf319e0d)
-        3.  [2024-01-22 Monday](#org8bc727b)
-        4.  [2024-01-23 Tuesday](#org2389a6f)
-        5.  [2024-01-24 Wednesday](#org6186066)
-        6.  [2024-01-25 Thursday](#org625681d)
-        7.  [2024-01-26 Friday](#org05ff896)
-        8.  [2024-01-29 Monday](#org5383101)
-        9.  [2024-01-30 Tuesday](#org9867a18)
-        10. [2024-01-31 Wednesday](#orga080333)
-    2.  [2024-02 February](#org4e2204e)
-        1.  [2024-02-01 Thursday](#org2d91b54)
-        2.  [2024-02-02 Friday](#orgb5691c5)
-        3.  [2024-02-05 Monday](#org69b2d68)
-        4.  [2024-02-06 Tuesday](#orga34d7a9)
-        5.  [2024-02-07 Wednesday](#org23f3b54)
-        6.  [2024-02-08 Thursday](#org5fce12a)
-        7.  [2024-02-09 Friday](#org4229180)
-        8.  [2024-02-12 Monday](#org983b7ea)
-        9.  [2024-02-13 Tuesday](#org6e3f270)
+1.  [2024](#orgf127b08)
+    1.  [2024-01 January](#orgbcbf8a5)
+        1.  [2024-01-17 Wednesday](#org8db45f7)
+        2.  [2024-01-18 Thursday](#org07e2f4b)
+        3.  [2024-01-22 Monday](#org942f166)
+        4.  [2024-01-23 Tuesday](#org2b2f00b)
+        5.  [2024-01-24 Wednesday](#orgf38cf01)
+        6.  [2024-01-25 Thursday](#org23b4e5f)
+        7.  [2024-01-26 Friday](#org074457c)
+        8.  [2024-01-29 Monday](#orge49b409)
+        9.  [2024-01-30 Tuesday](#orgd38ec18)
+        10. [2024-01-31 Wednesday](#orgedd1caa)
+    2.  [2024-02 February](#org86a56a9)
+        1.  [2024-02-01 Thursday](#orgea6b597)
+        2.  [2024-02-02 Friday](#orgb138c18)
+        3.  [2024-02-05 Monday](#org6b5e3c4)
+        4.  [2024-02-06 Tuesday](#org2249744)
+        5.  [2024-02-07 Wednesday](#org8a1ebea)
+        6.  [2024-02-08 Thursday](#org709b752)
+        7.  [2024-02-09 Friday](#orgbdcbd7e)
+        8.  [2024-02-12 Monday](#orgb2e3b29)
+        9.  [2024-02-13 Tuesday](#org9ee43f8)
+        10. [2024-02-14 Wednesday](#org1154cf4)
+        11. [2014-02-15 Thursday](#orgd96fff8)
+        12. [2024-02-16 Friday](#org8c5eea0)
 
 
 
-<a id="orgc9bfa78"></a>
+<a id="orgf127b08"></a>
 
 # 2024
 
 
-<a id="org7bb517e"></a>
+<a id="orgbcbf8a5"></a>
 
 ## 2024-01 January
 
 
-<a id="org4667467"></a>
+<a id="org8db45f7"></a>
 
 ### 2024-01-17 Wednesday
 
@@ -50,7 +53,7 @@
         -   [ ] Open and test compile current project state
 
 
-<a id="orgf319e0d"></a>
+<a id="org07e2f4b"></a>
 
 ### 2024-01-18 Thursday
 
@@ -63,7 +66,7 @@
         -   [X] Explore structure of J1939 plugin project via Qt
 
 
-<a id="org8bc727b"></a>
+<a id="org942f166"></a>
 
 ### 2024-01-22 Monday
 
@@ -219,7 +222,7 @@
                 -   [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
 
 
-<a id="org2389a6f"></a>
+<a id="org2b2f00b"></a>
 
 ### 2024-01-23 Tuesday
 
@@ -354,7 +357,7 @@
     -   stopped here.
 
 
-<a id="org6186066"></a>
+<a id="orgf38cf01"></a>
 
 ### 2024-01-24 Wednesday
 
@@ -472,7 +475,7 @@
                 -   SOLUTION: changed build from DEBUG to RELEASE
 
 
-<a id="org625681d"></a>
+<a id="org23b4e5f"></a>
 
 ### 2024-01-25 Thursday
 
@@ -600,7 +603,7 @@
         3.  OPSYD-72 Configurable CANID
 
 
-<a id="org05ff896"></a>
+<a id="org074457c"></a>
 
 ### 2024-01-26 Friday
 
@@ -631,7 +634,7 @@
             -   test write out to new xml file.
 
 
-<a id="org5383101"></a>
+<a id="orge49b409"></a>
 
 ### 2024-01-29 Monday
 
@@ -694,7 +697,7 @@
     -   see org roam notes and paste in here.
 
 
-<a id="org9867a18"></a>
+<a id="orgd38ec18"></a>
 
 ### 2024-01-30 Tuesday
 
@@ -802,7 +805,7 @@
         -   pushed to github and closed bug story in Jira   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-30 Tue 12:00]</span></span>
 
 
-<a id="orga080333"></a>
+<a id="orgedd1caa"></a>
 
 ### 2024-01-31 Wednesday
 
@@ -1068,12 +1071,12 @@
         -   [ ] Q: lookup QObject, when to use with class and when not.
 
 
-<a id="org4e2204e"></a>
+<a id="org86a56a9"></a>
 
 ## 2024-02 February
 
 
-<a id="org2d91b54"></a>
+<a id="orgea6b597"></a>
 
 ### 2024-02-01 Thursday
 
@@ -1136,7 +1139,7 @@
 2.  Move definition of new function to J1939Message.cpp
 
 
-<a id="orgb5691c5"></a>
+<a id="orgb138c18"></a>
 
 ### 2024-02-02 Friday
 
@@ -1246,7 +1249,7 @@
         -   TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
 
 
-<a id="org69b2d68"></a>
+<a id="org6b5e3c4"></a>
 
 ### 2024-02-05 Monday
 
@@ -1356,7 +1359,7 @@
             -
 
 
-<a id="orga34d7a9"></a>
+<a id="org2249744"></a>
 
 ### 2024-02-06 Tuesday
 
@@ -1461,9 +1464,9 @@
 
 2.  Generate C code changes for PGN
 
-    1.  see here: [1.2.3.1](#org54449c5)
+    1.  see here: [1.2.3.1](#orgc76ae7c)
     
-    2.  see here: [1](#orged000d5)
+    2.  see here: [1](#orgf412452)
     
     3.  TODO Continue PGN /SPN updates <code>[3/5]</code>
     
@@ -1499,7 +1502,7 @@
             -
 
 
-<a id="org23f3b54"></a>
+<a id="org8a1ebea"></a>
 
 ### 2024-02-07 Wednesday
 
@@ -1604,7 +1607,7 @@
         -   [ ] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
 
 
-<a id="org5fce12a"></a>
+<a id="org709b752"></a>
 
 ### 2024-02-08 Thursday
 
@@ -1693,7 +1696,7 @@
     1.  NOTES:
 
 
-<a id="org4229180"></a>
+<a id="orgbdcbd7e"></a>
 
 ### 2024-02-09 Friday
 
@@ -1848,7 +1851,7 @@
             -   [ ] test code generator in logicad
 
 
-<a id="org983b7ea"></a>
+<a id="orgb2e3b29"></a>
 
 ### 2024-02-12 Monday
 
@@ -1952,38 +1955,32 @@
 
 3.  XML Config updates for new PGN/SPN fields
 
-    1.  TODO Update XML with new PGN/SPN Fields <code>[0/3]</code>
+    1.  TODO Update XML with new PGN/SPN Fields <code>[1/4]</code>
     
-        -   [ ] J1939PGNLibrary <code>[0/2]</code>
-            -   [ ] ::saveJ1939LibPGN()
-                -   [ ] pgnExtDataPage
-                -   [ ] pgnDataPage
-                -   [ ] pgnPriority
-                -   [ ] pnLength
-                -   [ ] spnScaleFactor
-                -   [ ] spnOffset
-                -   [ ] spnHighVV
-            -   [ ] ::saveJ1939LibSPN()
-                -   [ ] pgnExtDataPage
-                -   [ ] pgnDataPage
-                -   [ ] pgnPriority
+        -   [X] J1939PGNLibrary <code>[2/2]</code>
+            -   [X] ::saveJ1939LibPGN()
+                -   [X] pgnExtDataPage
+                -   [X] pgnDataPage
+                -   [X] pgnPriority
+                -   [X] pnLength
+            -   [X] ::saveJ1939LibSPN()
+                -   [X] spnLength
+                -   [X] spnScaleFactor
+                -   [X] spnOffset
+                -   [X] spnHighVV
+        -   [-] J1939Message <code>[0/3]</code>
+            -   [-] ::saveMessageXML()
+                -   [X] pgnExtDataPage
+                -   [X] pgnDataPage
+                -   [X] pgnPriority
                 -   [ ] spnLength
                 -   [ ] spnScaleFactor
                 -   [ ] spnOffset
                 -   [ ] spnHighVV
-        -   [ ] J1939editMessage <code>[0/3]</code>
-            -   [ ] ::saveMessageXML()
-                -   [ ] pgnExtDataPage
-                -   [ ] pgnDataPage
-                -   [ ] pgnPriority
-                -   [ ] spnLength
-                -   [ ] spnScaleFactor
-                -   [ ] spnOffset
-                -   [ ] spnHighVV
-            -   [ ] ::loadMessageXML()
-                -   [ ] pgnExtDataPage
-                -   [ ] pgnDataPage
-                -   [ ] pgnPriority
+            -   [-] ::loadMessageXML()
+                -   [X] pgnExtDataPage
+                -   [X] pgnDataPage
+                -   [X] pgnPriority
                 -   [ ] spnLength
                 -   [ ] spnScaleFactor
                 -   [ ] spnOffset
@@ -1996,8 +1993,20 @@
                 -   [ ] spnScaleFactor
                 -   [ ] spnOffset
                 -   [ ] spnHighVV
-        -   [ ] J1939Generate <code>[0/1]</code>
-            -   [ ] ::LoadfromXML
+        -   [-] J1939Generate <code>[0/1]</code>
+            -   [-] ::LoadfromXML
+                -   [X] pgnTXRate
+                -   [X] pgnTXMethod
+                -   [X] pgnDLC
+                -   [X] pgnExtDataPage
+                -   [X] pgnDataPage
+                -   [X] pgnPriority
+                -   [ ] spnLength
+                -   [ ] spnScaleFactor
+                -   [ ] spnOffset
+                -   [ ] spnHighVV
+        -   [ ] J1939dbc <code>[0/1]</code>
+            -   [ ] ::dbcToJ1939()
                 -   [ ] pgnExtDataPage
                 -   [ ] pgnDataPage
                 -   [ ] pgnPriority
@@ -2007,9 +2016,282 @@
                 -   [ ] spnHighVV
 
 
-<a id="org6e3f270"></a>
+<a id="org9ee43f8"></a>
 
 ### 2024-02-13 Tuesday
 
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 16:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-13 Tue 21:26]</span></span></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-left">Time</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-left"><b>9:02</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;2024-02-13 Tuesday</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">9:02</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Update XML with new PGN/SPN Fieldto</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">9:02</td>
+</tr>
+</tbody>
+</table>
+
 1.  [Update XML with new PGN/SPN Fieldto](file:///home/scurfman/org/gtd/projects/j1939plugin.md)
+
+2.  Misc.
+
+    1.  TODO General <code>[2/2]</code>
+    
+        -   [X] Update Joe with layout changes
+        -   [X] Review SPN field layout
+            -   see S.L.O.T. definition per
+                -   S = Scale Factor
+                -   L = Limits (min / max)
+                -   O = Offsets
+                -   T = Transfer (data length)
+
+
+<a id="org1154cf4"></a>
+
+### 2024-02-14 Wednesday
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 17:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-15 Thu 08:36]</span></span></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-left">Time</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-left"><b>6:45</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;2024-02-14 Wednesday</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">6:45</td>
+<td class="org-right">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Teams Meeting: One on One w/ Andres</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:45</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Teams Meeting: J1939</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">0:30</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;OPSYD-37 Cont.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">5:30</td>
+</tr>
+</tbody>
+</table>
+
+1.  Teams Meeting: One on One w/ Andres
+
+2.  Teams Meeting: J1939
+
+3.  OPSYD-37 Cont.
+
+    1.  TODO Fix bugs in commit #8ab1945 <code>[6/8]</code>
+    
+        -   [X] J1939Message, Ln 335, all set to "Number"
+        -   [X] J1939editMessage, Ln 996, make parameters valid and default
+        -   [X] J1939editMessage, Ln 1535, make param valid and default
+        -   [X] J1939plugin, Ln 1028, make params valid and default
+        -   [X] J1939dbc, Ln 502, make params valid and default
+        -   [X] J1939generate, Ln 331, make params valid and default
+        -   [ ] Validators PGN <code>[0/6]</code>
+            -   [ ] TXRate
+            -   [ ] TXMethod
+            -   [ ] DLC
+            -   [ ] ExtDataPage
+            -   [ ] DataPage
+            -   [ ] Priority
+        -   [ ] Validators SPN <code>[0/3]</code> 
+            -   [ ] Scale Factor
+            -   [ ] Offset
+            -   [ ]
+
+
+<a id="orgd96fff8"></a>
+
+### 2014-02-15 Thursday
+
+1.  OUT SICk, PTO
+
+
+<a id="org8c5eea0"></a>
+
+### 2024-02-16 Friday
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 18:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-16 Fri 19:22]</span></span></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-left">Time</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-left"><b>9:31</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;2024-02-16 Friday</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">9:31</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;OPSYD-37 Cont.</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">9:31</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Fix bugs in commit #8ab1945</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">5:10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Qt Creator Validator Class</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">4:21</td>
+</tr>
+</tbody>
+</table>
+
+1.  OPSYD-37 Cont.
+
+    1.  [Fix bugs in commit #8ab1945](file:///home/scurfman/org/gtd/projects/j1939plugin.md)
+    
+    2.  Qt Creator Validator Class
+    
+        -   Trouble using multiple Qt Validators in Group Box
+        -   Trouble cycling Qt Validator in single QLineEdit to catch multiple bad tries
+        -   DO: complete included qt validator line edit tutorial in Qt Creator 12
+        -   DO: ask TG for input
+        -   DO: ask if input masking vs validator is worse or better
 

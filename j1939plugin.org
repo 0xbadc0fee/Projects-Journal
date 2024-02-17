@@ -883,37 +883,31 @@ CLOSED: [2024-02-12 Mon 19:05]
 :LOGBOOK:
 CLOCK: [2024-02-12 Mon 19:05]--[2024-02-12 Mon 19:25] =>  0:20
 :END:
-***** TODO Update XML with new PGN/SPN Fields [0/3]
-- [ ] J1939PGNLibrary [0/2]
-  - [ ] ::saveJ1939LibPGN()
-    - [ ] pgnExtDataPage
-    - [ ] pgnDataPage
-    - [ ] pgnPriority
+***** TODO Update XML with new PGN/SPN Fields [1/4]
+- [X] J1939PGNLibrary [2/2]
+  - [X] ::saveJ1939LibPGN()
+    - [X] pgnExtDataPage
+    - [X] pgnDataPage
+    - [X] pgnPriority
+    - [X] pnLength
+  - [X] ::saveJ1939LibSPN()
+    - [X] spnLength
+    - [X] spnScaleFactor
+    - [X] spnOffset
+    - [X] spnHighVV
+- [-] J1939Message [0/3]
+  - [-] ::saveMessageXML()
+    - [X] pgnExtDataPage
+    - [X] pgnDataPage
+    - [X] pgnPriority
     - [ ] spnLength
     - [ ] spnScaleFactor
     - [ ] spnOffset
     - [ ] spnHighVV
-  - [ ] ::saveJ1939LibSPN()
-    - [ ] pgnExtDataPage
-    - [ ] pgnDataPage
-    - [ ] pgnPriority
-    - [ ] spnLength
-    - [ ] spnScaleFactor
-    - [ ] spnOffset
-    - [ ] spnHighVV
-- [ ] J1939editMessage [0/3]
-  - [ ] ::saveMessageXML()
-    - [ ] pgnExtDataPage
-    - [ ] pgnDataPage
-    - [ ] pgnPriority
-    - [ ] spnLength
-    - [ ] spnScaleFactor
-    - [ ] spnOffset
-    - [ ] spnHighVV
-  - [ ] ::loadMessageXML()
-    - [ ] pgnExtDataPage
-    - [ ] pgnDataPage
-    - [ ] pgnPriority
+  - [-] ::loadMessageXML()
+    - [X] pgnExtDataPage
+    - [X] pgnDataPage
+    - [X] pgnPriority
     - [ ] spnLength
     - [ ] spnScaleFactor
     - [ ] spnOffset
@@ -926,8 +920,20 @@ CLOCK: [2024-02-12 Mon 19:05]--[2024-02-12 Mon 19:25] =>  0:20
     - [ ] spnScaleFactor
     - [ ] spnOffset
     - [ ] spnHighVV
-- [ ] J1939Generate [0/1]
-  - [ ] ::LoadfromXML
+- [-] J1939Generate [0/1]
+  - [-] ::LoadfromXML
+    - [X] pgnTXRate
+    - [X] pgnTXMethod
+    - [X] pgnDLC
+    - [X] pgnExtDataPage
+    - [X] pgnDataPage
+    - [X] pgnPriority
+    - [ ] spnLength
+    - [ ] spnScaleFactor
+    - [ ] spnOffset
+    - [ ] spnHighVV
+- [ ] J1939dbc [0/1]
+  - [ ] ::dbcToJ1939()
     - [ ] pgnExtDataPage
     - [ ] pgnDataPage
     - [ ] pgnPriority
@@ -935,5 +941,106 @@ CLOCK: [2024-02-12 Mon 19:05]--[2024-02-12 Mon 19:25] =>  0:20
     - [ ] spnScaleFactor
     - [ ] spnOffset
     - [ ] spnHighVV
+*** 2024-02-13 Tuesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-13 Tue 21:26]
+| Headline                                    | Time   |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| *Total time*                                | *9:02* |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| \_    2024-02-13 Tuesday                    |        |   | 9:02 |      |
+| \_      [[file:~/org/gtd/projects/j1939plugin.org::*Update XML with new PGN/SPN Fields][Update XML with new PGN/SPN Fieldto]] |        |   |      | 9:02 |
+#+END:
 
+****  [[file:~/org/gtd/projects/j1939plugin.org::*Update XML with new PGN/SPN Fields][Update XML with new PGN/SPN Fieldto]]
+:LOGBOOK:
+CLOCK: [2024-02-13 Tue 20:25]--[2024-02-13 Tue 21:25] =>  1:00
+CLOCK: [2024-02-13 Tue 15:19]--[2024-02-13 Tue 17:49] =>  2:30
+CLOCK: [2024-02-13 Tue 08:45]--[2024-02-13 Tue 12:30] =>  3:45
+CLOCK: [2024-02-13 Tue 05:30]--[2024-02-13 Tue 07:17] =>  1:47
+:END:
+**** Misc.
+***** TODO General [2/2]
+- [X] Update Joe with layout changes
+- [X] Review SPN field layout
+  + see S.L.O.T. definition per
+    + S = Scale Factor
+    + L = Limits (min / max)
+    + O = Offsets
+    + T = Transfer (data length)
+*** 2024-02-14 Wednesday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-15 Thu 08:36]
+| Headline                                    | Time   |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| *Total time*                                | *6:45* |   |      |      |
+|---------------------------------------------+--------+---+------+------|
+| \_    2024-02-14 Wednesday                  |        |   | 6:45 |      |
+| \_      Teams Meeting: One on One w/ Andres |        |   |      | 0:45 |
+| \_      Teams Meeting: J1939                |        |   |      | 0:30 |
+| \_      OPSYD-37 Cont.                      |        |   |      | 5:30 |
+#+END:
 
+**** Teams Meeting: One on One w/ Andres
+:LOGBOOK:
+CLOCK: [2024-02-14 Wed 08:00]--[2024-02-14 Wed 08:45] =>  0:45
+:END:
+**** Teams Meeting: J1939 
+:LOGBOOK:
+CLOCK: [2024-02-14 Wed 09:30]--[2024-02-14 Wed 10:00] =>  0:30
+:END:
+**** OPSYD-37 Cont.
+:LOGBOOK:
+CLOCK: [2024-02-14 Wed 17:00]--[2024-02-14 Wed 18:00] =>  1:00
+CLOCK: [2024-02-14 Wed 11:00]--[2024-02-14 Wed 14:00] =>  3:00
+CLOCK: [2024-02-14 Wed 08:45]--[2024-02-14 Wed 09:30] =>  0:45
+CLOCK: [2024-02-14 Wed 06:30]--[2024-02-14 Wed 07:15] =>  0:45
+:END:
+***** TODO Fix bugs in commit #8ab1945 [6/8]
+- [X] J1939Message, Ln 335, all set to "Number"
+- [X] J1939editMessage, Ln 996, make parameters valid and default
+- [X] J1939editMessage, Ln 1535, make param valid and default
+- [X] J1939plugin, Ln 1028, make params valid and default
+- [X] J1939dbc, Ln 502, make params valid and default
+- [X] J1939generate, Ln 331, make params valid and default
+- [ ] Validators PGN [0/6]
+  - [ ] TXRate
+  - [ ] TXMethod
+  - [ ] DLC
+  - [ ] ExtDataPage
+  - [ ] DataPage
+  - [ ] Priority
+- [ ] Validators SPN [0/3] 
+  - [ ] Scale Factor
+  - [ ] Offset
+  - [ ]
+*** 2014-02-15 Thursday
+**** OUT SICk, PTO
+*** 2024-02-16 Friday
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-02-16 Fri 19:22]
+| Headline                              | Time   |   |      |      |      |
+|---------------------------------------+--------+---+------+------+------|
+| *Total time*                          | *9:31* |   |      |      |      |
+|---------------------------------------+--------+---+------+------+------|
+| \_    2024-02-16 Friday               |        |   | 9:31 |      |      |
+| \_      OPSYD-37 Cont.                |        |   |      | 9:31 |      |
+| \_        [[file:~/org/gtd/projects/j1939plugin.org::*Fix bugs in commit #8ab1945][Fix bugs in commit #8ab1945]] |        |   |      |      | 5:10 |
+| \_        Qt Creator Validator Class  |        |   |      |      | 4:21 |
+#+END:
+
+**** OPSYD-37 Cont.  
+*****   [[file:~/org/gtd/projects/j1939plugin.org::*Fix bugs in commit #8ab1945][Fix bugs in commit #8ab1945]]
+:LOGBOOK:
+CLOCK: [2024-02-16 Fri 12:00]--[2024-02-16 Fri 13:30] =>  1:30
+CLOCK: [2024-02-16 Fri 07:20]--[2024-02-16 Fri 11:00] =>  3:40
+:END:
+***** Qt Creator Validator Class
+:LOGBOOK:
+CLOCK: [2024-02-16 Fri 15:00]--[2024-02-16 Fri 19:21] =>  4:21
+:END:
++ Trouble using multiple Qt Validators in Group Box
++ Trouble cycling Qt Validator in single QLineEdit to catch multiple bad tries
++ DO: complete included qt validator line edit tutorial in Qt Creator 12
++ DO: ask TG for input
++ DO: ask if input masking vs validator is worse or better
