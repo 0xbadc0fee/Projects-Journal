@@ -1,59 +1,68 @@
 
 # Table of Contents
 
-1.  [2024](#orgf127b08)
-    1.  [2024-01 January](#orgbcbf8a5)
-        1.  [2024-01-17 Wednesday](#org8db45f7)
-        2.  [2024-01-18 Thursday](#org07e2f4b)
-        3.  [2024-01-22 Monday](#org942f166)
-        4.  [2024-01-23 Tuesday](#org2b2f00b)
-        5.  [2024-01-24 Wednesday](#orgf38cf01)
-        6.  [2024-01-25 Thursday](#org23b4e5f)
-        7.  [2024-01-26 Friday](#org074457c)
-        8.  [2024-01-29 Monday](#orge49b409)
-        9.  [2024-01-30 Tuesday](#orgd38ec18)
-        10. [2024-01-31 Wednesday](#orgedd1caa)
-    2.  [2024-02 February](#org86a56a9)
-        1.  [2024-02-01 Thursday](#orgea6b597)
-        2.  [2024-02-02 Friday](#orgb138c18)
-        3.  [2024-02-05 Monday](#org6b5e3c4)
-        4.  [2024-02-06 Tuesday](#org2249744)
-        5.  [2024-02-07 Wednesday](#org8a1ebea)
-        6.  [2024-02-08 Thursday](#org709b752)
-        7.  [2024-02-09 Friday](#orgbdcbd7e)
-        8.  [2024-02-12 Monday](#orgb2e3b29)
-        9.  [2024-02-13 Tuesday](#org9ee43f8)
-        10. [2024-02-14 Wednesday](#org1154cf4)
-        11. [2014-02-15 Thursday](#orgd96fff8)
-        12. [2024-02-16 Friday](#org8c5eea0)
+1.  [2024](#org16d131e)
+    1.  [2024-01 January](#org975b6e4)
+        1.  [2024-01-17 Wednesday](#org6cf241e)
+        2.  [2024-01-18 Thursday](#orgba0403f)
+        3.  [2024-01-22 Monday](#org74a8851)
+        4.  [2024-01-23 Tuesday](#org60c7e71)
+        5.  [2024-01-24 Wednesday](#org555dc9b)
+        6.  [2024-01-25 Thursday](#orgc2b841b)
+        7.  [2024-01-26 Friday](#org3d77d08)
+        8.  [2024-01-29 Monday](#org054c8c2)
+        9.  [2024-01-30 Tuesday](#org310d444)
+        10. [2024-01-31 Wednesday](#orga9039f1)
+    2.  [2024-02 February](#org7b02977)
+        1.  [2024-02-01 Thursday](#orgee61087)
+        2.  [2024-02-02 Friday](#org5fcc06a)
+        3.  [2024-02-05 Monday](#orgff3b563)
+        4.  [2024-02-06 Tuesday](#org6d4a4e7)
+        5.  [2024-02-07 Wednesday](#orgf0c86f5)
+        6.  [2024-02-08 Thursday](#orgace0a37)
+        7.  [2024-02-09 Friday](#org41d7dd7)
+        8.  [2024-02-12 Monday](#orgbfdf72d)
+        9.  [2024-02-13 Tuesday](#org0906bdc)
+        10. [2024-02-14 Wednesday](#orgf6e5f4f)
+        11. [2014-02-15 Thursday](#orgb8657fd)
+        12. [2024-02-16 Friday](#org4f9e0a8)
+        13. [2024-02-19 Monday](#org0cba363)
+        14. [2024-02-22 Thursday](#org29005ab)
+        15. [2024-02-23 Friday](#org8d2769d)
+        16. [2024-02-26 Monday](#org733bae1)
+    3.  [2024-03 March](#org27dfe00)
+        1.  [2024-03-01 Friday](#orga9002d7)
+        2.  [2024-03-08 Friday](#orge08347a)
+        3.  [2024-03-11 Monday](#orgd75688b)
+        4.  [2024-03-12 Tuesday](#org046d15d)
 
 
 
-<a id="orgf127b08"></a>
+<a id="org16d131e"></a>
 
 # 2024
 
 
-<a id="orgbcbf8a5"></a>
+<a id="org975b6e4"></a>
 
 ## 2024-01 January
 
 
-<a id="org8db45f7"></a>
+<a id="org6cf241e"></a>
 
 ### 2024-01-17 Wednesday
 
 1.  J1939 Roadmap Review 2 <span class="timestamp-wrapper"><span class="timestamp">[2024-01-18 Thu 10:00] </span></span> Teams Meeting
 
-    1.  DONE Introductory Tasks <code>[3/4]</code>
+    1.  DONE Introductory Tasks <code>[4/4]</code>
     
         -   [X] Teams meeting
         -   [X] Download resources
         -   [X] Install toolchain(s)
-        -   [ ] Open and test compile current project state
+        -   [X] Open and test compile current project state
 
 
-<a id="org07e2f4b"></a>
+<a id="orgba0403f"></a>
 
 ### 2024-01-18 Thursday
 
@@ -66,7 +75,7 @@
         -   [X] Explore structure of J1939 plugin project via Qt
 
 
-<a id="org942f166"></a>
+<a id="org74a8851"></a>
 
 ### 2024-01-22 Monday
 
@@ -173,13 +182,14 @@
         -   Primary is TG.  SC has been added to project and onboarding.
             -   Currently TG is on PTO until <span class="timestamp-wrapper"><span class="timestamp">[2024-01-24 Wed] </span></span> .  SC will review Qt project, J1939 code so far, and J1939 standards while TG is out.
     
-    4.  TODO Qt Creator 12 STW <code>[4/5]</code> <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 07:53]</span></span>
+    4.  DONE Qt Creator 12 STW <code>[5/5]</code> <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 07:53]</span></span>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span>
         -   [X] Review Jira status (Backlog tab) for OpenSyde Plugins (J1939) [jira task](https://stwtechnic.atlassian.net/jira/software/projects/OPSYD/boards/27/backlog)
         -   [X] 30,000 ft code review of J1939 plugin code
         -   [X] Create running Question & Answer list (QnA)
         -   [X] Do a light review of built-in openCAN message handling using Qt Creator IDE.
-        -   [ ] Select and begin viewing a Qt Creator tutorial playlist to familiarize with the IDE
+        -   [X] Select and begin viewing a Qt Creator tutorial playlist to familiarize with the IDE
             -   special attention to SLOTS, SIGNALS, [signals and slots](https://www.youtube.com/watch?v=xHd5Ga8uihE) example.
                 -   will look something like:
                     
@@ -192,9 +202,10 @@
                 -   you can connect multiple signals to one slot, you can also connect one signal to multiple slots.  Neither object needs to know anything about the other object to work this way.
             -   take close look at j1939dbc.cpp, parsing J1939 DBC text from xml?
     
-    5.  TODO QnA List <code>[1/2]</code>
+    5.  DONE QnA List <code>[2/2]</code>
     
-        -   [ ] QSTRING, going to be a major function used here?
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span>
+        -   [X] QSTRING, going to be a major function used here?
         -   [X] Jira, what is the current sprint for this project right now?
             -   tasks = small portions completable by one person, in a day?
             -   stories = larger scope, can be multiple team, multiple people,
@@ -222,7 +233,7 @@
                 -   [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
 
 
-<a id="org2b2f00b"></a>
+<a id="org60c7e71"></a>
 
 ### 2024-01-23 Tuesday
 
@@ -357,7 +368,7 @@
     -   stopped here.
 
 
-<a id="orgf38cf01"></a>
+<a id="org555dc9b"></a>
 
 ### 2024-01-24 Wednesday
 
@@ -435,13 +446,14 @@
     
     2.  Experiment with running J1939 plugin
     
-        1.  General Testing Steps <code>[0/5]</code>:
+        1.  DONE General Testing Steps <code>[5/5]</code>:
         
-            -   [ ] Make new project
-            -   [ ] Add a node (i.e. ESX-4CS-GW)
-            -   [ ] Add a CAN bus and connect to node
-            -   [ ] Save project
-            -   [ ] Open Node in System Definition and Import TSP (confirm datablocks added)
+            -   State "DONE"       from              <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span>
+            -   [X] Make new project
+            -   [X] Add a node (i.e. ESX-4CS-GW)
+            -   [X] Add a CAN bus and connect to node
+            -   [X] Save project
+            -   [X] Open Node in System Definition and Import TSP (confirm datablocks added)
                 -   BREAK:  When exploring J1939 UI in Bus Edit and going back to Node edit got error "Extremely Nasty Error&#x2026;"  Qt closed the application.
                 -   APPLICATION OUTPUT: Warning: File for bus not found:  "C:/stw/qtProjects/J1939Plugin/openSYDE-master/opensyde\_tool/Demo4/system\_definition/Buses/NewCANBus.xml"
                 -   APPLICATION OUTPUT: 06:23:07: C:\stw\qtProjects\J1939Plugin\openSYDE-master\opensyde\_tool\result\tool\openSYDE.exe crashed
@@ -455,16 +467,17 @@
 
 2.  Known Good Release of J1939plugin
 
-    1.  TODO From scratch setup <code>[0/7]</code>
+    1.  DONE From scratch setup <code>[7/7]</code>
     
-        -   [ ] Clone git repo
-        -   [ ] blank task
-        -   [ ] download Extras / non-git assets
-        -   [ ] Test compile openSYDE.pro using Qt 5.15.2
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span>
+        -   [X] Clone git repo
+        -   [X] blank task
+        -   [X] download Extras / non-git assets
+        -   [X] Test compile openSYDE.pro using Qt 5.15.2
             -   process will create a couple directories we'll need
-        -   [ ] copy Extras / non-git assets to sub directories
-        -   [ ] Test compile j1939plugin.pro in Qt 5.15.2
-        -   [ ] Confirm new .a file generated and stored in correct build directory
+        -   [X] copy Extras / non-git assets to sub directories
+        -   [X] Test compile j1939plugin.pro in Qt 5.15.2
+        -   [X] Confirm new .a file generated and stored in correct build directory
     
     2.  BACKFILL NOTES TOMORROW MORNING!
     
@@ -475,7 +488,7 @@
                 -   SOLUTION: changed build from DEBUG to RELEASE
 
 
-<a id="org23b4e5f"></a>
+<a id="orgc2b841b"></a>
 
 ### 2024-01-25 Thursday
 
@@ -603,7 +616,7 @@
         3.  OPSYD-72 Configurable CANID
 
 
-<a id="org074457c"></a>
+<a id="org3d77d08"></a>
 
 ### 2024-01-26 Friday
 
@@ -634,7 +647,7 @@
             -   test write out to new xml file.
 
 
-<a id="orge49b409"></a>
+<a id="org054c8c2"></a>
 
 ### 2024-01-29 Monday
 
@@ -697,7 +710,7 @@
     -   see org roam notes and paste in here.
 
 
-<a id="orgd38ec18"></a>
+<a id="org310d444"></a>
 
 ### 2024-01-30 Tuesday
 
@@ -805,7 +818,7 @@
         -   pushed to github and closed bug story in Jira   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-30 Tue 12:00]</span></span>
 
 
-<a id="orgedd1caa"></a>
+<a id="orga9039f1"></a>
 
 ### 2024-01-31 Wednesday
 
@@ -865,12 +878,15 @@
 
 1.  Begin OPSYD-37 Add PGN Update Fields
 
-    1.  TODO PGN Updates <code>[0/3]</code>
+    1.  DONE PGN Updates <code>[0/3]</code>
     
-        -   [ ] TX Methods:
-            -   [ ] Cyclic
-            -   [ ] On Change
-            -   [ ] On Event
+        -   State "DONE"       from "WAIT"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:25]</span></span>
+        -   State "WAIT"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:43] </span></span>   
+            More work on PGN menus and validators
+        -   [-] TX Methods:
+            -   [X] Cyclic
+            -   [X] On Change
+            -   [X] On Event
             -   [ ] Update Generated C files
         -   [ ] SPN scaling and offset, Update Generated C files.
         -   [ ] Configurable CANID
@@ -1058,8 +1074,9 @@
         </tbody>
         </table>
     
-    3.  TODO Running Questions <code>[0/2]</code>
+    3.  DONE C gen Running Questions <code>[0/2]</code>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:25]</span></span>
         -   [ ] Q: J1939Generate is writing to C from both XML and plugin memory (DB)?
             -   A: J1939Generate outputting to 6 files and inputting from XML
                 -   WriteCInitFile()
@@ -1071,12 +1088,12 @@
         -   [ ] Q: lookup QObject, when to use with class and when not.
 
 
-<a id="org86a56a9"></a>
+<a id="org7b02977"></a>
 
 ## 2024-02 February
 
 
-<a id="orgea6b597"></a>
+<a id="orgee61087"></a>
 
 ### 2024-02-01 Thursday
 
@@ -1139,7 +1156,7 @@
 2.  Move definition of new function to J1939Message.cpp
 
 
-<a id="orgb138c18"></a>
+<a id="org5fcc06a"></a>
 
 ### 2024-02-02 Friday
 
@@ -1249,7 +1266,7 @@
         -   TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
 
 
-<a id="org6b5e3c4"></a>
+<a id="orgff3b563"></a>
 
 ### 2024-02-05 Monday
 
@@ -1325,8 +1342,10 @@
 
 1.  Continue OPSYD-37 PGN Updates
 
-    1.  TODO PGN Update: TX Methods <code>[3/5]</code>
+    1.  DONE PGN Update: TX Methods <code>[5/5]</code>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:24]</span></span>
+        
         -   [X] J1939Library.cpp
             -   [X] ADD QLabel \*pgnTxMethod
             -   [X] ADD pgnTxMethodL label & link to stylesheet
@@ -1338,28 +1357,27 @@
             -   [X] ADD GETTER @J1939Message.h getPGNTXMethod()
             -   [X] ADD SETTER @J1939Message.h setPGNTXMethod()
             -   [X] ADD getPGNTXMethod TO J1939generate.cpp
-        -   [ ] Update XML reader and XML writer 
-            -   [ ] J1939Message::saveMessageXML
-                -   [ ]
-            -   [ ] J1939Message::loadMessageXML
-                -   [ ]
-            -   [ ] J1939Message::LoadLibXML()
-                -   [ ]
-        -   [ ] Validate TXMethod updated in following XML Files:
-            -   [ ] j1939\_library.XML (START HERE)
-            -   [ ] NewCANBus.xml (search code for " busName ")
-            -   [ ] dp\_j1939\_newcanbus\_core.xml
+        -   [X] Update XML reader and XML writer 
+            -   [X] J1939Message::saveMessageXML
+            -   [X] J1939Message::loadMessageXML
+            -   [X] J1939Message::LoadLibXML()
+        -   [X] Validate TXMethod updated in following XML Files:
+            -   [X] j1939\_library.XML (START HERE)
+            -   [X] NewCANBus.xml (search code for " busName ")
+            -   [X] dp\_j1939\_newcanbus\_core.xml
     
-    2.  TODO SPN Update <code>[0/2]</code>
+    2.  DONE SPN Update <code>[1/2]</code>
     
-        -   [ ] J1939Library.cpp
-            -   [ ] ADD Q Row for Offset
-            -   [ ] ADD Q Row for Scale
-        -   [ ] Update Generated C Files (look for ..getPGN..())
+        -   State "DONE"       from "WAIT"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:24]</span></span>
+        -   State "WAIT"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:50] </span></span>   
+            Finish validators before c code generated
+        -   [X] J1939Library.cpp
+            -   [X] ADD Q Row for Offset
+            -   [X] ADD Q Row for Scale
             -
 
 
-<a id="org2249744"></a>
+<a id="org6d4a4e7"></a>
 
 ### 2024-02-06 Tuesday
 
@@ -1464,12 +1482,13 @@
 
 2.  Generate C code changes for PGN
 
-    1.  see here: [1.2.3.1](#orgc76ae7c)
+    1.  see here: [1.2.3.1](#orge63e555)
     
-    2.  see here: [1](#orgf412452)
+    2.  see here: [1](#org7264081)
     
-    3.  TODO Continue PGN /SPN updates <code>[3/5]</code>
+    3.  DONE Continue PGN /SPN updates <code>[5/5]</code>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:24]</span></span>
         -   [X] J1939Library.cpp
             -   [X] ADD QLabel \*pgnTxMethod
             -   [X] ADD pgnTxMethodL label & link to stylesheet
@@ -1481,28 +1500,25 @@
             -   [X] ADD GETTER @J1939Message.h getPGNTXMethod()
             -   [X] ADD SETTER @J1939Message.h setPGNTXMethod()
             -   [X] ADD getPGNTXMethod TO J1939generate.cpp
-        -   [ ] Update XML reader and XML writer 
-            -   [ ] J1939Message::saveMessageXML
-                -   [ ]
-            -   [ ] J1939Message::loadMessageXML
-                -   [ ]
-            -   [ ] J1939Message::LoadLibXML()
-                -   [ ]
-        -   [ ] Validate TXMethod updated in following XML Files:
-            -   [ ] j1939\_library.XML (START HERE)
-            -   [ ] NewCANBus.xml (search code for " busName ")
-            -   [ ] dp\_j1939\_newcanbus\_core.xml
+        -   [X] Update XML reader and XML writer 
+            -   [X] J1939Message::saveMessageXML
+            -   [X] J1939Message::loadMessageXML
+            -   [X] J1939Message::LoadLibXML()
+        -   [X] Validate TXMethod updated in following XML Files:
+            -   [X] j1939\_library.XML (START HERE)
+            -   [X] NewCANBus.xml (search code for " busName ")
+            -   [X] dp\_j1939\_newcanbus\_core.xml
     
-    4.  TODO SPN Update <code>[0/2]</code>
+    4.  DONE SPN Update <code>[1/2]</code>
     
-        -   [ ] J1939Library.cpp
-            -   [ ] ADD Q Row for Offset
-            -   [ ] ADD Q Row for Scale
-        -   [ ] Update Generated C Files (look for ..getPGN..())
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:23]</span></span>
+        -   [X] J1939Library.cpp
+            -   [X] ADD Q Row for Offset
+            -   [X] ADD Q Row for Scale
             -
 
 
-<a id="org8a1ebea"></a>
+<a id="orgf0c86f5"></a>
 
 ### 2024-02-07 Wednesday
 
@@ -1598,16 +1614,17 @@
 
 3.  Redo UI edits but OK to add Box to layout this time.
 
-    1.  TODO SPN / PGN UI updates <code>[1/5]</code>
+    1.  DONE SPN / PGN UI updates <code>[5/5]</code>
     
-        -   [ ] Swap PGN and SPN menu tool tips, currently reversed
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:23]</span></span>
+        -   [X] Swap PGN and SPN menu tool tips, currently reversed
         -   [X] Make notes about commit ID 611e77e
-        -   [ ] Identify where to change border-radius
-        -   [ ] Identify where to split SPN into 2 groups
-        -   [ ] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
+        -   [X] Identify where to change border-radius
+        -   [X] Identify where to split SPN into 2 groups
+        -   [X] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
 
 
-<a id="org709b752"></a>
+<a id="orgace0a37"></a>
 
 ### 2024-02-08 Thursday
 
@@ -1696,7 +1713,7 @@
     1.  NOTES:
 
 
-<a id="orgbdcbd7e"></a>
+<a id="org41d7dd7"></a>
 
 ### 2024-02-09 Friday
 
@@ -1838,7 +1855,7 @@
     
     2.  J1939 Plugin NOTES:
     
-        1.  WAIT Remaining SPN / PGN Tasks <code>[2/7]</code>
+        1.  WAIT Remaining SPN / PGN Tasks <code>[3/7]</code>
         
             -   State "WAIT"       from "DONE"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-12 Mon 19:24] </span></span>   
                 moved to different tasks
@@ -1846,12 +1863,12 @@
             -   [ ] Square up menu border radius
             -   [X] add more padding / margin spacing between outer / inner panels
             -   [X] clean up data entry code in fields
-            -   [ ] connect new fields to XML
+            -   [X] connect new fields to XML
             -   [ ] connect new fields to C / h Code Generator
             -   [ ] test code generator in logicad
 
 
-<a id="orgb2e3b29"></a>
+<a id="orgbfdf72d"></a>
 
 ### 2024-02-12 Monday
 
@@ -1955,8 +1972,9 @@
 
 3.  XML Config updates for new PGN/SPN fields
 
-    1.  TODO Update XML with new PGN/SPN Fields <code>[1/4]</code>
+    1.  DONE Update XML with new PGN/SPN Fields <code>[1/4]</code>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:23]</span></span>
         -   [X] J1939PGNLibrary <code>[2/2]</code>
             -   [X] ::saveJ1939LibPGN()
                 -   [X] pgnExtDataPage
@@ -2016,7 +2034,7 @@
                 -   [ ] spnHighVV
 
 
-<a id="org9ee43f8"></a>
+<a id="org0906bdc"></a>
 
 ### 2024-02-13 Tuesday
 
@@ -2078,8 +2096,9 @@
 
 2.  Misc.
 
-    1.  TODO General <code>[2/2]</code>
+    1.  DONE General <code>[2/2]</code>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:48]</span></span>
         -   [X] Update Joe with layout changes
         -   [X] Review SPN field layout
             -   see S.L.O.T. definition per
@@ -2089,7 +2108,7 @@
                 -   T = Transfer (data length)
 
 
-<a id="org1154cf4"></a>
+<a id="orgf6e5f4f"></a>
 
 ### 2024-02-14 Wednesday
 
@@ -2171,35 +2190,36 @@
 
 3.  OPSYD-37 Cont.
 
-    1.  TODO Fix bugs in commit #8ab1945 <code>[6/8]</code>
+    1.  DONE Fix bugs in commit #8ab1945 <code>[7/8]</code>
     
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:22]</span></span>
         -   [X] J1939Message, Ln 335, all set to "Number"
         -   [X] J1939editMessage, Ln 996, make parameters valid and default
         -   [X] J1939editMessage, Ln 1535, make param valid and default
         -   [X] J1939plugin, Ln 1028, make params valid and default
         -   [X] J1939dbc, Ln 502, make params valid and default
         -   [X] J1939generate, Ln 331, make params valid and default
-        -   [ ] Validators PGN <code>[0/6]</code>
-            -   [ ] TXRate
-            -   [ ] TXMethod
-            -   [ ] DLC
-            -   [ ] ExtDataPage
-            -   [ ] DataPage
-            -   [ ] Priority
+        -   [X] Validators PGN <code>[6/6]</code>
+            -   [X] TXRate
+            -   [X] TXMethod
+            -   [X] DLC
+            -   [X] ExtDataPage
+            -   [X] DataPage
+            -   [X] Priority
         -   [ ] Validators SPN <code>[0/3]</code> 
             -   [ ] Scale Factor
             -   [ ] Offset
             -   [ ]
 
 
-<a id="orgd96fff8"></a>
+<a id="orgb8657fd"></a>
 
 ### 2014-02-15 Thursday
 
 1.  OUT SICk, PTO
 
 
-<a id="org8c5eea0"></a>
+<a id="org4f9e0a8"></a>
 
 ### 2024-02-16 Friday
 
@@ -2294,4 +2314,328 @@
         -   DO: complete included qt validator line edit tutorial in Qt Creator 12
         -   DO: ask TG for input
         -   DO: ask if input masking vs validator is worse or better
+
+
+<a id="org0cba363"></a>
+
+### 2024-02-19 Monday
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 19:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-19 Mon 20:04]</span></span></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-left">Time</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-left"><b>11:02</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;2024-02-19 Monday</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">11:02</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Qt Validators for PGN / SPN</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">11:02</td>
+</tr>
+</tbody>
+</table>
+
+1.  Qt Validators for PGN / SPN
+
+
+<a id="org29005ab"></a>
+
+### 2024-02-22 Thursday
+
+1.  Validator class continued
+
+    1.  DONE FINISH Setting Up Validators <code>[3/3]</code>
+    
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:22]</span></span>
+        -   [X] Validator Class
+            -   [X] header
+            -   [X] .cpp file
+        -   [X] Validators PGN <code>[8/8]</code>
+            "Add" button in "Adding PGN" popup menu should trigger validation check.
+            "Add" button is connected to J1939PGNLibrary::saveJ1939LibPGN()
+            saveJ1939LibPGN() collects fields from the upper form and the lower form, then saves.
+            insert a check that unless the entire form returns as valid, that pressing "Add" button does NOTE
+            save to the library.
+            -   [X] Name
+                -   currently testing.  see J1939editMessage line 798
+            -   [X] Number
+            -   [X] TXRate
+            -   [X] TXMethod
+            -   [X] DLC
+            -   [X] ExtDataPage
+            -   [X] DataPage
+            -   [X] Priority
+        -   [X] Validators SPN <code>[3/3]</code> 
+            -   [X] Scale Factor
+            -   [X] Offset
+            -   [X] HighVV
+
+
+<a id="org8d2769d"></a>
+
+### 2024-02-23 Friday
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+<caption class="t-above"><span class="table-number">Table 20:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-23 Fri 20:38]</span></span></caption>
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Headline</th>
+<th scope="col" class="org-left">Time</th>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-right">&#xa0;</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left"><b>Total time</b></td>
+<td class="org-left"><b>7:56</b></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;2024-02-23 Friday</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">7:56</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">FINISH Setting Up Validators</a></td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">5:41</td>
+</tr>
+
+
+<tr>
+<td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;Sprint Wrap Up, Meeting, Update Jira</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-right">&#xa0;</td>
+<td class="org-left">2:15</td>
+</tr>
+</tbody>
+</table>
+
+1.  [FINISH Setting Up Validators](file:///home/scurfman/org/gtd/projects/j1939plugin.md)
+
+2.  Sprint Wrap Up, Meeting, Update Jira
+
+
+<a id="org733bae1"></a>
+
+### 2024-02-26 Monday
+
+1.  [Update XML with new PGN/SPN Fields](file:///home/scurfman/org/gtd/projects/j1939plugin.md) (Continued)
+
+2.  CANCELED Misc Bugs <code>[0/3]</code>
+
+    -   State "CANCELED"   from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:21]</span></span>
+    -   [ ] Margins mismatch between PGN and SPN popup menus, too much white space in SPN menu
+    -   [ ] Fix PGN Regex, don't force to caps first char, find and reuse what TG had  <span class="timestamp-wrapper"><span class="timestamp">[2024-02-29 Thu 08:00]</span></span>
+    -   [ ] Locate original validator for confirming DLC > 0 before allowing SPN to be added.
+
+
+<a id="org27dfe00"></a>
+
+## 2024-03 March
+
+
+<a id="orga9002d7"></a>
+
+### 2024-03-01 Friday
+
+1.  SPN Validators v2
+
+    -   reviewed validator progress with JG, came up with modified list. Replace previous TODO.
+    -   see jira for notes.
+    
+    1.  DONE SPN Validators <code>[4/5]</code>
+    
+        -   State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:22]</span></span>
+        -   [X] SPN Scale Factor, set range to full float
+        -   [X] SPN Offset, set range to +/- flull float
+        -   [X] SPN Data Format, set to {Unscaled, Scaled, Bitfield}
+        -   [X] SPN Name, copy TG's regex and use
+            -   [X] PGN Name, copy TG's regex and us
+
+
+<a id="orge08347a"></a>
+
+### 2024-03-08 Friday
+
+1.  SPN Wrap Up Tasks
+
+
+<a id="orgd75688b"></a>
+
+### 2024-03-11 Monday
+
+1.  OPSYD-79 Backend C Code Gen
+
+    1.  TODO c code gen review <code>[0/5]</code>
+    
+        -   [ ] Review existing class used for unscaled int
+        -   [ ] Identify and review exsting class used for scaled int
+        -   [ ] Identfiy and review existing class used for bitfield
+        -   [ ] manuall create .c and .h file for testing
+            -   [ ] contains all necessary PGN / SPN fields found in XML
+            -   [ ] check that manually created files import into logicad
+        -   [ ] Used tested .c and .h file as model output for plugin edits
+            -   [ ] WriteHFile()
+            -   [ ] WriteCFile()
+            -   [ ] WriteHFileNewPGN()
+            -   [ ] WriteCFileNewPGN()
+
+
+<a id="org046d15d"></a>
+
+### 2024-03-12 Tuesday
+
+1.  Misc Plugin fixes
+
+2.  Unscaled vs uint fiasco
+
+    1.  PROBLEM:
+    
+        -   moving XML schema to use "unscaled" "scaled" and "bitfield" for dataformat broke import export
+    
+    2.  OPTIONS:
+    
+        1.  convert "unscaled" to "uint" BEFORE saveJ1939LibSPN()
+            1.  Add function(s) after validators to convert ui data format + ui data length to "uint" style dataformat
+            2.  check to see what would have to change on DBC import to XML library
+        2.  convert "unscaled" to "uint" AFTER saveJ1939LibSPN()
+            1.  Anything writing FROM xmlLib TO target would have to include an "unscaled" to "uint" string conversion&#x2026;
+                1.  have to change datapool
+                2.  have to change dbc
+                3.  have to change generate
+    
+    3.  WIP:
+    
+        1.  TG fixed in datapool using AFTER xmlLib method
+            1.  see WriteDataPoolCoreFile()
+                
+                            for(auto &element:userPGN.getSPNList())
+                    {
+                        if(element.getSPNName() == spnName)
+                        {
+                            string dbFormat = element.getSPNDataFormatCB();
+                            string bitLFormat = element.getmSPNLength(); //8,16,32,64
+                    
+                            if(element.getSPNDataFormatCB() == "Scaled")
+                            {
+                                dbFormat = "sint";
+                            }
+                            else if(element.getSPNDataFormatCB() == "Unscaled")
+                            {
+                                dbFormat = "uint";
+                            }
+                            else if(element.getSPNDataFormatCB() == "Bitfield")
+                            {
+                                dbFormat = "uint";
+                            }
+                    
+                            setSize = dbFormat + bitLFormat;
+                    
+                            setHVV = element.getSPNHighVV();
+                            setOffset = element.getmSPNOffset();
+                            setFactor = element.getmSPNScale();
+                            break;
+                        }
+                    }
+            2.  see importDBCtoLib()
+                
+                    
+                    if(SPNMessageNew.bit_length == "64")
+                    {
+                        SPNMessageNew.dataFormat = "Bitfield";
+                    }
+                    else //todo what about scaled?
+                    {
+                        SPNMessageNew.dataFormat = "Unscaled";
+                    }
+            3.  see writeCFile()
+                
+                    for (auto & elementSPNMap : pgn.getSPNMap())
+                                    {
+                                        string setInt = "u8_";
+                                        for (auto & element : userPGN.getSPNList())//Loop through SPNs
+                                        {
+                                            if(element.getSPNName() == elementSPNMap.first)
+                                            {
+                                                if(element.getSPNDataFormatCB() == "uint8") //***FIX ME *****
+                                                {
+                                                    setInt = "u8_";
+                                                }
+                                                else if(element.getSPNDataFormatCB() == "uint16")
+                                                {
+                                                    setInt = "u16_";
+                                                }
+                                                else if(element.getSPNDataFormatCB() == "uint32")
+                                                {
+                                                    setInt = "u32_";
+                                                }
+                                            }
+                                        }
 
