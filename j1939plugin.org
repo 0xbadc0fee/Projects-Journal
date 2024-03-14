@@ -1253,3 +1253,56 @@ CLOSED: [2024-03-11 Mon 12:22]
                                 }
                             }
       #+end_src
+*** 2024-03-14 Thursday
+**** Misc Catch Up
++ TG out sick.  SC catching up on following..
+***** TODO Misc [0/6]
+- [ ] when adding new SPN's, prevent empty Offset
+- [ ] when adding new SPN's, prevent empty HighVV
+- [ ] move any validators that may be incorrectly in EDIT SPN that should be in ADD SPN (ignore if not found)
+- [ ] fix bug in overlong SPN Number, can cause full crash.  get std::out_of_range / stoi error
+- [ ] test that existing validators CHECK only and do not SET values
+  - [ ] modify check for HVV = Nan and DO NOT SET, just leave INVALID until user corrects.
+- [ ] inspect .c and .h files made with J1939 plugin built SPNs to make roadmap for c gen edits.
+***** TODO Pre Push Test Steps [0/10]
+- [ ] Pre-Test
+  - [ ] Delete existing J1939_library.xml
+  - [ ] misc ?
+- [ ] Create new project, start openSYDE (from Qt)
+  - [ ] New Project
+  - [ ] Add 1 STW device, 1 third party device, and 2 buses.  Connect devices to buses
+  - [ ] Save Project
+  - [ ] Import TSP for STW device, confirm OK and save
+- [ ] Bus check
+  - [ ] Buses -> COMM -> J1939, import DBC
+  - [ ] Save
+  - [ ] confirm node xml files created
+- [ ] DBC Stock Message Check
+  - [ ] From add pgn, import dbc
+  - [ ] confirm imported
+  - [ ] add 1 pgn + 1 spn to messages
+  - [ ] go to devices, datapools and confirm stock DBC message matches same as in plugin
+- [ ] Custom Message Check, XML
+  - [ ] create custom PNG and add
+  - [ ] add custom SPN to PGN above
+  - [ ] check disc, open J1939_library.xml, confirm has both stock and custom messages.
+  - [ ] confirm xml file has matching open and close xml tags on custom entry
+- [ ] Custom Message Check, Datapool
+  - [ ] from plugin, add custom spn and pgn to project.
+  - [ ] from devices, datapools, confirm custom message appears in new list.
+  - [ ] in datapools, confirm custom spn has exactly same VALUE TYPE, MIN, MAX, FACTOR, and OFFSET as entered in plugin
+- [ ] Message export test DBC
+  - [ ] from J1939 tab, export current message as DBC
+  - [ ] in text editor, confirm exported .DBC file has last entry matching custom SPN
+- [ ] Check C Code Gen output
+  - [ ] From system definition, open STW device and add J1939 datapool to application core
+  - [ ] save
+  - [ ] select Generate Files
+  - [ ] confirm last two should be .c and .h files for custom PGN (i.e. j1939_pgn_cfg_pushTestPGN.c && j1939_pgn_pushTestPGN.h)
+  - [ ] check with text editor that .c and .h files look corect
+- [ ] Open from saved
+  - [ ] save project and close openSYDE instance
+  - [ ] re run as-built openSYDE (from Qt)
+  - [ ] open test project and look for openSYDE errors on opening.
+- [ ] GIT PUSH
+  - [ ] if passed all above, ok to push.

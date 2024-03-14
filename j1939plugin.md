@@ -1,54 +1,55 @@
 
 # Table of Contents
 
-1.  [2024](#org16d131e)
-    1.  [2024-01 January](#org975b6e4)
-        1.  [2024-01-17 Wednesday](#org6cf241e)
-        2.  [2024-01-18 Thursday](#orgba0403f)
-        3.  [2024-01-22 Monday](#org74a8851)
-        4.  [2024-01-23 Tuesday](#org60c7e71)
-        5.  [2024-01-24 Wednesday](#org555dc9b)
-        6.  [2024-01-25 Thursday](#orgc2b841b)
-        7.  [2024-01-26 Friday](#org3d77d08)
-        8.  [2024-01-29 Monday](#org054c8c2)
-        9.  [2024-01-30 Tuesday](#org310d444)
-        10. [2024-01-31 Wednesday](#orga9039f1)
-    2.  [2024-02 February](#org7b02977)
-        1.  [2024-02-01 Thursday](#orgee61087)
-        2.  [2024-02-02 Friday](#org5fcc06a)
-        3.  [2024-02-05 Monday](#orgff3b563)
-        4.  [2024-02-06 Tuesday](#org6d4a4e7)
-        5.  [2024-02-07 Wednesday](#orgf0c86f5)
-        6.  [2024-02-08 Thursday](#orgace0a37)
-        7.  [2024-02-09 Friday](#org41d7dd7)
-        8.  [2024-02-12 Monday](#orgbfdf72d)
-        9.  [2024-02-13 Tuesday](#org0906bdc)
-        10. [2024-02-14 Wednesday](#orgf6e5f4f)
-        11. [2014-02-15 Thursday](#orgb8657fd)
-        12. [2024-02-16 Friday](#org4f9e0a8)
-        13. [2024-02-19 Monday](#org0cba363)
-        14. [2024-02-22 Thursday](#org29005ab)
-        15. [2024-02-23 Friday](#org8d2769d)
-        16. [2024-02-26 Monday](#org733bae1)
-    3.  [2024-03 March](#org27dfe00)
-        1.  [2024-03-01 Friday](#orga9002d7)
-        2.  [2024-03-08 Friday](#orge08347a)
-        3.  [2024-03-11 Monday](#orgd75688b)
-        4.  [2024-03-12 Tuesday](#org046d15d)
+1.  [2024](#orge3cc105)
+    1.  [2024-01 January](#orgca11fd9)
+        1.  [2024-01-17 Wednesday](#orge15f69d)
+        2.  [2024-01-18 Thursday](#org3d0e616)
+        3.  [2024-01-22 Monday](#orgdceb946)
+        4.  [2024-01-23 Tuesday](#org03db485)
+        5.  [2024-01-24 Wednesday](#org916c721)
+        6.  [2024-01-25 Thursday](#org85f92f6)
+        7.  [2024-01-26 Friday](#org98bcfc6)
+        8.  [2024-01-29 Monday](#org8a6abec)
+        9.  [2024-01-30 Tuesday](#org6de757a)
+        10. [2024-01-31 Wednesday](#org2604602)
+    2.  [2024-02 February](#orgb3af1b0)
+        1.  [2024-02-01 Thursday](#orgf4cf15c)
+        2.  [2024-02-02 Friday](#orgd8400ba)
+        3.  [2024-02-05 Monday](#orgc38506f)
+        4.  [2024-02-06 Tuesday](#orgec1bb0f)
+        5.  [2024-02-07 Wednesday](#orgb6821b3)
+        6.  [2024-02-08 Thursday](#org293db4a)
+        7.  [2024-02-09 Friday](#org3bfd636)
+        8.  [2024-02-12 Monday](#org3ab7104)
+        9.  [2024-02-13 Tuesday](#org2a25788)
+        10. [2024-02-14 Wednesday](#org7a59c2d)
+        11. [2014-02-15 Thursday](#org3eebd14)
+        12. [2024-02-16 Friday](#org5f33d50)
+        13. [2024-02-19 Monday](#org9d8ac79)
+        14. [2024-02-22 Thursday](#orgf94033e)
+        15. [2024-02-23 Friday](#orgff6b173)
+        16. [2024-02-26 Monday](#org6cd4d1f)
+    3.  [2024-03 March](#orgbf0cc56)
+        1.  [2024-03-01 Friday](#org8ac5b8a)
+        2.  [2024-03-08 Friday](#orgd7cb92f)
+        3.  [2024-03-11 Monday](#org2f9e066)
+        4.  [2024-03-12 Tuesday](#org8ddf2dc)
+        5.  [2024-03-14 Thursday](#org0e8b80e)
 
 
 
-<a id="org16d131e"></a>
+<a id="orge3cc105"></a>
 
 # 2024
 
 
-<a id="org975b6e4"></a>
+<a id="orgca11fd9"></a>
 
 ## 2024-01 January
 
 
-<a id="org6cf241e"></a>
+<a id="orge15f69d"></a>
 
 ### 2024-01-17 Wednesday
 
@@ -62,7 +63,7 @@
         -   [X] Open and test compile current project state
 
 
-<a id="orgba0403f"></a>
+<a id="org3d0e616"></a>
 
 ### 2024-01-18 Thursday
 
@@ -75,7 +76,7 @@
         -   [X] Explore structure of J1939 plugin project via Qt
 
 
-<a id="org74a8851"></a>
+<a id="orgdceb946"></a>
 
 ### 2024-01-22 Monday
 
@@ -233,7 +234,7 @@
                 -   [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
 
 
-<a id="org60c7e71"></a>
+<a id="org03db485"></a>
 
 ### 2024-01-23 Tuesday
 
@@ -368,7 +369,7 @@
     -   stopped here.
 
 
-<a id="org555dc9b"></a>
+<a id="org916c721"></a>
 
 ### 2024-01-24 Wednesday
 
@@ -488,7 +489,7 @@
                 -   SOLUTION: changed build from DEBUG to RELEASE
 
 
-<a id="orgc2b841b"></a>
+<a id="org85f92f6"></a>
 
 ### 2024-01-25 Thursday
 
@@ -616,7 +617,7 @@
         3.  OPSYD-72 Configurable CANID
 
 
-<a id="org3d77d08"></a>
+<a id="org98bcfc6"></a>
 
 ### 2024-01-26 Friday
 
@@ -647,7 +648,7 @@
             -   test write out to new xml file.
 
 
-<a id="org054c8c2"></a>
+<a id="org8a6abec"></a>
 
 ### 2024-01-29 Monday
 
@@ -710,7 +711,7 @@
     -   see org roam notes and paste in here.
 
 
-<a id="org310d444"></a>
+<a id="org6de757a"></a>
 
 ### 2024-01-30 Tuesday
 
@@ -818,7 +819,7 @@
         -   pushed to github and closed bug story in Jira   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-30 Tue 12:00]</span></span>
 
 
-<a id="orga9039f1"></a>
+<a id="org2604602"></a>
 
 ### 2024-01-31 Wednesday
 
@@ -1088,12 +1089,12 @@
         -   [ ] Q: lookup QObject, when to use with class and when not.
 
 
-<a id="org7b02977"></a>
+<a id="orgb3af1b0"></a>
 
 ## 2024-02 February
 
 
-<a id="orgee61087"></a>
+<a id="orgf4cf15c"></a>
 
 ### 2024-02-01 Thursday
 
@@ -1156,7 +1157,7 @@
 2.  Move definition of new function to J1939Message.cpp
 
 
-<a id="org5fcc06a"></a>
+<a id="orgd8400ba"></a>
 
 ### 2024-02-02 Friday
 
@@ -1266,7 +1267,7 @@
         -   TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
 
 
-<a id="orgff3b563"></a>
+<a id="orgc38506f"></a>
 
 ### 2024-02-05 Monday
 
@@ -1377,7 +1378,7 @@
             -
 
 
-<a id="org6d4a4e7"></a>
+<a id="orgec1bb0f"></a>
 
 ### 2024-02-06 Tuesday
 
@@ -1482,9 +1483,9 @@
 
 2.  Generate C code changes for PGN
 
-    1.  see here: [1.2.3.1](#orge63e555)
+    1.  see here: [1.2.3.1](#org44eaa66)
     
-    2.  see here: [1](#org7264081)
+    2.  see here: [1](#orgd3af965)
     
     3.  DONE Continue PGN /SPN updates <code>[5/5]</code>
     
@@ -1518,7 +1519,7 @@
             -
 
 
-<a id="orgf0c86f5"></a>
+<a id="orgb6821b3"></a>
 
 ### 2024-02-07 Wednesday
 
@@ -1624,7 +1625,7 @@
         -   [X] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
 
 
-<a id="orgace0a37"></a>
+<a id="org293db4a"></a>
 
 ### 2024-02-08 Thursday
 
@@ -1713,7 +1714,7 @@
     1.  NOTES:
 
 
-<a id="org41d7dd7"></a>
+<a id="org3bfd636"></a>
 
 ### 2024-02-09 Friday
 
@@ -1868,7 +1869,7 @@
             -   [ ] test code generator in logicad
 
 
-<a id="orgbfdf72d"></a>
+<a id="org3ab7104"></a>
 
 ### 2024-02-12 Monday
 
@@ -2034,7 +2035,7 @@
                 -   [ ] spnHighVV
 
 
-<a id="org0906bdc"></a>
+<a id="org2a25788"></a>
 
 ### 2024-02-13 Tuesday
 
@@ -2108,7 +2109,7 @@
                 -   T = Transfer (data length)
 
 
-<a id="orgf6e5f4f"></a>
+<a id="org7a59c2d"></a>
 
 ### 2024-02-14 Wednesday
 
@@ -2212,14 +2213,14 @@
             -   [ ]
 
 
-<a id="orgb8657fd"></a>
+<a id="org3eebd14"></a>
 
 ### 2014-02-15 Thursday
 
 1.  OUT SICk, PTO
 
 
-<a id="org4f9e0a8"></a>
+<a id="org5f33d50"></a>
 
 ### 2024-02-16 Friday
 
@@ -2316,7 +2317,7 @@
         -   DO: ask if input masking vs validator is worse or better
 
 
-<a id="org0cba363"></a>
+<a id="org9d8ac79"></a>
 
 ### 2024-02-19 Monday
 
@@ -2377,7 +2378,7 @@
 1.  Qt Validators for PGN / SPN
 
 
-<a id="org29005ab"></a>
+<a id="orgf94033e"></a>
 
 ### 2024-02-22 Thursday
 
@@ -2410,7 +2411,7 @@
             -   [X] HighVV
 
 
-<a id="org8d2769d"></a>
+<a id="orgff6b173"></a>
 
 ### 2024-02-23 Friday
 
@@ -2482,7 +2483,7 @@
 2.  Sprint Wrap Up, Meeting, Update Jira
 
 
-<a id="org733bae1"></a>
+<a id="org6cd4d1f"></a>
 
 ### 2024-02-26 Monday
 
@@ -2496,12 +2497,12 @@
     -   [ ] Locate original validator for confirming DLC > 0 before allowing SPN to be added.
 
 
-<a id="org27dfe00"></a>
+<a id="orgbf0cc56"></a>
 
 ## 2024-03 March
 
 
-<a id="orga9002d7"></a>
+<a id="org8ac5b8a"></a>
 
 ### 2024-03-01 Friday
 
@@ -2520,14 +2521,14 @@
             -   [X] PGN Name, copy TG's regex and us
 
 
-<a id="orge08347a"></a>
+<a id="orgd7cb92f"></a>
 
 ### 2024-03-08 Friday
 
 1.  SPN Wrap Up Tasks
 
 
-<a id="orgd75688b"></a>
+<a id="org2f9e066"></a>
 
 ### 2024-03-11 Monday
 
@@ -2548,7 +2549,7 @@
             -   [ ] WriteCFileNewPGN()
 
 
-<a id="org046d15d"></a>
+<a id="org8ddf2dc"></a>
 
 ### 2024-03-12 Tuesday
 
@@ -2638,4 +2639,67 @@
                                                 }
                                             }
                                         }
+
+
+<a id="org0e8b80e"></a>
+
+### 2024-03-14 Thursday
+
+1.  Misc Catch Up
+
+    -   TG out sick.  SC catching up on following..
+    
+    1.  TODO Misc <code>[0/6]</code>
+    
+        -   [ ] when adding new SPN's, prevent empty Offset
+        -   [ ] when adding new SPN's, prevent empty HighVV
+        -   [ ] move any validators that may be incorrectly in EDIT SPN that should be in ADD SPN (ignore if not found)
+        -   [ ] fix bug in overlong SPN Number, can cause full crash.  get std::out\_of\_range / stoi error
+        -   [ ] test that existing validators CHECK only and do not SET values
+            -   [ ] modify check for HVV = Nan and DO NOT SET, just leave INVALID until user corrects.
+        -   [ ] inspect .c and .h files made with J1939 plugin built SPNs to make roadmap for c gen edits.
+    
+    2.  TODO Pre Push Test Steps <code>[0/10]</code>
+    
+        -   [ ] Pre-Test
+            -   [ ] Delete existing J1939\_library.xml
+            -   [ ] misc ?
+        -   [ ] Create new project, start openSYDE (from Qt)
+            -   [ ] New Project
+            -   [ ] Add 1 STW device, 1 third party device, and 2 buses.  Connect devices to buses
+            -   [ ] Save Project
+            -   [ ] Import TSP for STW device, confirm OK and save
+        -   [ ] Bus check
+            -   [ ] Buses -> COMM -> J1939, import DBC
+            -   [ ] Save
+            -   [ ] confirm node xml files created
+        -   [ ] DBC Stock Message Check
+            -   [ ] From add pgn, import dbc
+            -   [ ] confirm imported
+            -   [ ] add 1 pgn + 1 spn to messages
+            -   [ ] go to devices, datapools and confirm stock DBC message matches same as in plugin
+        -   [ ] Custom Message Check, XML
+            -   [ ] create custom PNG and add
+            -   [ ] add custom SPN to PGN above
+            -   [ ] check disc, open J1939\_library.xml, confirm has both stock and custom messages.
+            -   [ ] confirm xml file has matching open and close xml tags on custom entry
+        -   [ ] Custom Message Check, Datapool
+            -   [ ] from plugin, add custom spn and pgn to project.
+            -   [ ] from devices, datapools, confirm custom message appears in new list.
+            -   [ ] in datapools, confirm custom spn has exactly same VALUE TYPE, MIN, MAX, FACTOR, and OFFSET as entered in plugin
+        -   [ ] Message export test DBC
+            -   [ ] from J1939 tab, export current message as DBC
+            -   [ ] in text editor, confirm exported .DBC file has last entry matching custom SPN
+        -   [ ] Check C Code Gen output
+            -   [ ] From system definition, open STW device and add J1939 datapool to application core
+            -   [ ] save
+            -   [ ] select Generate Files
+            -   [ ] confirm last two should be .c and .h files for custom PGN (i.e. j1939\_pgn\_cfg\_pushTestPGN.c && j1939\_pgn\_pushTestPGN.h)
+            -   [ ] check with text editor that .c and .h files look corect
+        -   [ ] Open from saved
+            -   [ ] save project and close openSYDE instance
+            -   [ ] re run as-built openSYDE (from Qt)
+            -   [ ] open test project and look for openSYDE errors on opening.
+        -   [ ] GIT PUSH
+            -   [ ] if passed all above, ok to push.
 
