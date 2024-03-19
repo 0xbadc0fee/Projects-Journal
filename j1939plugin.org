@@ -1256,14 +1256,28 @@ CLOSED: [2024-03-11 Mon 12:22]
 *** 2024-03-14 Thursday
 **** Misc Catch Up
 + TG out sick.  SC catching up on following..
-***** TODO Misc [0/6]
-- [ ] when adding new SPN's, prevent empty Offset
-- [ ] when adding new SPN's, prevent empty HighVV
-- [ ] move any validators that may be incorrectly in EDIT SPN that should be in ADD SPN (ignore if not found)
-- [ ] fix bug in overlong SPN Number, can cause full crash.  get std::out_of_range / stoi error
-- [ ] test that existing validators CHECK only and do not SET values
-  - [ ] modify check for HVV = Nan and DO NOT SET, just leave INVALID until user corrects.
+***** TODO Misc [5/10]
+- [X] when adding new SPN's, prevent empty Offset[2024-03-15 Fri] 
+- [X] when adding new SPN's, prevent empty HighVV  [2024-03-15 Fri] 
+- [X] move any validators that may be incorrectly in EDIT SPN that should be in ADD SPN (ignore if not found) [2024-03-15 Fri] 
+- [X] fix bug in overlong SPN Number, can cause full crash.  get std::out_of_range / stoi error [2024-03-15 Fri] 
+- [X] test that existing validators CHECK only and do not SET values
+  - [X] modify check for HVV = Nan and DO NOT SET, just leave INVALID until user corrects.
+- [ ] fix bug in display of 'Max' in openSYDE datapool, recalculating HVV and scales different than in popup UI.
+- [ ] make pair of DBC files; knownBAD and knownGOOD.  Test SPN checkboxes / start bit / length validation in UI.
+- [ ] make pair of .c / .h files.  (1) from stable example with J1939 data (EEC1 ?) and one from our plugin, compare for parsing planning.
+  + use TSP included example: j1939_pgn_cfg_EEC1.c / .h
+  + match SPN params exactly via plugin UI and compare output of our to built in example.
+    + SPN 899, EngineTorqueMode, bitfield, 4 bits
+    + SPN 512
+    + SPN 513
+    + SPN 190
+    + SPN 1483
+    + SPN 1675
+    + SPN 2432
 - [ ] inspect .c and .h files made with J1939 plugin built SPNs to make roadmap for c gen edits.
+- [ ] Remaining UI (OPSYD-84)
+  - [ ] 
 ***** TODO Pre Push Test Steps [0/10]
 - [ ] Pre-Test
   - [ ] Delete existing J1939_library.xml
@@ -1306,3 +1320,64 @@ CLOSED: [2024-03-11 Mon 12:22]
   - [ ] open test project and look for openSYDE errors on opening.
 - [ ] GIT PUSH
   - [ ] if passed all above, ok to push.
+*** 2024-03-15 Friday
+****   [[file:~/org/gtd/projects/j1939plugin.org::*Misc][Misc]] Continued
+**** Testing Issues
+***** TODO Testing Q&A [0/6]
+- [ ] Q: Is openSYDE datapool double scaling SPN on import from Plugin?
+- [ ] Q: Do values in .C / .H files need to be "pre-scaled"? i.e. SPN 190 HVV = 8031.875 || HVV = 64255 ??
+- [ ] Q: DBC testing had trouble with spaces, did 3rd party tool add spaces or did I?
+- [-] 
+  - [X] 
+  - [X] 
+  - [ ] 
+  - [ ] 
+- [ ] 
+- [ ]
+*** 2024-03-18 Monday
+**** GTD Daily
+***** TODO Process Inbox [0/5]
+- [ ] Dump It
+  - [ ] desk clean off
+  - [ ] PLC components
+  - [ ] stow demo boards
+  - [ ] clear off work bench
+- [ ] Delegate It
+- [ ] Defer It
+- [ ] Dock It
+  - [ ] 
+- [ ] Do It (2min tasks)
+  - [ ] schedule spring break vac days
+***** TODO Quick Review Projects [0/1]
+- [ ] JIRA OpenSYDE Plugins
+  - [ ] OPSYD-37
+    + miro edits, should add images of xml library
+  - [ ] OPSYD-84
+**** HVV
++ Found problem with openSYDE datapools accepting J1939plugin HVV import.
++ openSYDE is dumbing down HVV / Max before load into datapool.  Looks like for data formatting / rounding checks.
++ Make sense.  Only necessary for HVV since most likely to blow up out of bounds if unchecked.
++ Next Actions: find how / where openSYDE is packing / unpacking HVV and see if we can borrow the same method.
+***** openSYDE Max / HVV import
++ C_SyvDaltPaTreeModel.cpp
+  + h_AdaptFloatRangeOfValue()
+  + h_AdaptFloatRangeOfValueAndAppendResults()
+  + h_FixInvalidFloatValue()
++ C_OSCUtils.cpp
+  + h_IsFloat64NearlyEqual()
+  + h_IsFlaot32NearlyEqual()
+  + h_IsScalingActive()
+  + h_GetValueScaled()
+  + h_GetValueUnscaled()
++ C_OSC_NodeDataPoolContentUtil.cpp
+  + h_GetDataTypeSizeinByte()
+  + h_SetValueInMinMaxRange()
++ C_SdNdeDpContentUtil.cpp
+  + h_SetScaledValueInContent()
+  + h_GetMaxAfterScaling()
+  + h_GetMinimalTypeAfterScaling()
+  + h_ConvertScaledContentToGeneric()
+  + h_ConvertContentToGeneric()
+  + h_RangeCheckFloat()
+*** 2024-03-19 Tuesday
+**** HVV continued  

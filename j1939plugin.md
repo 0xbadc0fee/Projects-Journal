@@ -1,55 +1,58 @@
 
 # Table of Contents
 
-1.  [2024](#orge3cc105)
-    1.  [2024-01 January](#orgca11fd9)
-        1.  [2024-01-17 Wednesday](#orge15f69d)
-        2.  [2024-01-18 Thursday](#org3d0e616)
-        3.  [2024-01-22 Monday](#orgdceb946)
-        4.  [2024-01-23 Tuesday](#org03db485)
-        5.  [2024-01-24 Wednesday](#org916c721)
-        6.  [2024-01-25 Thursday](#org85f92f6)
-        7.  [2024-01-26 Friday](#org98bcfc6)
-        8.  [2024-01-29 Monday](#org8a6abec)
-        9.  [2024-01-30 Tuesday](#org6de757a)
-        10. [2024-01-31 Wednesday](#org2604602)
-    2.  [2024-02 February](#orgb3af1b0)
-        1.  [2024-02-01 Thursday](#orgf4cf15c)
-        2.  [2024-02-02 Friday](#orgd8400ba)
-        3.  [2024-02-05 Monday](#orgc38506f)
-        4.  [2024-02-06 Tuesday](#orgec1bb0f)
-        5.  [2024-02-07 Wednesday](#orgb6821b3)
-        6.  [2024-02-08 Thursday](#org293db4a)
-        7.  [2024-02-09 Friday](#org3bfd636)
-        8.  [2024-02-12 Monday](#org3ab7104)
-        9.  [2024-02-13 Tuesday](#org2a25788)
-        10. [2024-02-14 Wednesday](#org7a59c2d)
-        11. [2014-02-15 Thursday](#org3eebd14)
-        12. [2024-02-16 Friday](#org5f33d50)
-        13. [2024-02-19 Monday](#org9d8ac79)
-        14. [2024-02-22 Thursday](#orgf94033e)
-        15. [2024-02-23 Friday](#orgff6b173)
-        16. [2024-02-26 Monday](#org6cd4d1f)
-    3.  [2024-03 March](#orgbf0cc56)
-        1.  [2024-03-01 Friday](#org8ac5b8a)
-        2.  [2024-03-08 Friday](#orgd7cb92f)
-        3.  [2024-03-11 Monday](#org2f9e066)
-        4.  [2024-03-12 Tuesday](#org8ddf2dc)
-        5.  [2024-03-14 Thursday](#org0e8b80e)
+1.  [2024](#orgad32b21)
+    1.  [2024-01 January](#org16269e4)
+        1.  [2024-01-17 Wednesday](#orgaaeafe9)
+        2.  [2024-01-18 Thursday](#orgf9711c5)
+        3.  [2024-01-22 Monday](#orga30b389)
+        4.  [2024-01-23 Tuesday](#org42ec548)
+        5.  [2024-01-24 Wednesday](#org946b245)
+        6.  [2024-01-25 Thursday](#org9ba52c3)
+        7.  [2024-01-26 Friday](#org3d7c7fd)
+        8.  [2024-01-29 Monday](#org2e9fb41)
+        9.  [2024-01-30 Tuesday](#org7b5ce5f)
+        10. [2024-01-31 Wednesday](#org01f3d45)
+    2.  [2024-02 February](#orgb1ee9e7)
+        1.  [2024-02-01 Thursday](#org7488583)
+        2.  [2024-02-02 Friday](#org27b1ac4)
+        3.  [2024-02-05 Monday](#org2010cbe)
+        4.  [2024-02-06 Tuesday](#orgded26e7)
+        5.  [2024-02-07 Wednesday](#orge61a9d7)
+        6.  [2024-02-08 Thursday](#org55b73dd)
+        7.  [2024-02-09 Friday](#orgfaee05e)
+        8.  [2024-02-12 Monday](#org68c50c1)
+        9.  [2024-02-13 Tuesday](#org8d78b10)
+        10. [2024-02-14 Wednesday](#orgd3f4c6a)
+        11. [2014-02-15 Thursday](#org7f828ac)
+        12. [2024-02-16 Friday](#org7464b12)
+        13. [2024-02-19 Monday](#orgde16231)
+        14. [2024-02-22 Thursday](#org0990d39)
+        15. [2024-02-23 Friday](#org59ab33c)
+        16. [2024-02-26 Monday](#orga936356)
+    3.  [2024-03 March](#orgc10dfef)
+        1.  [2024-03-01 Friday](#org6108105)
+        2.  [2024-03-08 Friday](#org44845f8)
+        3.  [2024-03-11 Monday](#org3856ea0)
+        4.  [2024-03-12 Tuesday](#org2bae47c)
+        5.  [2024-03-14 Thursday](#org7a43adf)
+        6.  [2024-03-15 Friday](#org1b5383d)
+        7.  [2024-03-18 Monday](#org7eb96a8)
+        8.  [2024-03-19 Tuesday](#org2068b08)
 
 
 
-<a id="orge3cc105"></a>
+<a id="orgad32b21"></a>
 
 # 2024
 
 
-<a id="orgca11fd9"></a>
+<a id="org16269e4"></a>
 
 ## 2024-01 January
 
 
-<a id="orge15f69d"></a>
+<a id="orgaaeafe9"></a>
 
 ### 2024-01-17 Wednesday
 
@@ -63,7 +66,7 @@
         -   [X] Open and test compile current project state
 
 
-<a id="org3d0e616"></a>
+<a id="orgf9711c5"></a>
 
 ### 2024-01-18 Thursday
 
@@ -76,7 +79,7 @@
         -   [X] Explore structure of J1939 plugin project via Qt
 
 
-<a id="orgdceb946"></a>
+<a id="orga30b389"></a>
 
 ### 2024-01-22 Monday
 
@@ -234,7 +237,7 @@
                 -   [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
 
 
-<a id="org03db485"></a>
+<a id="org42ec548"></a>
 
 ### 2024-01-23 Tuesday
 
@@ -369,7 +372,7 @@
     -   stopped here.
 
 
-<a id="org916c721"></a>
+<a id="org946b245"></a>
 
 ### 2024-01-24 Wednesday
 
@@ -489,7 +492,7 @@
                 -   SOLUTION: changed build from DEBUG to RELEASE
 
 
-<a id="org85f92f6"></a>
+<a id="org9ba52c3"></a>
 
 ### 2024-01-25 Thursday
 
@@ -617,7 +620,7 @@
         3.  OPSYD-72 Configurable CANID
 
 
-<a id="org98bcfc6"></a>
+<a id="org3d7c7fd"></a>
 
 ### 2024-01-26 Friday
 
@@ -648,7 +651,7 @@
             -   test write out to new xml file.
 
 
-<a id="org8a6abec"></a>
+<a id="org2e9fb41"></a>
 
 ### 2024-01-29 Monday
 
@@ -711,7 +714,7 @@
     -   see org roam notes and paste in here.
 
 
-<a id="org6de757a"></a>
+<a id="org7b5ce5f"></a>
 
 ### 2024-01-30 Tuesday
 
@@ -819,7 +822,7 @@
         -   pushed to github and closed bug story in Jira   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-30 Tue 12:00]</span></span>
 
 
-<a id="org2604602"></a>
+<a id="org01f3d45"></a>
 
 ### 2024-01-31 Wednesday
 
@@ -1089,12 +1092,12 @@
         -   [ ] Q: lookup QObject, when to use with class and when not.
 
 
-<a id="orgb3af1b0"></a>
+<a id="orgb1ee9e7"></a>
 
 ## 2024-02 February
 
 
-<a id="orgf4cf15c"></a>
+<a id="org7488583"></a>
 
 ### 2024-02-01 Thursday
 
@@ -1157,7 +1160,7 @@
 2.  Move definition of new function to J1939Message.cpp
 
 
-<a id="orgd8400ba"></a>
+<a id="org27b1ac4"></a>
 
 ### 2024-02-02 Friday
 
@@ -1267,7 +1270,7 @@
         -   TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
 
 
-<a id="orgc38506f"></a>
+<a id="org2010cbe"></a>
 
 ### 2024-02-05 Monday
 
@@ -1378,7 +1381,7 @@
             -
 
 
-<a id="orgec1bb0f"></a>
+<a id="orgded26e7"></a>
 
 ### 2024-02-06 Tuesday
 
@@ -1483,9 +1486,9 @@
 
 2.  Generate C code changes for PGN
 
-    1.  see here: [1.2.3.1](#org44eaa66)
+    1.  see here: [1.2.3.1](#org256e2ae)
     
-    2.  see here: [1](#orgd3af965)
+    2.  see here: [1](#orgb1f4aa1)
     
     3.  DONE Continue PGN /SPN updates <code>[5/5]</code>
     
@@ -1519,7 +1522,7 @@
             -
 
 
-<a id="orgb6821b3"></a>
+<a id="orge61a9d7"></a>
 
 ### 2024-02-07 Wednesday
 
@@ -1625,7 +1628,7 @@
         -   [X] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
 
 
-<a id="org293db4a"></a>
+<a id="org55b73dd"></a>
 
 ### 2024-02-08 Thursday
 
@@ -1714,7 +1717,7 @@
     1.  NOTES:
 
 
-<a id="org3bfd636"></a>
+<a id="orgfaee05e"></a>
 
 ### 2024-02-09 Friday
 
@@ -1869,7 +1872,7 @@
             -   [ ] test code generator in logicad
 
 
-<a id="org3ab7104"></a>
+<a id="org68c50c1"></a>
 
 ### 2024-02-12 Monday
 
@@ -2035,7 +2038,7 @@
                 -   [ ] spnHighVV
 
 
-<a id="org2a25788"></a>
+<a id="org8d78b10"></a>
 
 ### 2024-02-13 Tuesday
 
@@ -2109,7 +2112,7 @@
                 -   T = Transfer (data length)
 
 
-<a id="org7a59c2d"></a>
+<a id="orgd3f4c6a"></a>
 
 ### 2024-02-14 Wednesday
 
@@ -2213,14 +2216,14 @@
             -   [ ]
 
 
-<a id="org3eebd14"></a>
+<a id="org7f828ac"></a>
 
 ### 2014-02-15 Thursday
 
 1.  OUT SICk, PTO
 
 
-<a id="org5f33d50"></a>
+<a id="org7464b12"></a>
 
 ### 2024-02-16 Friday
 
@@ -2317,7 +2320,7 @@
         -   DO: ask if input masking vs validator is worse or better
 
 
-<a id="org9d8ac79"></a>
+<a id="orgde16231"></a>
 
 ### 2024-02-19 Monday
 
@@ -2378,7 +2381,7 @@
 1.  Qt Validators for PGN / SPN
 
 
-<a id="orgf94033e"></a>
+<a id="org0990d39"></a>
 
 ### 2024-02-22 Thursday
 
@@ -2411,7 +2414,7 @@
             -   [X] HighVV
 
 
-<a id="orgff6b173"></a>
+<a id="org59ab33c"></a>
 
 ### 2024-02-23 Friday
 
@@ -2483,7 +2486,7 @@
 2.  Sprint Wrap Up, Meeting, Update Jira
 
 
-<a id="org6cd4d1f"></a>
+<a id="orga936356"></a>
 
 ### 2024-02-26 Monday
 
@@ -2497,12 +2500,12 @@
     -   [ ] Locate original validator for confirming DLC > 0 before allowing SPN to be added.
 
 
-<a id="orgbf0cc56"></a>
+<a id="orgc10dfef"></a>
 
 ## 2024-03 March
 
 
-<a id="org8ac5b8a"></a>
+<a id="org6108105"></a>
 
 ### 2024-03-01 Friday
 
@@ -2521,14 +2524,14 @@
             -   [X] PGN Name, copy TG's regex and us
 
 
-<a id="orgd7cb92f"></a>
+<a id="org44845f8"></a>
 
 ### 2024-03-08 Friday
 
 1.  SPN Wrap Up Tasks
 
 
-<a id="org2f9e066"></a>
+<a id="org3856ea0"></a>
 
 ### 2024-03-11 Monday
 
@@ -2549,7 +2552,7 @@
             -   [ ] WriteCFileNewPGN()
 
 
-<a id="org8ddf2dc"></a>
+<a id="org2bae47c"></a>
 
 ### 2024-03-12 Tuesday
 
@@ -2641,7 +2644,7 @@
                                         }
 
 
-<a id="org0e8b80e"></a>
+<a id="org7a43adf"></a>
 
 ### 2024-03-14 Thursday
 
@@ -2649,15 +2652,29 @@
 
     -   TG out sick.  SC catching up on following..
     
-    1.  TODO Misc <code>[0/6]</code>
+    1.  TODO Misc <code>[5/10]</code>
     
-        -   [ ] when adding new SPN's, prevent empty Offset
-        -   [ ] when adding new SPN's, prevent empty HighVV
-        -   [ ] move any validators that may be incorrectly in EDIT SPN that should be in ADD SPN (ignore if not found)
-        -   [ ] fix bug in overlong SPN Number, can cause full crash.  get std::out\_of\_range / stoi error
-        -   [ ] test that existing validators CHECK only and do not SET values
-            -   [ ] modify check for HVV = Nan and DO NOT SET, just leave INVALID until user corrects.
+        -   [X] when adding new SPN's, prevent empty Offset<span class="timestamp-wrapper"><span class="timestamp">[2024-03-15 Fri] </span></span>
+        -   [X] when adding new SPN's, prevent empty HighVV  <span class="timestamp-wrapper"><span class="timestamp">[2024-03-15 Fri] </span></span>
+        -   [X] move any validators that may be incorrectly in EDIT SPN that should be in ADD SPN (ignore if not found) <span class="timestamp-wrapper"><span class="timestamp">[2024-03-15 Fri] </span></span>
+        -   [X] fix bug in overlong SPN Number, can cause full crash.  get std::out\_of\_range / stoi error <span class="timestamp-wrapper"><span class="timestamp">[2024-03-15 Fri] </span></span>
+        -   [X] test that existing validators CHECK only and do not SET values
+            -   [X] modify check for HVV = Nan and DO NOT SET, just leave INVALID until user corrects.
+        -   [ ] fix bug in display of 'Max' in openSYDE datapool, recalculating HVV and scales different than in popup UI.
+        -   [ ] make pair of DBC files; knownBAD and knownGOOD.  Test SPN checkboxes / start bit / length validation in UI.
+        -   [ ] make pair of .c / .h files.  (1) from stable example with J1939 data (EEC1 ?) and one from our plugin, compare for parsing planning.
+            -   use TSP included example: j1939\_pgn\_cfg\_EEC1.c / .h
+            -   match SPN params exactly via plugin UI and compare output of our to built in example.
+                -   SPN 899, EngineTorqueMode, bitfield, 4 bits
+                -   SPN 512
+                -   SPN 513
+                -   SPN 190
+                -   SPN 1483
+                -   SPN 1675
+                -   SPN 2432
         -   [ ] inspect .c and .h files made with J1939 plugin built SPNs to make roadmap for c gen edits.
+        -   [ ] Remaining UI (OPSYD-84)
+            -   [ ]
     
     2.  TODO Pre Push Test Steps <code>[0/10]</code>
     
@@ -2702,4 +2719,94 @@
             -   [ ] open test project and look for openSYDE errors on opening.
         -   [ ] GIT PUSH
             -   [ ] if passed all above, ok to push.
+
+
+<a id="org1b5383d"></a>
+
+### 2024-03-15 Friday
+
+1.  [Misc](file:///home/scurfman/org/gtd/projects/j1939plugin.md) Continued
+
+2.  Testing Issues
+
+    1.  TODO Testing Q&A <code>[0/6]</code>
+    
+        -   [ ] Q: Is openSYDE datapool double scaling SPN on import from Plugin?
+        -   [ ] Q: Do values in .C / .H files need to be "pre-scaled"? i.e. SPN 190 HVV = 8031.875 || HVV = 64255 ??
+        -   [ ] Q: DBC testing had trouble with spaces, did 3rd party tool add spaces or did I?
+        -   [-] -   [X] 
+            
+            -   [X] 
+            
+            -   [ ] 
+            
+            -   [ ]
+        -   [ ] 
+        
+        -   [ ] 
+
+
+<a id="org7eb96a8"></a>
+
+### 2024-03-18 Monday
+
+1.  GTD Daily
+
+    1.  TODO Process Inbox <code>[0/5]</code>
+    
+        -   [ ] Dump It
+            -   [ ] desk clean off
+            -   [ ] PLC components
+            -   [ ] stow demo boards
+            -   [ ] clear off work bench
+        -   [ ] Delegate It
+        -   [ ] Defer It
+        -   [ ] Dock It
+            -   [ ]
+        -   [ ] Do It (2min tasks)
+            -   [ ] schedule spring break vac days
+    
+    2.  TODO Quick Review Projects <code>[0/1]</code>
+    
+        -   [ ] JIRA OpenSYDE Plugins
+            -   [ ] OPSYD-37
+                -   miro edits, should add images of xml library
+            -   [ ] OPSYD-84
+
+2.  HVV
+
+    -   Found problem with openSYDE datapools accepting J1939plugin HVV import.
+    -   openSYDE is dumbing down HVV / Max before load into datapool.  Looks like for data formatting / rounding checks.
+    -   Make sense.  Only necessary for HVV since most likely to blow up out of bounds if unchecked.
+    -   Next Actions: find how / where openSYDE is packing / unpacking HVV and see if we can borrow the same method.
+    
+    1.  openSYDE Max / HVV import
+    
+        -   C\_SyvDaltPaTreeModel.cpp
+            -   h\_AdaptFloatRangeOfValue()
+            -   h\_AdaptFloatRangeOfValueAndAppendResults()
+            -   h\_FixInvalidFloatValue()
+        -   C\_OSCUtils.cpp
+            -   h\_IsFloat64NearlyEqual()
+            -   h\_IsFlaot32NearlyEqual()
+            -   h\_IsScalingActive()
+            -   h\_GetValueScaled()
+            -   h\_GetValueUnscaled()
+        -   C\_OSC\_NodeDataPoolContentUtil.cpp
+            -   h\_GetDataTypeSizeinByte()
+            -   h\_SetValueInMinMaxRange()
+        -   C\_SdNdeDpContentUtil.cpp
+            -   h\_SetScaledValueInContent()
+            -   h\_GetMaxAfterScaling()
+            -   h\_GetMinimalTypeAfterScaling()
+            -   h\_ConvertScaledContentToGeneric()
+            -   h\_ConvertContentToGeneric()
+            -   h\_RangeCheckFloat()
+
+
+<a id="org2068b08"></a>
+
+### 2024-03-19 Tuesday
+
+1.  HVV continued
 
