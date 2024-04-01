@@ -1380,4 +1380,106 @@ CLOSED: [2024-03-11 Mon 12:22]
   + h_ConvertContentToGeneric()
   + h_RangeCheckFloat()
 *** 2024-03-19 Tuesday
-**** HVV continued  
+**** HVV continued
+***** TODO HVV Modifier [2/5]
+- [X] copy h_GetValueUnscaled() to plugin
+- [X] copy h_GetValueScaled() to plugin
+- [ ] add layer between UI and XML to handle both PHYS HVV and OSC HVV.
+  + experimented with a couple places.
+  + currently working on slipping in a variable in spnLib.
+- [ ] Q: trouble using debugger on plugin, can use fine on OpenSyde code, but breakpoints not working in plugin code. (build directory ? )
+- [ ] TOMORROW: continue J1939PGNLibrary.cpp @645, get a getValueUnscaled() call working correctly and then modify for data types.
+*** 2024-03-20 Wednesday
+**** Misc
+***** QT troubleshooting
++ degugging issue
++ failed to load plugin issue
+***** Code Gen / Hvv common questions review
++ review SCALED_VALUE
++ where in output of code gen do we find scale factor?
+  + see SCALE_FACTOR_1 , SCALE_FACTOR_2, table in J1939_sph.h
++
+*** 2024-03-22 Friday
+**** HVV UI <-> DP
++ Qt repaired, all day Thursday and 1/2 Wednesday.
+***** TODO Recreate HVV upscale <-> downscale code [1/3]
+- [X] fresh pull
+- [-] From UI -> XML
+  - [-] Add SPN menu
+    - [X] add object for emSPNHighVVUi
+    - [X] rename qline emSPNHighVV -> emSPNHighVVUi @ 554,555,
+    - [ ] point menu ui validators to new emSPNHighVVUi
+    - [ ] DO NOT change emSPNHighVV in string append functions @saveJ1939LibSPN()
+  - [ ] Edit SPN menu
+- [ ] From XML -> UI
+  - [ ] Add SPN menu
+  - [ ] Edit SPN menu
+  - [ ] change validator in validationDBCSPNCheckLib()
+*** 2024-03-25 Monday
+**** Review / Merge
++ max setable HVV not validating, but is calculating, fix before push
++
+*** 2024-03-29 Friday
+**** Fix Compile Errors
++ Still can't compile projects built using J1939 plugin
+***** TODO Troubleshooting Compiler [1/2]
+- [X] Test openSYDE v1.51
+  - [X] Load ESX-4CS-GW template project
+    - [X] Generate code as-is
+    - [X] Compile in logicad
+      + compiled correctly
+  - [X] Load ESX-4CS-GW example project
+    - [X] Generate code as-is
+    - [X] Compile in logicad
+      + compiled correctly
+- [-] Test openSYDE DEV env
+  - [X] Fresh git pull
+  - [-] Load ESX-4CS-GW template project
+    - [X] Compile in logicad
+    - [X] Generate code as-is
+    - [X] do not import j1939 libs (control test)
+    - [X] compile and record missing j1939 libs
+    - [X] add includes and recompile
+    - [ ] repeat until compiles correctly
+      + compile errors out on NOACT (no nodes, no busses)
+      + modify template only enough to include a node / bus, no PGN no SPN.
+  - [ ] Load ESX-4CS-GW example project
+    - [ ] Generate code as-is
+    - [ ] Compile in logicad
+  - [ ] Load ESX-4CS-GW J1939 Demo project (1pgn / 1spn)
+    - [ ] Generate code, make sure plugin .c and .h files used
+    - [ ] do not import j1939 libs (control test)
+    - [ ] compile and record missing lib files
+    - [ ] add includes for missing J1939
+    - [ ] recompile
+** 2024-04 April
+*** 2024-04-01 Monday
+**** Testing Release 2 of plugin
+***** TODO Tests (checked = OK) [0/4]
+- [ ] PGN adding from BAD input
+  - [ ] via Popup Menu
+    - PGN name accepted reserved c++ words
+    - CRASH @pgnNumber if user input overlong int 999999999999999999999999999999999999999
+      - terminate called after throwing an instance of 'std::out_of_range' what():  stoi
+  - [ ] via XML Library file
+    - CRASH @pgnNumber if import XML with overlong int
+      - terminate called after throwing an instance of 'std::out_of_range' what():  stoi
+  - [ ] via DBC Import
+- [ ] SPN adding from BAD input
+  - [ ] via Popup Menu
+    - spnName accepted special character '=' (caught in openSYDE datapool validator)
+    - Scale Factor accepted sci notation 1E+02 (maybe fine)
+    - Offset accepted sci notation 1E+02
+    - Offset accepted reserved word: return
+    - HVV accepted: .  (single decimal, no whole or fractional provided, just . )
+  - [ ] via XML Library File
+  - [ ] via DBC import
+- [ ] PGN edit w/ BAD input
+  - [ ] 
+- [ ] SPN edit w/ BAD input
+- P
+- Mini list of naughty strings (2-3 samples ea category)
+- Reserved: if, else, return
+- Numeric: %100, 1E+02, -2147483648/-1, INF, .  
+- Special Chars: ,./;'[]\-= , U+0001, U+0080
+- unicode symbols: ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็
