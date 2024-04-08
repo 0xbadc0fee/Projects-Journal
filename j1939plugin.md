@@ -1,64 +1,65 @@
 
 # Table of Contents
 
-1.  [2024](#orgd87e3fa)
-    1.  [2024-01 January](#org78db1b7)
-        1.  [2024-01-17 Wednesday](#orga6eab78)
-        2.  [2024-01-18 Thursday](#orgab569bc)
-        3.  [2024-01-22 Monday](#org1479153)
-        4.  [2024-01-23 Tuesday](#org23a561d)
-        5.  [2024-01-24 Wednesday](#org5c89f51)
-        6.  [2024-01-25 Thursday](#org709a82a)
-        7.  [2024-01-26 Friday](#orgaceaea1)
-        8.  [2024-01-29 Monday](#org14115ca)
-        9.  [2024-01-30 Tuesday](#org01a6751)
-        10. [2024-01-31 Wednesday](#org5aac6fb)
-    2.  [2024-02 February](#org98cab86)
-        1.  [2024-02-01 Thursday](#org678c474)
-        2.  [2024-02-02 Friday](#org8f99265)
-        3.  [2024-02-05 Monday](#org7aae0a3)
-        4.  [2024-02-06 Tuesday](#org0860d22)
-        5.  [2024-02-07 Wednesday](#orgdb3a479)
-        6.  [2024-02-08 Thursday](#orgbd1510c)
-        7.  [2024-02-09 Friday](#org6704480)
-        8.  [2024-02-12 Monday](#org79e6ab8)
-        9.  [2024-02-13 Tuesday](#orgd0394b6)
-        10. [2024-02-14 Wednesday](#org0f4f4b4)
-        11. [2014-02-15 Thursday](#org2715e87)
-        12. [2024-02-16 Friday](#org3dedeff)
-        13. [2024-02-19 Monday](#orga28db9c)
-        14. [2024-02-22 Thursday](#org1752f2b)
-        15. [2024-02-23 Friday](#org70aa593)
-        16. [2024-02-26 Monday](#org5cf8f7e)
-    3.  [2024-03 March](#orgcbd7bc9)
-        1.  [2024-03-01 Friday](#org1949682)
-        2.  [2024-03-08 Friday](#org267b5fc)
-        3.  [2024-03-11 Monday](#org15dbc54)
-        4.  [2024-03-12 Tuesday](#orge331894)
-        5.  [2024-03-14 Thursday](#org9a97693)
-        6.  [2024-03-15 Friday](#orgb64370b)
-        7.  [2024-03-18 Monday](#org85aea92)
-        8.  [2024-03-19 Tuesday](#orgafa5481)
-        9.  [2024-03-20 Wednesday](#org02e0b9b)
-        10. [2024-03-22 Friday](#orgaec589d)
-        11. [2024-03-25 Monday](#orge42347f)
-        12. [2024-03-29 Friday](#orge05f7e9)
-    4.  [2024-04 April](#org1645b12)
-        1.  [2024-04-01 Monday](#orgc7d38ba)
+1.  [2024](#orgfb8a058)
+    1.  [2024-01 January](#orgd76792c)
+        1.  [2024-01-17 Wednesday](#orgc5c837a)
+        2.  [2024-01-18 Thursday](#orgec20666)
+        3.  [2024-01-22 Monday](#org7350909)
+        4.  [2024-01-23 Tuesday](#org4e0cd44)
+        5.  [2024-01-24 Wednesday](#orgddafbd5)
+        6.  [2024-01-25 Thursday](#org02b94c4)
+        7.  [2024-01-26 Friday](#orgbfe3d3e)
+        8.  [2024-01-29 Monday](#orgea7d13a)
+        9.  [2024-01-30 Tuesday](#org3c47d4d)
+        10. [2024-01-31 Wednesday](#orgddb230c)
+    2.  [2024-02 February](#orgdf890a9)
+        1.  [2024-02-01 Thursday](#org03a20c4)
+        2.  [2024-02-02 Friday](#org7cbd7ea)
+        3.  [2024-02-05 Monday](#orgaad3b77)
+        4.  [2024-02-06 Tuesday](#org425422a)
+        5.  [2024-02-07 Wednesday](#org737d2f6)
+        6.  [2024-02-08 Thursday](#org46f7a0a)
+        7.  [2024-02-09 Friday](#org98f0bed)
+        8.  [2024-02-12 Monday](#org7af18c0)
+        9.  [2024-02-13 Tuesday](#org89685c2)
+        10. [2024-02-14 Wednesday](#orgc44453d)
+        11. [2014-02-15 Thursday](#org1d219e2)
+        12. [2024-02-16 Friday](#org3bec51b)
+        13. [2024-02-19 Monday](#org1124159)
+        14. [2024-02-22 Thursday](#orgc080a3d)
+        15. [2024-02-23 Friday](#orgf6c9bb1)
+        16. [2024-02-26 Monday](#orgee7a5c1)
+    3.  [2024-03 March](#org4715d45)
+        1.  [2024-03-01 Friday](#org6dbe97f)
+        2.  [2024-03-08 Friday](#org8254279)
+        3.  [2024-03-11 Monday](#org9d6078a)
+        4.  [2024-03-12 Tuesday](#orgb23fc13)
+        5.  [2024-03-14 Thursday](#org1a07c0b)
+        6.  [2024-03-15 Friday](#org4eb58f4)
+        7.  [2024-03-18 Monday](#org80f5314)
+        8.  [2024-03-19 Tuesday](#org0540075)
+        9.  [2024-03-20 Wednesday](#org564365e)
+        10. [2024-03-22 Friday](#org2ece6b9)
+        11. [2024-03-25 Monday](#orgf4f701d)
+        12. [2024-03-29 Friday](#orgf6dbf45)
+    4.  [2024-04 April](#org3d9d956)
+        1.  [2024-04-01 Monday](#org18bcbbd)
+        2.  [2024-04-08 Monday](#org120b356)
 
 
 
-<a id="orgd87e3fa"></a>
+<a id="orgfb8a058"></a>
 
 # 2024
 
 
-<a id="org78db1b7"></a>
+<a id="orgd76792c"></a>
 
 ## 2024-01 January
 
 
-<a id="orga6eab78"></a>
+<a id="orgc5c837a"></a>
 
 ### 2024-01-17 Wednesday
 
@@ -72,7 +73,7 @@
         -   [X] Open and test compile current project state
 
 
-<a id="orgab569bc"></a>
+<a id="orgec20666"></a>
 
 ### 2024-01-18 Thursday
 
@@ -85,7 +86,7 @@
         -   [X] Explore structure of J1939 plugin project via Qt
 
 
-<a id="org1479153"></a>
+<a id="org7350909"></a>
 
 ### 2024-01-22 Monday
 
@@ -243,7 +244,7 @@
                 -   [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
 
 
-<a id="org23a561d"></a>
+<a id="org4e0cd44"></a>
 
 ### 2024-01-23 Tuesday
 
@@ -378,7 +379,7 @@
     -   stopped here.
 
 
-<a id="org5c89f51"></a>
+<a id="orgddafbd5"></a>
 
 ### 2024-01-24 Wednesday
 
@@ -498,7 +499,7 @@
                 -   SOLUTION: changed build from DEBUG to RELEASE
 
 
-<a id="org709a82a"></a>
+<a id="org02b94c4"></a>
 
 ### 2024-01-25 Thursday
 
@@ -626,7 +627,7 @@
         3.  OPSYD-72 Configurable CANID
 
 
-<a id="orgaceaea1"></a>
+<a id="orgbfe3d3e"></a>
 
 ### 2024-01-26 Friday
 
@@ -657,7 +658,7 @@
             -   test write out to new xml file.
 
 
-<a id="org14115ca"></a>
+<a id="orgea7d13a"></a>
 
 ### 2024-01-29 Monday
 
@@ -720,7 +721,7 @@
     -   see org roam notes and paste in here.
 
 
-<a id="org01a6751"></a>
+<a id="org3c47d4d"></a>
 
 ### 2024-01-30 Tuesday
 
@@ -828,7 +829,7 @@
         -   pushed to github and closed bug story in Jira   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-30 Tue 12:00]</span></span>
 
 
-<a id="org5aac6fb"></a>
+<a id="orgddb230c"></a>
 
 ### 2024-01-31 Wednesday
 
@@ -1098,12 +1099,12 @@
         -   [ ] Q: lookup QObject, when to use with class and when not.
 
 
-<a id="org98cab86"></a>
+<a id="orgdf890a9"></a>
 
 ## 2024-02 February
 
 
-<a id="org678c474"></a>
+<a id="org03a20c4"></a>
 
 ### 2024-02-01 Thursday
 
@@ -1166,7 +1167,7 @@
 2.  Move definition of new function to J1939Message.cpp
 
 
-<a id="org8f99265"></a>
+<a id="org7cbd7ea"></a>
 
 ### 2024-02-02 Friday
 
@@ -1276,7 +1277,7 @@
         -   TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
 
 
-<a id="org7aae0a3"></a>
+<a id="orgaad3b77"></a>
 
 ### 2024-02-05 Monday
 
@@ -1387,7 +1388,7 @@
             -
 
 
-<a id="org0860d22"></a>
+<a id="org425422a"></a>
 
 ### 2024-02-06 Tuesday
 
@@ -1492,9 +1493,9 @@
 
 2.  Generate C code changes for PGN
 
-    1.  see here: [1.2.3.1](#orgee466f9)
+    1.  see here: [1.2.3.1](#orgd4ff49b)
     
-    2.  see here: [1](#org9697edd)
+    2.  see here: [1](#org5764803)
     
     3.  DONE Continue PGN /SPN updates <code>[5/5]</code>
     
@@ -1528,7 +1529,7 @@
             -
 
 
-<a id="orgdb3a479"></a>
+<a id="org737d2f6"></a>
 
 ### 2024-02-07 Wednesday
 
@@ -1634,7 +1635,7 @@
         -   [X] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
 
 
-<a id="orgbd1510c"></a>
+<a id="org46f7a0a"></a>
 
 ### 2024-02-08 Thursday
 
@@ -1723,7 +1724,7 @@
     1.  NOTES:
 
 
-<a id="org6704480"></a>
+<a id="org98f0bed"></a>
 
 ### 2024-02-09 Friday
 
@@ -1878,7 +1879,7 @@
             -   [ ] test code generator in logicad
 
 
-<a id="org79e6ab8"></a>
+<a id="org7af18c0"></a>
 
 ### 2024-02-12 Monday
 
@@ -2044,7 +2045,7 @@
                 -   [ ] spnHighVV
 
 
-<a id="orgd0394b6"></a>
+<a id="org89685c2"></a>
 
 ### 2024-02-13 Tuesday
 
@@ -2118,7 +2119,7 @@
                 -   T = Transfer (data length)
 
 
-<a id="org0f4f4b4"></a>
+<a id="orgc44453d"></a>
 
 ### 2024-02-14 Wednesday
 
@@ -2222,14 +2223,14 @@
             -   [ ]
 
 
-<a id="org2715e87"></a>
+<a id="org1d219e2"></a>
 
 ### 2014-02-15 Thursday
 
 1.  OUT SICk, PTO
 
 
-<a id="org3dedeff"></a>
+<a id="org3bec51b"></a>
 
 ### 2024-02-16 Friday
 
@@ -2326,7 +2327,7 @@
         -   DO: ask if input masking vs validator is worse or better
 
 
-<a id="orga28db9c"></a>
+<a id="org1124159"></a>
 
 ### 2024-02-19 Monday
 
@@ -2387,7 +2388,7 @@
 1.  Qt Validators for PGN / SPN
 
 
-<a id="org1752f2b"></a>
+<a id="orgc080a3d"></a>
 
 ### 2024-02-22 Thursday
 
@@ -2420,7 +2421,7 @@
             -   [X] HighVV
 
 
-<a id="org70aa593"></a>
+<a id="orgf6c9bb1"></a>
 
 ### 2024-02-23 Friday
 
@@ -2492,7 +2493,7 @@
 2.  Sprint Wrap Up, Meeting, Update Jira
 
 
-<a id="org5cf8f7e"></a>
+<a id="orgee7a5c1"></a>
 
 ### 2024-02-26 Monday
 
@@ -2506,12 +2507,12 @@
     -   [ ] Locate original validator for confirming DLC > 0 before allowing SPN to be added.
 
 
-<a id="orgcbd7bc9"></a>
+<a id="org4715d45"></a>
 
 ## 2024-03 March
 
 
-<a id="org1949682"></a>
+<a id="org6dbe97f"></a>
 
 ### 2024-03-01 Friday
 
@@ -2530,14 +2531,14 @@
             -   [X] PGN Name, copy TG's regex and us
 
 
-<a id="org267b5fc"></a>
+<a id="org8254279"></a>
 
 ### 2024-03-08 Friday
 
 1.  SPN Wrap Up Tasks
 
 
-<a id="org15dbc54"></a>
+<a id="org9d6078a"></a>
 
 ### 2024-03-11 Monday
 
@@ -2558,7 +2559,7 @@
             -   [ ] WriteCFileNewPGN()
 
 
-<a id="orge331894"></a>
+<a id="orgb23fc13"></a>
 
 ### 2024-03-12 Tuesday
 
@@ -2650,7 +2651,7 @@
                                         }
 
 
-<a id="org9a97693"></a>
+<a id="org1a07c0b"></a>
 
 ### 2024-03-14 Thursday
 
@@ -2727,7 +2728,7 @@
             -   [ ] if passed all above, ok to push.
 
 
-<a id="orgb64370b"></a>
+<a id="org4eb58f4"></a>
 
 ### 2024-03-15 Friday
 
@@ -2752,7 +2753,7 @@
         -   [ ] 
 
 
-<a id="org85aea92"></a>
+<a id="org80f5314"></a>
 
 ### 2024-03-18 Monday
 
@@ -2810,7 +2811,7 @@
             -   h\_RangeCheckFloat()
 
 
-<a id="orgafa5481"></a>
+<a id="org0540075"></a>
 
 ### 2024-03-19 Tuesday
 
@@ -2827,7 +2828,7 @@
         -   [ ] TOMORROW: continue J1939PGNLibrary.cpp @645, get a getValueUnscaled() call working correctly and then modify for data types.
 
 
-<a id="org02e0b9b"></a>
+<a id="org564365e"></a>
 
 ### 2024-03-20 Wednesday
 
@@ -2846,7 +2847,7 @@
         -   
 
 
-<a id="orgaec589d"></a>
+<a id="org2ece6b9"></a>
 
 ### 2024-03-22 Friday
 
@@ -2870,7 +2871,7 @@
             -   [ ] change validator in validationDBCSPNCheckLib()
 
 
-<a id="orge42347f"></a>
+<a id="orgf4f701d"></a>
 
 ### 2024-03-25 Monday
 
@@ -2880,7 +2881,7 @@
     -   
 
 
-<a id="orge05f7e9"></a>
+<a id="orgf6dbf45"></a>
 
 ### 2024-03-29 Friday
 
@@ -2921,12 +2922,12 @@
                 -   [ ] recompile
 
 
-<a id="org1645b12"></a>
+<a id="org3d9d956"></a>
 
 ## 2024-04 April
 
 
-<a id="orgc7d38ba"></a>
+<a id="org18bcbbd"></a>
 
 ### 2024-04-01 Monday
 
@@ -2961,4 +2962,40 @@
         -   Numeric: %100, 1E+02, -2147483648/-1, INF, .
         -   Special Chars: ,./;'[]\&#x00ad;= , U+0001, U+0080
         -   unicode symbols: ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็
+
+
+<a id="org120b356"></a>
+
+### 2024-04-08 Monday
+
+1.  Release 2 Misc
+
+    1.  TODO Testing <code>[0/4]</code>
+    
+        -   [ ] SPN Range
+            -   [ ] recreate valid EEC1 Sample PGN with 7 SPN's (see miro)
+            -   [ ] confirm XML library EEC1 is correct
+            -   [ ] confirm openSYDE datapools EEC1 matches plugin UI and XML
+        -   [ ] DBC Export/Import EEC1 (pluginin <-> plugin)
+            -   [ ] confirm DBC text file look correct
+            -   [ ] re-import DBC into new openSYDE project w/ blank XML Library
+            -   [ ] confirm DBC imported correctly into plugin UI
+            -   [ ] confirm DBC imported values populated into XML library correctly
+            -   [ ] add/apply messages to openSYDE node and confirm datapools matches plugin, XML, and DBC
+        -   [ ] DBC Import/Export EEC1 (cssElectronics <-> plugin)
+            -   [ ] (optional) see if plugin generated DBC can be opened by cssElectronic web tool
+            -   [ ] using new project & blank xml library, try to import cssEle generated DBC into plugin
+            -   [ ] confirm all 7 spn's of DBC populated in plugin pgn
+            -   [ ] check UI values in ea of 7 imported spn's using plugin
+            -   [ ] add/apply messages to a project node
+            -   [ ] confirm XML library looks correct
+            -   [ ] view PGN / SPN's in openSYDE datapools and confirm matches plugin UI values
+        -   [ ] Generate Code with EEC1 sample
+            -   [ ] if above tests pass, run generate code on sample project with EEC1 data
+            -   [ ] view .c and .h files and confirm contains 1 PGN w/ 7 SPN's.
+            -   [ ] confirm logicad env correctly builds template project (no plugin info)
+            -   [ ] open sample project generated code in logicad env
+            -   [ ] try to compile
+    
+    2.  TODO Changes <code>[/]</code>
 

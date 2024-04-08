@@ -1483,3 +1483,31 @@ CLOSED: [2024-03-11 Mon 12:22]
 - Numeric: %100, 1E+02, -2147483648/-1, INF, .  
 - Special Chars: ,./;'[]\-= , U+0001, U+0080
 - unicode symbols: ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็
+*** 2024-04-08 Monday
+**** Release 2 Misc  
+***** TODO Testing [0/4]
+- [ ] SPN Range
+  - [ ] recreate valid EEC1 Sample PGN with 7 SPN's (see miro)
+  - [ ] confirm XML library EEC1 is correct
+  - [ ] confirm openSYDE datapools EEC1 matches plugin UI and XML
+- [ ] DBC Export/Import EEC1 (pluginin <-> plugin)
+  - [ ] confirm DBC text file look correct
+  - [ ] re-import DBC into new openSYDE project w/ blank XML Library
+  - [ ] confirm DBC imported correctly into plugin UI
+  - [ ] confirm DBC imported values populated into XML library correctly
+  - [ ] add/apply messages to openSYDE node and confirm datapools matches plugin, XML, and DBC
+- [ ] DBC Import/Export EEC1 (cssElectronics <-> plugin)
+  - [ ] (optional) see if plugin generated DBC can be opened by cssElectronic web tool
+  - [ ] using new project & blank xml library, try to import cssEle generated DBC into plugin
+  - [ ] confirm all 7 spn's of DBC populated in plugin pgn
+  - [ ] check UI values in ea of 7 imported spn's using plugin
+  - [ ] add/apply messages to a project node
+  - [ ] confirm XML library looks correct
+  - [ ] view PGN / SPN's in openSYDE datapools and confirm matches plugin UI values
+- [ ] Generate Code with EEC1 sample
+  - [ ] if above tests pass, run generate code on sample project with EEC1 data
+  - [ ] view .c and .h files and confirm contains 1 PGN w/ 7 SPN's.
+  - [ ] confirm logicad env correctly builds template project (no plugin info)
+  - [ ] open sample project generated code in logicad env
+  - [ ] try to compile
+***** TODO Changes [/]
