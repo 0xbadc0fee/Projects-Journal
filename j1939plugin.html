@@ -3,18 +3,18 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2024-04-08 Mon 08:08 -->
+<!-- 2024-04-08 Mon 08:30 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Project Journal: OpenSyde Plugins (J1939)</title>
 <meta name="author" content="scurfman" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="https://github.com/0xbadc0fee/org-html-themes/blob/471a9ed8c6effa856ce1e0eced43b4fa87299d97/src/readtheorg_theme/css/htmlize.css">
-<link rel="stylesheet" type="text/css" href="https://github.com/0xbadc0fee/org-html-themes/blob/471a9ed8c6effa856ce1e0eced43b4fa87299d97/src/readtheorg_theme/css/readtheorg.css">
+<link rel="stylesheet" type="text/css" href="https://0xbadc0fee.github.io/org-html-themes/master/src/readtheorg_theme/css/htmlize.css>
+<link rel="stylesheet" type="text/css" href="https://0xbadc0fee.github.io/org-html-themes/master/src/readtheorg_theme/css/readtheorg.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://github.com/0xbadc0fee/org-html-themes/blob/471a9ed8c6effa856ce1e0eced43b4fa87299d97/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://github.com/0xbadc0fee/org-html-themes/blob/471a9ed8c6effa856ce1e0eced43b4fa87299d97/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript" src="https://0xbadc0fee.github.io/org-html-themes/master/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://0xbadc0fee.github.io/org-html-themes/master/src/readtheorg_theme/js/readtheorg.js"></script>
 <script>
   window.MathJax = {
     tex: {
@@ -55,62 +55,62 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgecd854a">1. 2024</a>
+<li><a href="#orgba6b938">1. 2024</a>
 <ul>
-<li><a href="#org82bbe82">1.1. 2024-01 January</a>
+<li><a href="#org1e5c52a">1.1. 2024-01 January</a>
 <ul>
-<li><a href="#org48206cf">1.1.1. 2024-01-17 Wednesday</a></li>
-<li><a href="#orgf039d1c">1.1.2. 2024-01-18 Thursday</a></li>
-<li><a href="#org20f79e8">1.1.3. 2024-01-22 Monday</a></li>
-<li><a href="#orge0ba53b">1.1.4. 2024-01-23 Tuesday</a></li>
-<li><a href="#orgd31b10a">1.1.5. 2024-01-24 Wednesday</a></li>
-<li><a href="#orgec4904a">1.1.6. 2024-01-25 Thursday</a></li>
-<li><a href="#org847c7dc">1.1.7. 2024-01-26 Friday</a></li>
-<li><a href="#orgc7c24cc">1.1.8. 2024-01-29 Monday</a></li>
-<li><a href="#org389471e">1.1.9. 2024-01-30 Tuesday</a></li>
-<li><a href="#org3f94f00">1.1.10. 2024-01-31 Wednesday</a></li>
+<li><a href="#org1e774d6">1.1.1. 2024-01-17 Wednesday</a></li>
+<li><a href="#org2426935">1.1.2. 2024-01-18 Thursday</a></li>
+<li><a href="#orga483217">1.1.3. 2024-01-22 Monday</a></li>
+<li><a href="#org501d0ba">1.1.4. 2024-01-23 Tuesday</a></li>
+<li><a href="#org18c11c9">1.1.5. 2024-01-24 Wednesday</a></li>
+<li><a href="#org677ba35">1.1.6. 2024-01-25 Thursday</a></li>
+<li><a href="#orgad73ced">1.1.7. 2024-01-26 Friday</a></li>
+<li><a href="#org59f2cf1">1.1.8. 2024-01-29 Monday</a></li>
+<li><a href="#orgb4308e8">1.1.9. 2024-01-30 Tuesday</a></li>
+<li><a href="#org2e8ce7f">1.1.10. 2024-01-31 Wednesday</a></li>
 </ul>
 </li>
-<li><a href="#org79327f7">1.2. 2024-02 February</a>
+<li><a href="#org2da0ca7">1.2. 2024-02 February</a>
 <ul>
-<li><a href="#orgcd7e213">1.2.1. 2024-02-01 Thursday</a></li>
-<li><a href="#org0a565ab">1.2.2. 2024-02-02 Friday</a></li>
-<li><a href="#org164f4ef">1.2.3. 2024-02-05 Monday</a></li>
-<li><a href="#org8177632">1.2.4. 2024-02-06 Tuesday</a></li>
-<li><a href="#org0602250">1.2.5. 2024-02-07 Wednesday</a></li>
-<li><a href="#orgd0144c5">1.2.6. 2024-02-08 Thursday</a></li>
-<li><a href="#org4e1f554">1.2.7. 2024-02-09 Friday</a></li>
-<li><a href="#org45ec46a">1.2.8. 2024-02-12 Monday</a></li>
-<li><a href="#org2dee311">1.2.9. 2024-02-13 Tuesday</a></li>
-<li><a href="#orgd4da29e">1.2.10. 2024-02-14 Wednesday</a></li>
-<li><a href="#org2988d88">1.2.11. 2014-02-15 Thursday</a></li>
-<li><a href="#org58d2e75">1.2.12. 2024-02-16 Friday</a></li>
-<li><a href="#org9215f97">1.2.13. 2024-02-19 Monday</a></li>
-<li><a href="#org77d4028">1.2.14. 2024-02-22 Thursday</a></li>
-<li><a href="#org453b4c0">1.2.15. 2024-02-23 Friday</a></li>
-<li><a href="#org21b261c">1.2.16. 2024-02-26 Monday</a></li>
+<li><a href="#org2cb6289">1.2.1. 2024-02-01 Thursday</a></li>
+<li><a href="#org7036c90">1.2.2. 2024-02-02 Friday</a></li>
+<li><a href="#org8259e59">1.2.3. 2024-02-05 Monday</a></li>
+<li><a href="#org76c99a2">1.2.4. 2024-02-06 Tuesday</a></li>
+<li><a href="#org5b9e162">1.2.5. 2024-02-07 Wednesday</a></li>
+<li><a href="#org757de4d">1.2.6. 2024-02-08 Thursday</a></li>
+<li><a href="#orgdc39524">1.2.7. 2024-02-09 Friday</a></li>
+<li><a href="#org2ac606c">1.2.8. 2024-02-12 Monday</a></li>
+<li><a href="#orged52796">1.2.9. 2024-02-13 Tuesday</a></li>
+<li><a href="#org91cd111">1.2.10. 2024-02-14 Wednesday</a></li>
+<li><a href="#org964ea29">1.2.11. 2014-02-15 Thursday</a></li>
+<li><a href="#org6a84b34">1.2.12. 2024-02-16 Friday</a></li>
+<li><a href="#org1773d52">1.2.13. 2024-02-19 Monday</a></li>
+<li><a href="#org72346ba">1.2.14. 2024-02-22 Thursday</a></li>
+<li><a href="#org63496dd">1.2.15. 2024-02-23 Friday</a></li>
+<li><a href="#org2a31653">1.2.16. 2024-02-26 Monday</a></li>
 </ul>
 </li>
-<li><a href="#org3219dcc">1.3. 2024-03 March</a>
+<li><a href="#org3588c67">1.3. 2024-03 March</a>
 <ul>
-<li><a href="#org5df9343">1.3.1. 2024-03-01 Friday</a></li>
-<li><a href="#org442db2a">1.3.2. 2024-03-08 Friday</a></li>
-<li><a href="#orgf8b2ddd">1.3.3. 2024-03-11 Monday</a></li>
-<li><a href="#org9272d87">1.3.4. 2024-03-12 Tuesday</a></li>
-<li><a href="#orgfdfc252">1.3.5. 2024-03-14 Thursday</a></li>
-<li><a href="#org97371a1">1.3.6. 2024-03-15 Friday</a></li>
-<li><a href="#org00a7939">1.3.7. 2024-03-18 Monday</a></li>
-<li><a href="#org5e1519b">1.3.8. 2024-03-19 Tuesday</a></li>
-<li><a href="#orgcb04f0d">1.3.9. 2024-03-20 Wednesday</a></li>
-<li><a href="#orgd8edbee">1.3.10. 2024-03-22 Friday</a></li>
-<li><a href="#orgeaad85f">1.3.11. 2024-03-25 Monday</a></li>
-<li><a href="#org9d4f721">1.3.12. 2024-03-29 Friday</a></li>
+<li><a href="#orgc776c63">1.3.1. 2024-03-01 Friday</a></li>
+<li><a href="#orgb68ff7f">1.3.2. 2024-03-08 Friday</a></li>
+<li><a href="#org601c305">1.3.3. 2024-03-11 Monday</a></li>
+<li><a href="#orged0cc1f">1.3.4. 2024-03-12 Tuesday</a></li>
+<li><a href="#org326d710">1.3.5. 2024-03-14 Thursday</a></li>
+<li><a href="#org37c18d6">1.3.6. 2024-03-15 Friday</a></li>
+<li><a href="#org5c77a7b">1.3.7. 2024-03-18 Monday</a></li>
+<li><a href="#org31ef318">1.3.8. 2024-03-19 Tuesday</a></li>
+<li><a href="#org486ac93">1.3.9. 2024-03-20 Wednesday</a></li>
+<li><a href="#org86f5b85">1.3.10. 2024-03-22 Friday</a></li>
+<li><a href="#orgc6adebe">1.3.11. 2024-03-25 Monday</a></li>
+<li><a href="#org1e94edf">1.3.12. 2024-03-29 Friday</a></li>
 </ul>
 </li>
-<li><a href="#orga33d56d">1.4. 2024-04 April</a>
+<li><a href="#org07ad361">1.4. 2024-04 April</a>
 <ul>
-<li><a href="#org45d43bd">1.4.1. 2024-04-01 Monday</a></li>
-<li><a href="#orgcd0e5ba">1.4.2. 2024-04-08 Monday</a></li>
+<li><a href="#orgb8450b2">1.4.1. 2024-04-01 Monday</a></li>
+<li><a href="#org38bbfe2">1.4.2. 2024-04-08 Monday</a></li>
 </ul>
 </li>
 </ul>
@@ -119,22 +119,22 @@
 </div>
 </div>
 
-<div id="outline-container-orgecd854a" class="outline-2">
-<h2 id="orgecd854a"><span class="section-number-2">1.</span> 2024</h2>
+<div id="outline-container-orgba6b938" class="outline-2">
+<h2 id="orgba6b938"><span class="section-number-2">1.</span> 2024</h2>
 <div class="outline-text-2" id="text-1">
 </div>
-<div id="outline-container-org82bbe82" class="outline-3">
-<h3 id="org82bbe82"><span class="section-number-3">1.1.</span> 2024-01 January</h3>
+<div id="outline-container-org1e5c52a" class="outline-3">
+<h3 id="org1e5c52a"><span class="section-number-3">1.1.</span> 2024-01 January</h3>
 <div class="outline-text-3" id="text-1-1">
 </div>
-<div id="outline-container-org48206cf" class="outline-4">
-<h4 id="org48206cf"><span class="section-number-4">1.1.1.</span> 2024-01-17 Wednesday</h4>
+<div id="outline-container-org1e774d6" class="outline-4">
+<h4 id="org1e774d6"><span class="section-number-4">1.1.1.</span> 2024-01-17 Wednesday</h4>
 <div class="outline-text-4" id="text-1-1-1">
 </div>
 <ol class="org-ol">
-<li><a id="org8b18066"></a>J1939 Roadmap Review 2 <span class="timestamp-wrapper"><span class="timestamp">[2024-01-18 Thu 10:00] </span></span> Teams Meeting<br />
+<li><a id="orgb0478df"></a>J1939 Roadmap Review 2 <span class="timestamp-wrapper"><span class="timestamp">[2024-01-18 Thu 10:00] </span></span> Teams Meeting<br />
 <ol class="org-ol">
-<li><a id="org192d991"></a><span class="done DONE">DONE</span> Introductory Tasks <code>[4/4]</code><br />
+<li><a id="org23a533c"></a><span class="done DONE">DONE</span> Introductory Tasks <code>[4/4]</code><br />
 <div class="outline-text-6" id="text-1-1-1-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Teams meeting</li>
@@ -148,14 +148,14 @@
 </li>
 </ol>
 </div>
-<div id="outline-container-orgf039d1c" class="outline-4">
-<h4 id="orgf039d1c"><span class="section-number-4">1.1.2.</span> 2024-01-18 Thursday</h4>
+<div id="outline-container-org2426935" class="outline-4">
+<h4 id="org2426935"><span class="section-number-4">1.1.2.</span> 2024-01-18 Thursday</h4>
 <div class="outline-text-4" id="text-1-1-2">
 </div>
 <ol class="org-ol">
-<li><a id="org3855b82"></a>J1939 Onboarding continued<br />
+<li><a id="org4dc7310"></a>J1939 Onboarding continued<br />
 <ol class="org-ol">
-<li><a id="org1f118e7"></a><span class="done DONE">DONE</span> Continued setup tasks <code>[3/3]</code><br />
+<li><a id="orgbeb3168"></a><span class="done DONE">DONE</span> Continued setup tasks <code>[3/3]</code><br />
 <div class="outline-text-6" id="text-1-1-2-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Open and test compile current project state</li>
@@ -168,8 +168,8 @@
 </li>
 </ol>
 </div>
-<div id="outline-container-org20f79e8" class="outline-4">
-<h4 id="org20f79e8"><span class="section-number-4">1.1.3.</span> 2024-01-22 Monday</h4>
+<div id="outline-container-orga483217" class="outline-4">
+<h4 id="orga483217"><span class="section-number-4">1.1.3.</span> 2024-01-22 Monday</h4>
 <div class="outline-text-4" id="text-1-1-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 1:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 13:14]</span></span></caption>
@@ -248,9 +248,9 @@
 </div>
 
 <ol class="org-ol">
-<li><a id="org8b9fb7d"></a>Qt Creator Onboarding continued<br />
+<li><a id="orga66d92c"></a>Qt Creator Onboarding continued<br />
 <ol class="org-ol">
-<li><a id="orgc8c3d5c"></a>30,000ft Flyby<br />
+<li><a id="org323f81d"></a>30,000ft Flyby<br />
 <div class="outline-text-6" id="text-1-1-3-1-1">
 <ol class="org-ol">
 <li>Problem to solve?
@@ -264,7 +264,7 @@
 </ol>
 </div>
 </li>
-<li><a id="org2a6fb1c"></a>NOTE: BE SURE TO REVIEW CONTENTS OF ALL KNOWN PROJECT RESOURCES<br />
+<li><a id="orgac3879a"></a>NOTE: BE SURE TO REVIEW CONTENTS OF ALL KNOWN PROJECT RESOURCES<br />
 <div class="outline-text-6" id="text-1-1-3-1-2">
 <ul class="org-ul">
 <li>STW Jira Tracker: <a href="https://stwtechnic.atlassian.net/jira/software/projects/OPSYD/boards/27/timeline">Project Link</a></li>
@@ -274,7 +274,7 @@
 </ul>
 </div>
 </li>
-<li><a id="orge83388f"></a>Current Project State <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 08:25]</span></span><br />
+<li><a id="org2e4aa54"></a>Current Project State <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 08:25]</span></span><br />
 <div class="outline-text-6" id="text-1-1-3-1-3">
 <ul class="org-ul">
 <li>Epic OPSYD-16 MVP CLOSED</li>
@@ -286,7 +286,7 @@
 </ul>
 </div>
 </li>
-<li><a id="orgadfa471"></a><span class="done DONE">DONE</span> Qt Creator 12 STW <code>[5/5]</code> <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 07:53]</span></span><br />
+<li><a id="org2ddd701"></a><span class="done DONE">DONE</span> Qt Creator 12 STW <code>[5/5]</code> <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 07:53]</span></span><br />
 <div class="outline-text-6" id="text-1-1-3-1-4">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span></li>
@@ -317,7 +317,7 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="org1421a88"></a><span class="done DONE">DONE</span> QnA List <code>[2/2]</code><br />
+<li><a id="orgd1acd70"></a><span class="done DONE">DONE</span> QnA List <code>[2/2]</code><br />
 <div class="outline-text-6" id="text-1-1-3-1-5">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span></li>
@@ -333,7 +333,7 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="org0de561b"></a>NOTES: Existing Code Review (fleeting, unsorted):<br />
+<li><a id="org53fc9f4"></a>NOTES: Existing Code Review (fleeting, unsorted):<br />
 <div class="outline-text-6" id="text-1-1-3-1-6">
 <ul class="org-ul">
 <li>Current Epic has 9/17 issues in Backlog.
@@ -351,7 +351,7 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="org4cdb4c2"></a>NOTES: Qt Creator onboarding, walk-thru(s)<br />
+<li><a id="org4651441"></a>NOTES: Qt Creator onboarding, walk-thru(s)<br />
 <div class="outline-text-6" id="text-1-1-3-1-7">
 <ul class="org-ul">
 <li>Refer to built in example files in Qt Creator, select a widget based application example
@@ -372,8 +372,8 @@ will look something like:
 </li>
 </ol>
 </div>
-<div id="outline-container-orge0ba53b" class="outline-4">
-<h4 id="orge0ba53b"><span class="section-number-4">1.1.4.</span> 2024-01-23 Tuesday</h4>
+<div id="outline-container-org501d0ba" class="outline-4">
+<h4 id="org501d0ba"><span class="section-number-4">1.1.4.</span> 2024-01-23 Tuesday</h4>
 <div class="outline-text-4" id="text-1-1-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 2:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-01-23 Tue 15:32]</span></span></caption>
@@ -452,11 +452,11 @@ will look something like:
 </div>
 
 <ol class="org-ol">
-<li><a id="org55b7562"></a>Qt Creator review continued.<br />
+<li><a id="org3006b79"></a>Qt Creator review continued.<br />
 <div class="outline-text-5" id="text-1-1-4-1">
 </div>
 <ol class="org-ol">
-<li><a id="org3544526"></a>Focus on Qt Creator 12 today<br />
+<li><a id="org3bc31c2"></a>Focus on Qt Creator 12 today<br />
 <div class="outline-text-6" id="text-1-1-4-1-1">
 <ul class="org-ul">
 <li>Very robust documentation.  Lots of tutorials, examples, help files, etc.  Also many third party learning resources.</li>
@@ -473,9 +473,9 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="org8e9011d"></a>Qt Creator Example 1: (on hold while setting up training laptop)<br />
+<li><a id="org3b363a4"></a>Qt Creator Example 1: (on hold while setting up training laptop)<br />
 <ol class="org-ol">
-<li><a id="org0cceba9"></a>INTERMEDIATE PROJECT: Find info on string parsing DBC if possible.<br />
+<li><a id="orgfbf3b17"></a>INTERMEDIATE PROJECT: Find info on string parsing DBC if possible.<br />
 <div class="outline-text-7" id="text-1-1-4-1-2-1">
 <ul class="org-ul">
 <li>Web based DBC editing tool by CSS <a href="https://www.csselectronics.com/pages/dbc-editor-can-bus-database">link</a></li>
@@ -486,7 +486,7 @@ will look something like:
 </li>
 </ol>
 </li>
-<li><a id="orgead4d5d"></a>Qt Creator Examples: continued<br />
+<li><a id="org630f08f"></a>Qt Creator Examples: continued<br />
 <div class="outline-text-6" id="text-1-1-4-1-3">
 <ul class="org-ul">
 <li>Qt built in tutorials and examples now running on training laptop (Qt v. 6.6)</li>
@@ -494,18 +494,18 @@ will look something like:
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org2d607bd"></a>CONTAINER EXTENSION EXAMPLE <a href="https://doc.qt.io/qt-6/qtdesigner-containerextension-example.html#:~:text=The%20Container%20Extension%20example%20consists,MultiPageWidget%20class%20to%20Qt%20Designer.">link</a><br /></li>
-<li><a id="orgcb229ee"></a>TASK MENU EXTENSION EXAMPLE <a href="https://doc.qt.io/qt-6/qtdesigner-containerextension-example.html#:~:text=The%20Container%20Extension%20example%20consists,MultiPageWidget%20class%20to%20Qt%20Designer.">link</a><br /></li>
-<li><a id="org1cc59af"></a>QREGULAR EXPRESSION EXAMPLE <a href="https://doc.qt.io/qt-6/qtwidgets-tools-regularexpression-example.html">link</a><br /></li>
-<li><a id="org2646387"></a>ECHO PLUGIN EXAMPLE <a href="https://doc.qt.io/qt-6/qtwidgets-tools-echoplugin-example.html">link</a><br /></li>
-<li><a id="org5bbc447"></a>NETWORK CHAT EXAMPLE <a href="https://doc.qt.io/qt-6/qtnetwork-network-chat-example.html">link</a><br /></li>
-<li><a id="org3925711"></a>FFT SPECTRUM EXAMPLE <a href="https://doc.qt.io/qt-5/qtmultimedia-multimedia-spectrum-example.htmli">link</a><br /></li>
+<li><a id="org9373614"></a>CONTAINER EXTENSION EXAMPLE <a href="https://doc.qt.io/qt-6/qtdesigner-containerextension-example.html#:~:text=The%20Container%20Extension%20example%20consists,MultiPageWidget%20class%20to%20Qt%20Designer.">link</a><br /></li>
+<li><a id="orgad13751"></a>TASK MENU EXTENSION EXAMPLE <a href="https://doc.qt.io/qt-6/qtdesigner-containerextension-example.html#:~:text=The%20Container%20Extension%20example%20consists,MultiPageWidget%20class%20to%20Qt%20Designer.">link</a><br /></li>
+<li><a id="org8e5973f"></a>QREGULAR EXPRESSION EXAMPLE <a href="https://doc.qt.io/qt-6/qtwidgets-tools-regularexpression-example.html">link</a><br /></li>
+<li><a id="orge76e0d7"></a>ECHO PLUGIN EXAMPLE <a href="https://doc.qt.io/qt-6/qtwidgets-tools-echoplugin-example.html">link</a><br /></li>
+<li><a id="org1d0735b"></a>NETWORK CHAT EXAMPLE <a href="https://doc.qt.io/qt-6/qtnetwork-network-chat-example.html">link</a><br /></li>
+<li><a id="org96cc3cb"></a>FFT SPECTRUM EXAMPLE <a href="https://doc.qt.io/qt-5/qtmultimedia-multimedia-spectrum-example.htmli">link</a><br /></li>
 </ol>
 </li>
-<li><a id="orge26df0b"></a>"Qt Group" Official Video Tutorials.  "Tutorials" Playlist (YT)<br /></li>
+<li><a id="orgdc90b2b"></a>"Qt Group" Official Video Tutorials.  "Tutorials" Playlist (YT)<br /></li>
 </ol>
 </li>
-<li><a id="orge81a294"></a>J1939 Plugin Code Review continued:<br />
+<li><a id="orge094e59"></a>J1939 Plugin Code Review continued:<br />
 <div class="outline-text-5" id="text-1-1-4-2">
 <ul class="org-ul">
 <li>Went back to our code after getting more familiar with Qt.</li>
@@ -519,8 +519,8 @@ will look something like:
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd31b10a" class="outline-4">
-<h4 id="orgd31b10a"><span class="section-number-4">1.1.5.</span> 2024-01-24 Wednesday</h4>
+<div id="outline-container-org18c11c9" class="outline-4">
+<h4 id="org18c11c9"><span class="section-number-4">1.1.5.</span> 2024-01-24 Wednesday</h4>
 <div class="outline-text-4" id="text-1-1-5">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 3:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-01-24 Wed 19:39]</span></span></caption>
@@ -583,11 +583,11 @@ will look something like:
 </div>
 
 <ol class="org-ol">
-<li><a id="org01de167"></a>Revisit running J1939 plugin after adding missing SVG's<br />
+<li><a id="org95d5aa5"></a>Revisit running J1939 plugin after adding missing SVG's<br />
 <div class="outline-text-5" id="text-1-1-5-1">
 </div>
 <ol class="org-ol">
-<li><a id="org342017b"></a>Recap missing SVG's<br />
+<li><a id="orgbac8a66"></a>Recap missing SVG's<br />
 <div class="outline-text-6" id="text-1-1-5-1-1">
 <ul class="org-ul">
 <li>Problem: Qt Creator Application Output:
@@ -599,9 +599,9 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="orgc8ec2bd"></a>Experiment with running J1939 plugin<br />
+<li><a id="org7d4bd84"></a>Experiment with running J1939 plugin<br />
 <ol class="org-ol">
-<li><a id="org503ec49"></a><span class="done DONE">DONE</span> General Testing Steps <code>[5/5]</code>:<br />
+<li><a id="org1bcd448"></a><span class="done DONE">DONE</span> General Testing Steps <code>[5/5]</code>:<br />
 <div class="outline-text-7" id="text-1-1-5-1-2-1">
 <ul class="org-ul">
 <li>State "DONE"       from              <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span></li>
@@ -620,7 +620,7 @@ will look something like:
 </li>
 </ol>
 </li>
-<li><a id="orgd6911f2"></a>Teams Meeting Today<br />
+<li><a id="orgef1c2be"></a>Teams Meeting Today<br />
 <div class="outline-text-6" id="text-1-1-5-1-3">
 <ul class="org-ul">
 <li>Export copy of this journal to html on github <a href="https://github.com/0xbadc0fee/Projects-Journal/blob/master/j1939plugin.html">link</a></li>
@@ -634,11 +634,11 @@ will look something like:
 </li>
 </ol>
 </li>
-<li><a id="orgcbb60e5"></a>Known Good Release of J1939plugin<br />
+<li><a id="org018f79f"></a>Known Good Release of J1939plugin<br />
 <div class="outline-text-5" id="text-1-1-5-2">
 </div>
 <ol class="org-ol">
-<li><a id="org9b58b97"></a><span class="done DONE">DONE</span> From scratch setup <code>[7/7]</code><br />
+<li><a id="orga7be1dc"></a><span class="done DONE">DONE</span> From scratch setup <code>[7/7]</code><br />
 <div class="outline-text-6" id="text-1-1-5-2-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:42]</span></span></li>
@@ -655,7 +655,7 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="org1927d08"></a>BACKFILL NOTES TOMORROW MORNING!<br />
+<li><a id="org114f83f"></a>BACKFILL NOTES TOMORROW MORNING!<br />
 <div class="outline-text-6" id="text-1-1-5-2-2">
 <ul class="org-ul">
 <li>ADD TREE STRUCTURE SNAPSHOTS</li>
@@ -674,12 +674,12 @@ will look something like:
 </li>
 </ol>
 </div>
-<div id="outline-container-orgec4904a" class="outline-4">
-<h4 id="orgec4904a"><span class="section-number-4">1.1.6.</span> 2024-01-25 Thursday</h4>
+<div id="outline-container-org677ba35" class="outline-4">
+<h4 id="org677ba35"><span class="section-number-4">1.1.6.</span> 2024-01-25 Thursday</h4>
 <div class="outline-text-4" id="text-1-1-6">
 </div>
 <ol class="org-ol">
-<li><a id="org70a1267"></a>Test / Explore state of latest GIT published plugin project<br />
+<li><a id="org4b29021"></a>Test / Explore state of latest GIT published plugin project<br />
 <div class="outline-text-5" id="text-1-1-6-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 4:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-01-25 Thu 15:48]</span></span></caption>
@@ -758,7 +758,7 @@ will look something like:
 </div>
 
 <ol class="org-ol">
-<li><a id="org308b9a2"></a>Create &amp; run new minimal openSYDE project for J1939 messaging<br />
+<li><a id="org58cbc78"></a>Create &amp; run new minimal openSYDE project for J1939 messaging<br />
 <div class="outline-text-6" id="text-1-1-6-1-1">
 <ul class="org-ul">
 <li>Application and Widget running, OK</li>
@@ -772,11 +772,11 @@ will look something like:
 </ul>
 </div>
 </li>
-<li><a id="orgbaf6d05"></a>Teams Meeting "J1939 Review Jira Items"<br />
+<li><a id="org32d1ef6"></a>Teams Meeting "J1939 Review Jira Items"<br />
 <div class="outline-text-6" id="text-1-1-6-1-2">
 </div>
 </li>
-<li><a id="orgaf17a50"></a>OPSYD-76 library xml file missing<br />
+<li><a id="org655c803"></a>OPSYD-76 library xml file missing<br />
 <div class="outline-text-6" id="text-1-1-6-1-3">
 <ul class="org-ul">
 <li>See J1939PGNLibrary.cpp:182 Add file creation if file check fails</li>
@@ -809,25 +809,25 @@ On creation of default file use this structure:
 </ul>
 </div>
 </li>
-<li><a id="org5a4e0a7"></a>Review my OPSYD Tasks<br />
+<li><a id="orgdab1a8d"></a>Review my OPSYD Tasks<br />
 <ol class="org-ol">
-<li><a id="org4fc8338"></a>OPSYD-70 TX Method options added<br /></li>
-<li><a id="orgad7d0b7"></a>OPSYD-71 SPN Scaling and offset options added<br /></li>
-<li><a id="orgc1b32f5"></a>OPSYD-72 Configurable CANID<br /></li>
+<li><a id="org8b0fb54"></a>OPSYD-70 TX Method options added<br /></li>
+<li><a id="org40af7ad"></a>OPSYD-71 SPN Scaling and offset options added<br /></li>
+<li><a id="orgc3cacf2"></a>OPSYD-72 Configurable CANID<br /></li>
 </ol>
 </li>
 </ol>
 </li>
 </ol>
 </div>
-<div id="outline-container-org847c7dc" class="outline-4">
-<h4 id="org847c7dc"><span class="section-number-4">1.1.7.</span> 2024-01-26 Friday</h4>
+<div id="outline-container-orgad73ced" class="outline-4">
+<h4 id="orgad73ced"><span class="section-number-4">1.1.7.</span> 2024-01-26 Friday</h4>
 <div class="outline-text-4" id="text-1-1-7">
 </div>
 <ol class="org-ol">
-<li><a id="org899f3e9"></a>Working on OPSYD-76 Library xml file missing<br />
+<li><a id="org98c102d"></a>Working on OPSYD-76 Library xml file missing<br />
 <ol class="org-ol">
-<li><a id="orge1aeea6"></a>Continued from prev day, see above.<br />
+<li><a id="org4a797ac"></a>Continued from prev day, see above.<br />
 <div class="outline-text-6" id="text-1-1-7-1-1">
 <ul class="org-ul">
 <li><p>
@@ -867,8 +867,8 @@ Qt recommended QFile usage:
 </li>
 </ol>
 </div>
-<div id="outline-container-orgc7c24cc" class="outline-4">
-<h4 id="orgc7c24cc"><span class="section-number-4">1.1.8.</span> 2024-01-29 Monday</h4>
+<div id="outline-container-org59f2cf1" class="outline-4">
+<h4 id="org59f2cf1"><span class="section-number-4">1.1.8.</span> 2024-01-29 Monday</h4>
 <div class="outline-text-4" id="text-1-1-8">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 5:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-01-31 Wed 06:21]</span></span></caption>
@@ -923,7 +923,7 @@ Qt recommended QFile usage:
 </div>
 
 <ol class="org-ol">
-<li><a id="org7df4489"></a><a href="file:///home/scurfman/org/roam/20231031064611-programming.html#MissingReference">C++ NOTES</a><br />
+<li><a id="org0a7df69"></a><a href="file:///home/scurfman/org/roam/20231031064611-programming.html#MissingReference">C++ NOTES</a><br />
 <div class="outline-text-5" id="text-1-1-8-1">
 <ul class="org-ul">
 <li>see org roam notes and paste in here.</li>
@@ -932,8 +932,8 @@ Qt recommended QFile usage:
 </li>
 </ol>
 </div>
-<div id="outline-container-org389471e" class="outline-4">
-<h4 id="org389471e"><span class="section-number-4">1.1.9.</span> 2024-01-30 Tuesday</h4>
+<div id="outline-container-orgb4308e8" class="outline-4">
+<h4 id="orgb4308e8"><span class="section-number-4">1.1.9.</span> 2024-01-30 Tuesday</h4>
 <div class="outline-text-4" id="text-1-1-9">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 6:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-01-31 Wed 06:21]</span></span></caption>
@@ -1004,15 +1004,15 @@ Qt recommended QFile usage:
 </div>
 
 <ol class="org-ol">
-<li><a id="orgbc90250"></a>Finished testing J1939Message::saveMessageXML()<br />
+<li><a id="org51d23f8"></a>Finished testing J1939Message::saveMessageXML()<br />
 <div class="outline-text-5" id="text-1-1-9-1">
 </div>
 </li>
-<li><a id="org2174fbd"></a>Teams Call, SC &amp; TG; J1939 Plugin Code Review<br />
+<li><a id="org1f4e082"></a>Teams Call, SC &amp; TG; J1939 Plugin Code Review<br />
 <div class="outline-text-5" id="text-1-1-9-2">
 </div>
 </li>
-<li><a id="org16fd1db"></a>Finished bug fix OPSYD-76 missing xml file<br />
+<li><a id="orgc4237b7"></a>Finished bug fix OPSYD-76 missing xml file<br />
 <div class="outline-text-5" id="text-1-1-9-3">
 <ul class="org-ul">
 <li>used TG's file save class J1939Message::saveMessageXML</li>
@@ -1050,8 +1050,8 @@ NOTE: per section 2.8 of XML 1.1 Standard, declaration is mandatory, so if possi
 </li>
 </ol>
 </div>
-<div id="outline-container-org3f94f00" class="outline-4">
-<h4 id="org3f94f00"><span class="section-number-4">1.1.10.</span> 2024-01-31 Wednesday</h4>
+<div id="outline-container-org2e8ce7f" class="outline-4">
+<h4 id="org2e8ce7f"><span class="section-number-4">1.1.10.</span> 2024-01-31 Wednesday</h4>
 <div class="outline-text-4" id="text-1-1-10">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 7:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-02 Fri 14:39]</span></span></caption>
@@ -1106,11 +1106,11 @@ NOTE: per section 2.8 of XML 1.1 Standard, declaration is mandatory, so if possi
 </div>
 
 <ol class="org-ol">
-<li><a id="orgbac6f4d"></a>Begin OPSYD-37 Add PGN Update Fields<br />
+<li><a id="orgb23fb22"></a>Begin OPSYD-37 Add PGN Update Fields<br />
 <div class="outline-text-5" id="text-1-1-10-1">
 </div>
 <ol class="org-ol">
-<li><a id="orgb80dc72"></a><span class="done DONE">DONE</span> PGN Updates <code>[0/3]</code><br />
+<li><a id="orgacea547"></a><span class="done DONE">DONE</span> PGN Updates <code>[0/3]</code><br />
 <div class="outline-text-6" id="text-1-1-10-1-1">
 <ul class="org-ul">
 <li>State "DONE"       from "WAIT"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:25]</span></span></li>
@@ -1128,7 +1128,7 @@ More work on PGN menus and validators</li>
 </ul>
 </div>
 </li>
-<li><a id="org682889a"></a>Change Notes:<br />
+<li><a id="org4143d68"></a>Change Notes:<br />
 <div class="outline-text-6" id="text-1-1-10-1-2">
 <ul class="org-ul">
 <li>Look for var mappings in three groups <b>xmlFile &lt;-&gt; Database &lt;-&gt; UI</b>
@@ -1325,7 +1325,7 @@ More work on PGN menus and validators</li>
 </table>
 </div>
 </li>
-<li><a id="org6473151"></a><span class="done DONE">DONE</span> C gen Running Questions <code>[0/2]</code><br />
+<li><a id="orgb114e86"></a><span class="done DONE">DONE</span> C gen Running Questions <code>[0/2]</code><br />
 <div class="outline-text-6" id="text-1-1-10-1-3">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:25]</span></span></li>
@@ -1350,12 +1350,12 @@ More work on PGN menus and validators</li>
 </ol>
 </div>
 </div>
-<div id="outline-container-org79327f7" class="outline-3">
-<h3 id="org79327f7"><span class="section-number-3">1.2.</span> 2024-02 February</h3>
+<div id="outline-container-org2da0ca7" class="outline-3">
+<h3 id="org2da0ca7"><span class="section-number-3">1.2.</span> 2024-02 February</h3>
 <div class="outline-text-3" id="text-1-2">
 </div>
-<div id="outline-container-orgcd7e213" class="outline-4">
-<h4 id="orgcd7e213"><span class="section-number-4">1.2.1.</span> 2024-02-01 Thursday</h4>
+<div id="outline-container-org2cb6289" class="outline-4">
+<h4 id="org2cb6289"><span class="section-number-4">1.2.1.</span> 2024-02-01 Thursday</h4>
 <div class="outline-text-4" id="text-1-2-1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 8:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-02 Fri 14:40]</span></span></caption>
@@ -1410,15 +1410,15 @@ More work on PGN menus and validators</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="org7aef6ec"></a>Fix bugs in last commit of OPSYD-76<br />
+<li><a id="orge653a43"></a>Fix bugs in last commit of OPSYD-76<br />
 <div class="outline-text-5" id="text-1-2-1-1">
 </div>
 </li>
-<li><a id="orgeae7bc1"></a>Move definition of new function to J1939Message.cpp<br /></li>
+<li><a id="orgabcbdad"></a>Move definition of new function to J1939Message.cpp<br /></li>
 </ol>
 </div>
-<div id="outline-container-org0a565ab" class="outline-4">
-<h4 id="org0a565ab"><span class="section-number-4">1.2.2.</span> 2024-02-02 Friday</h4>
+<div id="outline-container-org7036c90" class="outline-4">
+<h4 id="org7036c90"><span class="section-number-4">1.2.2.</span> 2024-02-02 Friday</h4>
 <div class="outline-text-4" id="text-1-2-2">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 9:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-02 Fri 14:40]</span></span></caption>
@@ -1473,11 +1473,11 @@ More work on PGN menus and validators</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="orgce3f764"></a>OPSYD-76 continued<br />
+<li><a id="org392d8b1"></a>OPSYD-76 continued<br />
 <div class="outline-text-5" id="text-1-2-2-1">
 </div>
 <ol class="org-ol">
-<li><a id="org386daf9"></a><span class="done DONE">DONE</span> Correct OPSYD-76 commits <code>[5/6]</code><br />
+<li><a id="orgc34cc13"></a><span class="done DONE">DONE</span> Correct OPSYD-76 commits <code>[5/6]</code><br />
 <div class="outline-text-6" id="text-1-2-2-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Restructure in to new function per TG commit messsage</li>
@@ -1489,7 +1489,7 @@ More work on PGN menus and validators</li>
 </ul>
 </div>
 </li>
-<li><a id="org2069e76"></a>EXTRA: Improved xml maker, flexible tags parameter<br />
+<li><a id="orgdd7dd03"></a>EXTRA: Improved xml maker, flexible tags parameter<br />
 <div class="outline-text-6" id="text-1-2-2-1-2">
 <ul class="org-ul">
 <li>Was seeing if I could get our method to work with the full length XML declaration including special char's.  Found what to change in the string info for it to work.</li>
@@ -1522,7 +1522,7 @@ See below, this code snippet works
 </ul>
 </div>
 </li>
-<li><a id="orgefa6f02"></a>Style guide Q&amp;A with TG<br />
+<li><a id="orgaa5381c"></a>Style guide Q&amp;A with TG<br />
 <div class="outline-text-6" id="text-1-2-2-1-3">
 <ul class="org-ul">
 <li>DO use camelCase and verbNounNoun style naming</li>
@@ -1535,9 +1535,9 @@ See below, this code snippet works
 </li>
 </ol>
 </li>
-<li><a id="orgea566f7"></a>Backfill notes for the week<br />
+<li><a id="org22390f7"></a>Backfill notes for the week<br />
 <ol class="org-ol">
-<li><a id="orgb88cc42"></a>OPSYD-76 closed<br />
+<li><a id="org60d3fdd"></a>OPSYD-76 closed<br />
 <div class="outline-text-6" id="text-1-2-2-2-1">
 <ul class="org-ul">
 <li>TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.</li>
@@ -1548,8 +1548,8 @@ See below, this code snippet works
 </li>
 </ol>
 </div>
-<div id="outline-container-org164f4ef" class="outline-4">
-<h4 id="org164f4ef"><span class="section-number-4">1.2.3.</span> 2024-02-05 Monday</h4>
+<div id="outline-container-org8259e59" class="outline-4">
+<h4 id="org8259e59"><span class="section-number-4">1.2.3.</span> 2024-02-05 Monday</h4>
 <div class="outline-text-4" id="text-1-2-3">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 10:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-05 Mon 15:36]</span></span></caption>
@@ -1619,9 +1619,9 @@ See below, this code snippet works
 </div>
 
 <ol class="org-ol">
-<li><a id="org411c765"></a>Continue OPSYD-37 PGN Updates<br />
+<li><a id="org5c093f6"></a>Continue OPSYD-37 PGN Updates<br />
 <ol class="org-ol">
-<li><a id="org321ea8c"></a><span class="done DONE">DONE</span> PGN Update: TX Methods <code>[5/5]</code><br />
+<li><a id="org7094ae6"></a><span class="done DONE">DONE</span> PGN Update: TX Methods <code>[5/5]</code><br />
 <div class="outline-text-6" id="text-1-2-3-1-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:24]</span></span></li>
@@ -1659,7 +1659,7 @@ See below, this code snippet works
 </ul>
 </div>
 </li>
-<li><a id="orge87bd3c"></a><span class="done DONE">DONE</span> SPN Update <code>[1/2]</code><br />
+<li><a id="org09ce376"></a><span class="done DONE">DONE</span> SPN Update <code>[1/2]</code><br />
 <div class="outline-text-6" id="text-1-2-3-1-2">
 <ul class="org-ul">
 <li>State "DONE"       from "WAIT"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:24]</span></span></li>
@@ -1678,8 +1678,8 @@ Finish validators before c code generated</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org8177632" class="outline-4">
-<h4 id="org8177632"><span class="section-number-4">1.2.4.</span> 2024-02-06 Tuesday</h4>
+<div id="outline-container-org76c99a2" class="outline-4">
+<h4 id="org76c99a2"><span class="section-number-4">1.2.4.</span> 2024-02-06 Tuesday</h4>
 <div class="outline-text-4" id="text-1-2-4">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 11:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-06 Tue 16:24]</span></span></caption>
@@ -1742,11 +1742,11 @@ Finish validators before c code generated</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="org45f88e5"></a>UI Modifications, per JS, see Figma<br />
+<li><a id="org06253f8"></a>UI Modifications, per JS, see Figma<br />
 <div class="outline-text-5" id="text-1-2-4-1">
 </div>
 <ol class="org-ol">
-<li><a id="org77b4976"></a>NOTES:<br />
+<li><a id="org7d06a06"></a>NOTES:<br />
 <div class="outline-text-6" id="text-1-2-4-1-1">
 <ul class="org-ul">
 <li>See: <a href="https://purecss.io/forms/">PURE CSS forms</a></li>
@@ -1803,13 +1803,13 @@ Finish validators before c code generated</li>
 </li>
 </ol>
 </li>
-<li><a id="orgda77689"></a>Generate C code changes for PGN<br />
+<li><a id="org07c51b2"></a>Generate C code changes for PGN<br />
 <div class="outline-text-5" id="text-1-2-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="org0595bab"></a>see here: <a href="#org411c765">1.2.3.1</a><br /></li>
-<li><a id="org211d6b7"></a>see here: <a href="#org326d7df">1</a><br /></li>
-<li><a id="org0da139f"></a><span class="done DONE">DONE</span> Continue PGN /SPN updates <code>[5/5]</code><br />
+<li><a id="org3987629"></a>see here: <a href="#org5c093f6">1.2.3.1</a><br /></li>
+<li><a id="org6ff5afe"></a>see here: <a href="#org271d660">1</a><br /></li>
+<li><a id="org16aac2f"></a><span class="done DONE">DONE</span> Continue PGN /SPN updates <code>[5/5]</code><br />
 <div class="outline-text-6" id="text-1-2-4-2-3">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:24]</span></span></li>
@@ -1845,7 +1845,7 @@ Finish validators before c code generated</li>
 </ul>
 </div>
 </li>
-<li><a id="orgc28fbd6"></a><span class="done DONE">DONE</span> SPN Update <code>[1/2]</code><br />
+<li><a id="org52d908e"></a><span class="done DONE">DONE</span> SPN Update <code>[1/2]</code><br />
 <div class="outline-text-6" id="text-1-2-4-2-4">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:23]</span></span></li>
@@ -1862,8 +1862,8 @@ Finish validators before c code generated</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org0602250" class="outline-4">
-<h4 id="org0602250"><span class="section-number-4">1.2.5.</span> 2024-02-07 Wednesday</h4>
+<div id="outline-container-org5b9e162" class="outline-4">
+<h4 id="org5b9e162"><span class="section-number-4">1.2.5.</span> 2024-02-07 Wednesday</h4>
 <div class="outline-text-4" id="text-1-2-5">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 12:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-07 Wed 15:26]</span></span></caption>
@@ -1933,11 +1933,11 @@ Finish validators before c code generated</li>
 </table>
 </div>
 <ol class="org-ol">
-<li><a id="org6216fc8"></a>Continue UI Edits to PGN / SPN<br />
+<li><a id="org780d52a"></a>Continue UI Edits to PGN / SPN<br />
 <div class="outline-text-5" id="text-1-2-5-1">
 </div>
 <ol class="org-ol">
-<li><a id="org9360ba2"></a><span class="done DONE">DONE</span> Wrap up 'Border Only' method <code>[5/5]</code><br />
+<li><a id="org7f10f2f"></a><span class="done DONE">DONE</span> Wrap up 'Border Only' method <code>[5/5]</code><br />
 <div class="outline-text-6" id="text-1-2-5-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Finish PGN Menu</li>
@@ -1953,7 +1953,7 @@ Finish validators before c code generated</li>
 </li>
 </ol>
 </li>
-<li><a id="org14b23d8"></a>Meeting with TG<br />
+<li><a id="org5c517eb"></a>Meeting with TG<br />
 <div class="outline-text-5" id="text-1-2-5-2">
 <ul class="org-ul">
 <li>NOTES: UI discussion
@@ -1967,11 +1967,11 @@ Finish validators before c code generated</li>
 </ul>
 </div>
 </li>
-<li><a id="org7c58c03"></a>Redo UI edits but OK to add Box to layout this time.<br />
+<li><a id="org1976461"></a>Redo UI edits but OK to add Box to layout this time.<br />
 <div class="outline-text-5" id="text-1-2-5-3">
 </div>
 <ol class="org-ol">
-<li><a id="org27fe776"></a><span class="done DONE">DONE</span> SPN / PGN UI updates <code>[5/5]</code><br />
+<li><a id="orga71872e"></a><span class="done DONE">DONE</span> SPN / PGN UI updates <code>[5/5]</code><br />
 <div class="outline-text-6" id="text-1-2-5-3-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:23]</span></span></li>
@@ -1987,8 +1987,8 @@ Finish validators before c code generated</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd0144c5" class="outline-4">
-<h4 id="orgd0144c5"><span class="section-number-4">1.2.6.</span> 2024-02-08 Thursday</h4>
+<div id="outline-container-org757de4d" class="outline-4">
+<h4 id="org757de4d"><span class="section-number-4">1.2.6.</span> 2024-02-08 Thursday</h4>
 <div class="outline-text-4" id="text-1-2-6">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 13:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-08 Thu 17:37]</span></span></caption>
@@ -2059,31 +2059,31 @@ Finish validators before c code generated</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="org8848c21"></a>CSS Color Coded Debugging<br />
+<li><a id="orgcd097a0"></a>CSS Color Coded Debugging<br />
 <div class="outline-text-5" id="text-1-2-6-1">
 </div>
 <ol class="org-ol">
-<li><a id="orga23c51a"></a>NOTES:<br /></li>
+<li><a id="org1f7ce32"></a>NOTES:<br /></li>
 </ol>
 </li>
-<li><a id="org76be239"></a>Qt UI Elements: Map what changes what<br />
+<li><a id="org77c3752"></a>Qt UI Elements: Map what changes what<br />
 <div class="outline-text-5" id="text-1-2-6-2">
 </div>
 <ol class="org-ol">
-<li><a id="org33c8da3"></a>NOTES:<br /></li>
+<li><a id="orgd6b1420"></a>NOTES:<br /></li>
 </ol>
 </li>
-<li><a id="orgb980fee"></a>Build and test lower pane of SPN Edit menu<br />
+<li><a id="org500476b"></a>Build and test lower pane of SPN Edit menu<br />
 <div class="outline-text-5" id="text-1-2-6-3">
 </div>
 <ol class="org-ol">
-<li><a id="org0273a3b"></a>NOTES:<br /></li>
+<li><a id="org103544f"></a>NOTES:<br /></li>
 </ol>
 </li>
 </ol>
 </div>
-<div id="outline-container-org4e1f554" class="outline-4">
-<h4 id="org4e1f554"><span class="section-number-4">1.2.7.</span> 2024-02-09 Friday</h4>
+<div id="outline-container-orgdc39524" class="outline-4">
+<h4 id="orgdc39524"><span class="section-number-4">1.2.7.</span> 2024-02-09 Friday</h4>
 <div class="outline-text-4" id="text-1-2-7">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 14:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-09 Fri 17:14]</span></span></caption>
@@ -2146,11 +2146,11 @@ Finish validators before c code generated</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="org618be30"></a>Fix aborted Git merge<br />
+<li><a id="org458cdca"></a>Fix aborted Git merge<br />
 <div class="outline-text-5" id="text-1-2-7-1">
 </div>
 <ol class="org-ol">
-<li><a id="org5115c66"></a><span class="done DONE">DONE</span> Git repair <code>[5/5]</code><br />
+<li><a id="orgbb734ae"></a><span class="done DONE">DONE</span> Git repair <code>[5/5]</code><br />
 <div class="outline-text-6" id="text-1-2-7-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Try git merge &#x2013;abort</li>
@@ -2163,11 +2163,11 @@ Finish validators before c code generated</li>
 </li>
 </ol>
 </li>
-<li><a id="org75740ee"></a>Backfill Notes for SPN Menu<br />
+<li><a id="org1a5cbd6"></a>Backfill Notes for SPN Menu<br />
 <div class="outline-text-5" id="text-1-2-7-2">
 </div>
 <ol class="org-ol">
-<li><a id="org5de5e32"></a>Qt SPN Menu parent-child tree:<br />
+<li><a id="orgfb6e8a5"></a>Qt SPN Menu parent-child tree:<br />
 <div class="outline-text-6" id="text-1-2-7-2-1">
 <ol class="org-ol">
 <li>QDockWidget * dockSPN <i>/ widget name = emFormGroupBoxMiddle()  /</i> groupBoxStyleSheet
@@ -2267,9 +2267,9 @@ Finish validators before c code generated</li>
 </ol>
 </div>
 </li>
-<li><a id="org1b9d9b7"></a>J1939 Plugin NOTES:<br />
+<li><a id="org3e75be4"></a>J1939 Plugin NOTES:<br />
 <ol class="org-ol">
-<li><a id="org0f60511"></a><span class="todo WAIT">WAIT</span> Remaining SPN / PGN Tasks <code>[3/7]</code><br />
+<li><a id="orgf4cd58b"></a><span class="todo WAIT">WAIT</span> Remaining SPN / PGN Tasks <code>[3/7]</code><br />
 <div class="outline-text-7" id="text-1-2-7-2-2-1">
 <ul class="org-ul">
 <li>State "WAIT"       from "DONE"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-12 Mon 19:24] </span></span> <br />
@@ -2290,8 +2290,8 @@ moved to different tasks</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org45ec46a" class="outline-4">
-<h4 id="org45ec46a"><span class="section-number-4">1.2.8.</span> 2024-02-12 Monday</h4>
+<div id="outline-container-org2ac606c" class="outline-4">
+<h4 id="org2ac606c"><span class="section-number-4">1.2.8.</span> 2024-02-12 Monday</h4>
 <div class="outline-text-4" id="text-1-2-8">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 15:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-12 Mon 19:26]</span></span></caption>
@@ -2361,11 +2361,11 @@ moved to different tasks</li>
 </table>
 </div>
 <ol class="org-ol">
-<li><a id="org0d0b7f6"></a>Continue SPN Menu Edits<br />
+<li><a id="orgfae0af3"></a>Continue SPN Menu Edits<br />
 <div class="outline-text-5" id="text-1-2-8-1">
 </div>
 <ol class="org-ol">
-<li><a id="org003d586"></a>NOTES:<br />
+<li><a id="org08bfd9e"></a>NOTES:<br />
 <div class="outline-text-6" id="text-1-2-8-1-1">
 <ul class="org-ul">
 <li>spent lot's of time trying to modify outermost menu via Qt stylesheets</li>
@@ -2377,11 +2377,11 @@ moved to different tasks</li>
 </li>
 </ol>
 </li>
-<li><a id="org002d6d7"></a>New PGN Menu Edits<br />
+<li><a id="org731758a"></a>New PGN Menu Edits<br />
 <div class="outline-text-5" id="text-1-2-8-2">
 </div>
 <ol class="org-ol">
-<li><a id="org65b8843"></a><span class="done DONE">DONE</span> PGN Menu Additions <code>[6/6]</code><br />
+<li><a id="org11d6b26"></a><span class="done DONE">DONE</span> PGN Menu Additions <code>[6/6]</code><br />
 <div class="outline-text-6" id="text-1-2-8-2-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> PGN: Extended Data Page field
@@ -2407,11 +2407,11 @@ moved to different tasks</li>
 </li>
 </ol>
 </li>
-<li><a id="org6aefafa"></a>XML Config updates for new PGN/SPN fields<br />
+<li><a id="orgc0bc143"></a>XML Config updates for new PGN/SPN fields<br />
 <div class="outline-text-5" id="text-1-2-8-3">
 </div>
 <ol class="org-ol">
-<li><a id="org022f419"></a><span class="done DONE">DONE</span> Update XML with new PGN/SPN Fields <code>[1/4]</code><br />
+<li><a id="org5a1a366"></a><span class="done DONE">DONE</span> Update XML with new PGN/SPN Fields <code>[1/4]</code><br />
 <div class="outline-text-6" id="text-1-2-8-3-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:23]</span></span></li>
@@ -2501,8 +2501,8 @@ moved to different tasks</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org2dee311" class="outline-4">
-<h4 id="org2dee311"><span class="section-number-4">1.2.9.</span> 2024-02-13 Tuesday</h4>
+<div id="outline-container-orged52796" class="outline-4">
+<h4 id="orged52796"><span class="section-number-4">1.2.9.</span> 2024-02-13 Tuesday</h4>
 <div class="outline-text-4" id="text-1-2-9">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 16:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-13 Tue 21:26]</span></span></caption>
@@ -2557,13 +2557,13 @@ moved to different tasks</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="org056938a"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Update XML with new PGN/SPN Fieldto</a><br />
+<li><a id="org0084e07"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Update XML with new PGN/SPN Fieldto</a><br />
 <div class="outline-text-5" id="text-1-2-9-1">
 </div>
 </li>
-<li><a id="org6a121d5"></a>Misc.<br />
+<li><a id="org47e0453"></a>Misc.<br />
 <ol class="org-ol">
-<li><a id="org4935933"></a><span class="done DONE">DONE</span> General <code>[2/2]</code><br />
+<li><a id="org36e6694"></a><span class="done DONE">DONE</span> General <code>[2/2]</code><br />
 <div class="outline-text-6" id="text-1-2-9-2-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-02-26 Mon 07:48]</span></span></li>
@@ -2585,8 +2585,8 @@ moved to different tasks</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd4da29e" class="outline-4">
-<h4 id="orgd4da29e"><span class="section-number-4">1.2.10.</span> 2024-02-14 Wednesday</h4>
+<div id="outline-container-org91cd111" class="outline-4">
+<h4 id="org91cd111"><span class="section-number-4">1.2.10.</span> 2024-02-14 Wednesday</h4>
 <div class="outline-text-4" id="text-1-2-10">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 17:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-15 Thu 08:36]</span></span></caption>
@@ -2657,19 +2657,19 @@ moved to different tasks</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="orgb9b8177"></a>Teams Meeting: One on One w/ Andres<br />
+<li><a id="org4223d7c"></a>Teams Meeting: One on One w/ Andres<br />
 <div class="outline-text-5" id="text-1-2-10-1">
 </div>
 </li>
-<li><a id="org43cda7b"></a>Teams Meeting: J1939<br />
+<li><a id="orgb690605"></a>Teams Meeting: J1939<br />
 <div class="outline-text-5" id="text-1-2-10-2">
 </div>
 </li>
-<li><a id="orgd67fd62"></a>OPSYD-37 Cont.<br />
+<li><a id="org984d347"></a>OPSYD-37 Cont.<br />
 <div class="outline-text-5" id="text-1-2-10-3">
 </div>
 <ol class="org-ol">
-<li><a id="org0590cf9"></a><span class="done DONE">DONE</span> Fix bugs in commit #8ab1945 <code>[7/8]</code><br />
+<li><a id="org13f5cc1"></a><span class="done DONE">DONE</span> Fix bugs in commit #8ab1945 <code>[7/8]</code><br />
 <div class="outline-text-6" id="text-1-2-10-3-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:22]</span></span></li>
@@ -2701,16 +2701,16 @@ moved to different tasks</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org2988d88" class="outline-4">
-<h4 id="org2988d88"><span class="section-number-4">1.2.11.</span> 2014-02-15 Thursday</h4>
+<div id="outline-container-org964ea29" class="outline-4">
+<h4 id="org964ea29"><span class="section-number-4">1.2.11.</span> 2014-02-15 Thursday</h4>
 <div class="outline-text-4" id="text-1-2-11">
 </div>
 <ol class="org-ol">
-<li><a id="orgff84bf1"></a>OUT SICk, PTO<br /></li>
+<li><a id="orga794ea6"></a>OUT SICk, PTO<br /></li>
 </ol>
 </div>
-<div id="outline-container-org58d2e75" class="outline-4">
-<h4 id="org58d2e75"><span class="section-number-4">1.2.12.</span> 2024-02-16 Friday</h4>
+<div id="outline-container-org6a84b34" class="outline-4">
+<h4 id="org6a84b34"><span class="section-number-4">1.2.12.</span> 2024-02-16 Friday</h4>
 <div class="outline-text-4" id="text-1-2-12">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 18:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-16 Fri 19:22]</span></span></caption>
@@ -2789,13 +2789,13 @@ moved to different tasks</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="org5dd8c7e"></a>OPSYD-37 Cont.<br />
+<li><a id="orgf969e17"></a>OPSYD-37 Cont.<br />
 <ol class="org-ol">
-<li><a id="org3fbfc12"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Fix bugs in commit #8ab1945</a><br />
+<li><a id="orgae85615"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Fix bugs in commit #8ab1945</a><br />
 <div class="outline-text-6" id="text-1-2-12-1-1">
 </div>
 </li>
-<li><a id="org572ccd0"></a>Qt Creator Validator Class<br />
+<li><a id="org0ce0c06"></a>Qt Creator Validator Class<br />
 <div class="outline-text-6" id="text-1-2-12-1-2">
 <ul class="org-ul">
 <li>Trouble using multiple Qt Validators in Group Box</li>
@@ -2810,8 +2810,8 @@ moved to different tasks</li>
 </li>
 </ol>
 </div>
-<div id="outline-container-org9215f97" class="outline-4">
-<h4 id="org9215f97"><span class="section-number-4">1.2.13.</span> 2024-02-19 Monday</h4>
+<div id="outline-container-org1773d52" class="outline-4">
+<h4 id="org1773d52"><span class="section-number-4">1.2.13.</span> 2024-02-19 Monday</h4>
 <div class="outline-text-4" id="text-1-2-13">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 19:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-19 Mon 20:04]</span></span></caption>
@@ -2866,21 +2866,21 @@ moved to different tasks</li>
 </div>
 
 <ol class="org-ol">
-<li><a id="orgccb66b6"></a>Qt Validators for PGN / SPN<br />
+<li><a id="orgc68d6ed"></a>Qt Validators for PGN / SPN<br />
 <div class="outline-text-5" id="text-1-2-13-1">
 </div>
 </li>
 </ol>
 </div>
 
-<div id="outline-container-org77d4028" class="outline-4">
-<h4 id="org77d4028"><span class="section-number-4">1.2.14.</span> 2024-02-22 Thursday</h4>
+<div id="outline-container-org72346ba" class="outline-4">
+<h4 id="org72346ba"><span class="section-number-4">1.2.14.</span> 2024-02-22 Thursday</h4>
 <div class="outline-text-4" id="text-1-2-14">
 </div>
 <ol class="org-ol">
-<li><a id="org3589204"></a>Validator class continued<br />
+<li><a id="orgeab5c96"></a>Validator class continued<br />
 <ol class="org-ol">
-<li><a id="orge0317c2"></a><span class="done DONE">DONE</span> FINISH Setting Up Validators <code>[3/3]</code><br />
+<li><a id="org2b549b7"></a><span class="done DONE">DONE</span> FINISH Setting Up Validators <code>[3/3]</code><br />
 <div class="outline-text-6" id="text-1-2-14-1-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:22]</span></span></li>
@@ -2921,8 +2921,8 @@ save to the library.
 </li>
 </ol>
 </div>
-<div id="outline-container-org453b4c0" class="outline-4">
-<h4 id="org453b4c0"><span class="section-number-4">1.2.15.</span> 2024-02-23 Friday</h4>
+<div id="outline-container-org63496dd" class="outline-4">
+<h4 id="org63496dd"><span class="section-number-4">1.2.15.</span> 2024-02-23 Friday</h4>
 <div class="outline-text-4" id="text-1-2-15">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 <caption class="t-above"><span class="table-number">Table 20:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-02-23 Fri 20:38]</span></span></caption>
@@ -2985,23 +2985,23 @@ save to the library.
 </div>
 
 <ol class="org-ol">
-<li><a id="org563b4f0"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">FINISH Setting Up Validators</a><br />
+<li><a id="org336ce7e"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">FINISH Setting Up Validators</a><br />
 <div class="outline-text-5" id="text-1-2-15-1">
 </div>
 </li>
-<li><a id="org5e53b4f"></a>Sprint Wrap Up, Meeting, Update Jira<br />
+<li><a id="org2d66410"></a>Sprint Wrap Up, Meeting, Update Jira<br />
 <div class="outline-text-5" id="text-1-2-15-2">
 </div>
 </li>
 </ol>
 </div>
-<div id="outline-container-org21b261c" class="outline-4">
-<h4 id="org21b261c"><span class="section-number-4">1.2.16.</span> 2024-02-26 Monday</h4>
+<div id="outline-container-org2a31653" class="outline-4">
+<h4 id="org2a31653"><span class="section-number-4">1.2.16.</span> 2024-02-26 Monday</h4>
 <div class="outline-text-4" id="text-1-2-16">
 </div>
 <ol class="org-ol">
-<li><a id="org0525857"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Update XML with new PGN/SPN Fields</a> (Continued)<br /></li>
-<li><a id="orga9e95bd"></a><span class="done CANCELED">CANCELED</span> Misc Bugs <code>[0/3]</code><br />
+<li><a id="orgb65b43e"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Update XML with new PGN/SPN Fields</a> (Continued)<br /></li>
+<li><a id="org6552c37"></a><span class="done CANCELED">CANCELED</span> Misc Bugs <code>[0/3]</code><br />
 <div class="outline-text-5" id="text-1-2-16-2">
 <ul class="org-ul">
 <li>State "CANCELED"   from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:21]</span></span></li>
@@ -3014,16 +3014,16 @@ save to the library.
 </ol>
 </div>
 </div>
-<div id="outline-container-org3219dcc" class="outline-3">
-<h3 id="org3219dcc"><span class="section-number-3">1.3.</span> 2024-03 March</h3>
+<div id="outline-container-org3588c67" class="outline-3">
+<h3 id="org3588c67"><span class="section-number-3">1.3.</span> 2024-03 March</h3>
 <div class="outline-text-3" id="text-1-3">
 </div>
-<div id="outline-container-org5df9343" class="outline-4">
-<h4 id="org5df9343"><span class="section-number-4">1.3.1.</span> 2024-03-01 Friday</h4>
+<div id="outline-container-orgc776c63" class="outline-4">
+<h4 id="orgc776c63"><span class="section-number-4">1.3.1.</span> 2024-03-01 Friday</h4>
 <div class="outline-text-4" id="text-1-3-1">
 </div>
 <ol class="org-ol">
-<li><a id="orgb1f1259"></a>SPN Validators v2<br />
+<li><a id="org1b03911"></a>SPN Validators v2<br />
 <div class="outline-text-5" id="text-1-3-1-1">
 <ul class="org-ul">
 <li>reviewed validator progress with JG, came up with modified list. Replace previous TODO.</li>
@@ -3031,7 +3031,7 @@ save to the library.
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgf8313b1"></a><span class="done DONE">DONE</span> SPN Validators <code>[4/5]</code><br />
+<li><a id="org1e97f20"></a><span class="done DONE">DONE</span> SPN Validators <code>[4/5]</code><br />
 <div class="outline-text-6" id="text-1-3-1-1-1">
 <ul class="org-ul">
 <li>State "DONE"       from "TODO"       <span class="timestamp-wrapper"><span class="timestamp">[2024-03-11 Mon 12:22]</span></span></li>
@@ -3049,22 +3049,22 @@ save to the library.
 </li>
 </ol>
 </div>
-<div id="outline-container-org442db2a" class="outline-4">
-<h4 id="org442db2a"><span class="section-number-4">1.3.2.</span> 2024-03-08 Friday</h4>
+<div id="outline-container-orgb68ff7f" class="outline-4">
+<h4 id="orgb68ff7f"><span class="section-number-4">1.3.2.</span> 2024-03-08 Friday</h4>
 <div class="outline-text-4" id="text-1-3-2">
 </div>
 <ol class="org-ol">
-<li><a id="org917d420"></a>SPN Wrap Up Tasks<br /></li>
+<li><a id="orgc685b7b"></a>SPN Wrap Up Tasks<br /></li>
 </ol>
 </div>
-<div id="outline-container-orgf8b2ddd" class="outline-4">
-<h4 id="orgf8b2ddd"><span class="section-number-4">1.3.3.</span> 2024-03-11 Monday</h4>
+<div id="outline-container-org601c305" class="outline-4">
+<h4 id="org601c305"><span class="section-number-4">1.3.3.</span> 2024-03-11 Monday</h4>
 <div class="outline-text-4" id="text-1-3-3">
 </div>
 <ol class="org-ol">
-<li><a id="org533d94d"></a>OPSYD-79 Backend C Code Gen<br />
+<li><a id="org2e1d366"></a>OPSYD-79 Backend C Code Gen<br />
 <ol class="org-ol">
-<li><a id="org2e2a0b6"></a><span class="todo TODO">TODO</span> c code gen review <code>[0/5]</code><br />
+<li><a id="org23c4c56"></a><span class="todo TODO">TODO</span> c code gen review <code>[0/5]</code><br />
 <div class="outline-text-6" id="text-1-3-3-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Review existing class used for unscaled int</li>
@@ -3089,22 +3089,22 @@ save to the library.
 </li>
 </ol>
 </div>
-<div id="outline-container-org9272d87" class="outline-4">
-<h4 id="org9272d87"><span class="section-number-4">1.3.4.</span> 2024-03-12 Tuesday</h4>
+<div id="outline-container-orged0cc1f" class="outline-4">
+<h4 id="orged0cc1f"><span class="section-number-4">1.3.4.</span> 2024-03-12 Tuesday</h4>
 <div class="outline-text-4" id="text-1-3-4">
 </div>
 <ol class="org-ol">
-<li><a id="orgf98cccb"></a>Misc Plugin fixes<br /></li>
-<li><a id="orgecab172"></a>Unscaled vs uint fiasco<br />
+<li><a id="orgf30fa59"></a>Misc Plugin fixes<br /></li>
+<li><a id="org450c421"></a>Unscaled vs uint fiasco<br />
 <ol class="org-ol">
-<li><a id="orgc812362"></a>PROBLEM:<br />
+<li><a id="orgd9e5408"></a>PROBLEM:<br />
 <div class="outline-text-6" id="text-1-3-4-2-1">
 <ul class="org-ul">
 <li>moving XML schema to use "unscaled" "scaled" and "bitfield" for dataformat broke import export</li>
 </ul>
 </div>
 </li>
-<li><a id="org501a825"></a>OPTIONS:<br />
+<li><a id="org4ce0368"></a>OPTIONS:<br />
 <div class="outline-text-6" id="text-1-3-4-2-2">
 <ol class="org-ol">
 <li>convert "unscaled" to "uint" BEFORE saveJ1939LibSPN()
@@ -3124,7 +3124,7 @@ save to the library.
 </ol>
 </div>
 </li>
-<li><a id="orgb41acc4"></a>WIP:<br />
+<li><a id="org48c0e8d"></a>WIP:<br />
 <div class="outline-text-6" id="text-1-3-4-2-3">
 <ol class="org-ol">
 <li>TG fixed in datapool using AFTER xmlLib method
@@ -3213,19 +3213,19 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-orgfdfc252" class="outline-4">
-<h4 id="orgfdfc252"><span class="section-number-4">1.3.5.</span> 2024-03-14 Thursday</h4>
+<div id="outline-container-org326d710" class="outline-4">
+<h4 id="org326d710"><span class="section-number-4">1.3.5.</span> 2024-03-14 Thursday</h4>
 <div class="outline-text-4" id="text-1-3-5">
 </div>
 <ol class="org-ol">
-<li><a id="org8b4b276"></a>Misc Catch Up<br />
+<li><a id="org7b1439b"></a>Misc Catch Up<br />
 <div class="outline-text-5" id="text-1-3-5-1">
 <ul class="org-ul">
 <li>TG out sick.  SC catching up on following..</li>
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgbf58d58"></a><span class="todo TODO">TODO</span> Misc <code>[5/10]</code><br />
+<li><a id="org0a7e9c6"></a><span class="todo TODO">TODO</span> Misc <code>[5/10]</code><br />
 <div class="outline-text-6" id="text-1-3-5-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> when adding new SPN's, prevent empty Offset<span class="timestamp-wrapper"><span class="timestamp">[2024-03-15 Fri] </span></span></li>
@@ -3260,7 +3260,7 @@ see writeCFile()
 </ul>
 </div>
 </li>
-<li><a id="org01bdb29"></a><span class="todo TODO">TODO</span> Pre Push Test Steps <code>[0/10]</code><br />
+<li><a id="orgc6636c2"></a><span class="todo TODO">TODO</span> Pre Push Test Steps <code>[0/10]</code><br />
 <div class="outline-text-6" id="text-1-3-5-1-2">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Pre-Test
@@ -3331,15 +3331,15 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-org97371a1" class="outline-4">
-<h4 id="org97371a1"><span class="section-number-4">1.3.6.</span> 2024-03-15 Friday</h4>
+<div id="outline-container-org37c18d6" class="outline-4">
+<h4 id="org37c18d6"><span class="section-number-4">1.3.6.</span> 2024-03-15 Friday</h4>
 <div class="outline-text-4" id="text-1-3-6">
 </div>
 <ol class="org-ol">
-<li><a id="org0847fda"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Misc</a> Continued<br /></li>
-<li><a id="org175de7b"></a>Testing Issues<br />
+<li><a id="org9a9ec61"></a><a href="file:///home/scurfman/org/gtd/projects/j1939plugin.html#MissingReference">Misc</a> Continued<br /></li>
+<li><a id="orgc34d61b"></a>Testing Issues<br />
 <ol class="org-ol">
-<li><a id="org36262ed"></a><span class="todo TODO">TODO</span> Testing Q&amp;A <code>[0/6]</code><br />
+<li><a id="org5a96aad"></a><span class="todo TODO">TODO</span> Testing Q&amp;A <code>[0/6]</code><br />
 <div class="outline-text-6" id="text-1-3-6-2-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Q: Is openSYDE datapool double scaling SPN on import from Plugin?</li>
@@ -3364,14 +3364,14 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-org00a7939" class="outline-4">
-<h4 id="org00a7939"><span class="section-number-4">1.3.7.</span> 2024-03-18 Monday</h4>
+<div id="outline-container-org5c77a7b" class="outline-4">
+<h4 id="org5c77a7b"><span class="section-number-4">1.3.7.</span> 2024-03-18 Monday</h4>
 <div class="outline-text-4" id="text-1-3-7">
 </div>
 <ol class="org-ol">
-<li><a id="org0fd80b5"></a>GTD Daily<br />
+<li><a id="org3a88469"></a>GTD Daily<br />
 <ol class="org-ol">
-<li><a id="orgcc4673a"></a><span class="todo TODO">TODO</span> Process Inbox <code>[0/5]</code><br />
+<li><a id="orgf357608"></a><span class="todo TODO">TODO</span> Process Inbox <code>[0/5]</code><br />
 <div class="outline-text-6" id="text-1-3-7-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Dump It
@@ -3394,7 +3394,7 @@ see writeCFile()
 </ul>
 </div>
 </li>
-<li><a id="orgda1dd3d"></a><span class="todo TODO">TODO</span> Quick Review Projects <code>[0/1]</code><br />
+<li><a id="org5ffa377"></a><span class="todo TODO">TODO</span> Quick Review Projects <code>[0/1]</code><br />
 <div class="outline-text-6" id="text-1-3-7-1-2">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> JIRA OpenSYDE Plugins
@@ -3410,7 +3410,7 @@ see writeCFile()
 </li>
 </ol>
 </li>
-<li><a id="org523444a"></a>HVV<br />
+<li><a id="orgd15b841"></a>HVV<br />
 <div class="outline-text-5" id="text-1-3-7-2">
 <ul class="org-ul">
 <li>Found problem with openSYDE datapools accepting J1939plugin HVV import.</li>
@@ -3420,7 +3420,7 @@ see writeCFile()
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org19916d1"></a>openSYDE Max / HVV import<br />
+<li><a id="orgc079f48"></a>openSYDE Max / HVV import<br />
 <div class="outline-text-6" id="text-1-3-7-2-1">
 <ul class="org-ul">
 <li>C_SyvDaltPaTreeModel.cpp
@@ -3458,14 +3458,14 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-org5e1519b" class="outline-4">
-<h4 id="org5e1519b"><span class="section-number-4">1.3.8.</span> 2024-03-19 Tuesday</h4>
+<div id="outline-container-org31ef318" class="outline-4">
+<h4 id="org31ef318"><span class="section-number-4">1.3.8.</span> 2024-03-19 Tuesday</h4>
 <div class="outline-text-4" id="text-1-3-8">
 </div>
 <ol class="org-ol">
-<li><a id="org66f4a0d"></a>HVV continued<br />
+<li><a id="orgf495359"></a>HVV continued<br />
 <ol class="org-ol">
-<li><a id="orgf8d5f3d"></a><span class="todo TODO">TODO</span> HVV Modifier <code>[2/5]</code><br />
+<li><a id="org29569cf"></a><span class="todo TODO">TODO</span> HVV Modifier <code>[2/5]</code><br />
 <div class="outline-text-6" id="text-1-3-8-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> copy h_GetValueUnscaled() to plugin</li>
@@ -3484,14 +3484,14 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-orgcb04f0d" class="outline-4">
-<h4 id="orgcb04f0d"><span class="section-number-4">1.3.9.</span> 2024-03-20 Wednesday</h4>
+<div id="outline-container-org486ac93" class="outline-4">
+<h4 id="org486ac93"><span class="section-number-4">1.3.9.</span> 2024-03-20 Wednesday</h4>
 <div class="outline-text-4" id="text-1-3-9">
 </div>
 <ol class="org-ol">
-<li><a id="org712348b"></a>Misc<br />
+<li><a id="orgc48a0f1"></a>Misc<br />
 <ol class="org-ol">
-<li><a id="org7800a0a"></a>QT troubleshooting<br />
+<li><a id="org083c173"></a>QT troubleshooting<br />
 <div class="outline-text-6" id="text-1-3-9-1-1">
 <ul class="org-ul">
 <li>degugging issue</li>
@@ -3499,7 +3499,7 @@ see writeCFile()
 </ul>
 </div>
 </li>
-<li><a id="org4f44917"></a>Code Gen / Hvv common questions review<br />
+<li><a id="org226658c"></a>Code Gen / Hvv common questions review<br />
 <div class="outline-text-6" id="text-1-3-9-1-2">
 <ul class="org-ul">
 <li>review SCALED_VALUE</li>
@@ -3515,19 +3515,19 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-orgd8edbee" class="outline-4">
-<h4 id="orgd8edbee"><span class="section-number-4">1.3.10.</span> 2024-03-22 Friday</h4>
+<div id="outline-container-org86f5b85" class="outline-4">
+<h4 id="org86f5b85"><span class="section-number-4">1.3.10.</span> 2024-03-22 Friday</h4>
 <div class="outline-text-4" id="text-1-3-10">
 </div>
 <ol class="org-ol">
-<li><a id="orgd4eb401"></a>HVV UI &lt;-&gt; DP<br />
+<li><a id="orgbe64183"></a>HVV UI &lt;-&gt; DP<br />
 <div class="outline-text-5" id="text-1-3-10-1">
 <ul class="org-ul">
 <li>Qt repaired, all day Thursday and 1/2 Wednesday.</li>
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="orgbd4beb5"></a><span class="todo TODO">TODO</span> Recreate HVV upscale &lt;-&gt; downscale code <code>[1/3]</code><br />
+<li><a id="org2517118"></a><span class="todo TODO">TODO</span> Recreate HVV upscale &lt;-&gt; downscale code <code>[1/3]</code><br />
 <div class="outline-text-6" id="text-1-3-10-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> fresh pull</li>
@@ -3555,12 +3555,12 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-orgeaad85f" class="outline-4">
-<h4 id="orgeaad85f"><span class="section-number-4">1.3.11.</span> 2024-03-25 Monday</h4>
+<div id="outline-container-orgc6adebe" class="outline-4">
+<h4 id="orgc6adebe"><span class="section-number-4">1.3.11.</span> 2024-03-25 Monday</h4>
 <div class="outline-text-4" id="text-1-3-11">
 </div>
 <ol class="org-ol">
-<li><a id="orge741108"></a>Review / Merge<br />
+<li><a id="org4845856"></a>Review / Merge<br />
 <div class="outline-text-5" id="text-1-3-11-1">
 <ul class="org-ul">
 <li>max setable HVV not validating, but is calculating, fix before push</li>
@@ -3570,19 +3570,19 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-org9d4f721" class="outline-4">
-<h4 id="org9d4f721"><span class="section-number-4">1.3.12.</span> 2024-03-29 Friday</h4>
+<div id="outline-container-org1e94edf" class="outline-4">
+<h4 id="org1e94edf"><span class="section-number-4">1.3.12.</span> 2024-03-29 Friday</h4>
 <div class="outline-text-4" id="text-1-3-12">
 </div>
 <ol class="org-ol">
-<li><a id="org65eeb26"></a>Fix Compile Errors<br />
+<li><a id="orge3f94ba"></a>Fix Compile Errors<br />
 <div class="outline-text-5" id="text-1-3-12-1">
 <ul class="org-ul">
 <li>Still can't compile projects built using J1939 plugin</li>
 </ul>
 </div>
 <ol class="org-ol">
-<li><a id="org1616247"></a><span class="todo TODO">TODO</span> Troubleshooting Compiler <code>[1/2]</code><br />
+<li><a id="org1e31187"></a><span class="todo TODO">TODO</span> Troubleshooting Compiler <code>[1/2]</code><br />
 <div class="outline-text-6" id="text-1-3-12-1-1">
 <ul class="org-ul">
 <li class="on"><code>[X]</code> Test openSYDE v1.51
@@ -3642,18 +3642,18 @@ see writeCFile()
 </ol>
 </div>
 </div>
-<div id="outline-container-orga33d56d" class="outline-3">
-<h3 id="orga33d56d"><span class="section-number-3">1.4.</span> 2024-04 April</h3>
+<div id="outline-container-org07ad361" class="outline-3">
+<h3 id="org07ad361"><span class="section-number-3">1.4.</span> 2024-04 April</h3>
 <div class="outline-text-3" id="text-1-4">
 </div>
-<div id="outline-container-org45d43bd" class="outline-4">
-<h4 id="org45d43bd"><span class="section-number-4">1.4.1.</span> 2024-04-01 Monday</h4>
+<div id="outline-container-orgb8450b2" class="outline-4">
+<h4 id="orgb8450b2"><span class="section-number-4">1.4.1.</span> 2024-04-01 Monday</h4>
 <div class="outline-text-4" id="text-1-4-1">
 </div>
 <ol class="org-ol">
-<li><a id="org23642ef"></a>Testing Release 2 of plugin<br />
+<li><a id="orgf6b620b"></a>Testing Release 2 of plugin<br />
 <ol class="org-ol">
-<li><a id="orgb4ed810"></a><span class="todo TODO">TODO</span> Tests (checked = OK) <code>[0/4]</code><br />
+<li><a id="orgbff3414"></a><span class="todo TODO">TODO</span> Tests (checked = OK) <code>[0/4]</code><br />
 <div class="outline-text-6" id="text-1-4-1-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> PGN adding from BAD input
@@ -3706,14 +3706,14 @@ see writeCFile()
 </li>
 </ol>
 </div>
-<div id="outline-container-orgcd0e5ba" class="outline-4">
-<h4 id="orgcd0e5ba"><span class="section-number-4">1.4.2.</span> 2024-04-08 Monday</h4>
+<div id="outline-container-org38bbfe2" class="outline-4">
+<h4 id="org38bbfe2"><span class="section-number-4">1.4.2.</span> 2024-04-08 Monday</h4>
 <div class="outline-text-4" id="text-1-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgd516146"></a>Release 2 Misc<br />
+<li><a id="org0184e39"></a>Release 2 Misc<br />
 <ol class="org-ol">
-<li><a id="orgd36ef0b"></a><span class="todo TODO">TODO</span> Testing <code>[0/4]</code><br />
+<li><a id="orgc9094bf"></a><span class="todo TODO">TODO</span> Testing <code>[0/4]</code><br />
 <div class="outline-text-6" id="text-1-4-2-1-1">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> SPN Range
@@ -3751,7 +3751,7 @@ see writeCFile()
 </ul>
 </div>
 </li>
-<li><a id="org2241521"></a><span class="todo TODO">TODO</span> Changes <code>[/]</code><br /></li>
+<li><a id="orgcc296d5"></a><span class="todo TODO">TODO</span> Changes <code>[/]</code><br /></li>
 </ol>
 </li>
 </ol>
@@ -3761,7 +3761,7 @@ see writeCFile()
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: scurfman</p>
-<p class="date">Created: 2024-04-08 Mon 08:08</p>
+<p class="date">Created: 2024-04-08 Mon 08:30</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
