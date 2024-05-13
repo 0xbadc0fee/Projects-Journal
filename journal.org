@@ -1,0 +1,85 @@
+
+* 2024
+** 2024-01 January
+*** 2024-01-17 Wednesday
+**** Onboarding Notes 'OpenSYDE Plugins (J1939)'
+***** Added to project [2024-01-17 Wed 13:20] 
+****** DONE Next Actions [8/8] <2024-01-17 Wed 17:35>
+CLOSED: [2024-01-22 Mon 06:33]
+- [X] Refer to the How-to prepared by TG
+- [X] Download and install "i686-8.1.0-release-posix-dwarf-rt_v6-rev0.7z"
+- [X] Download and install "openSYDE_Release 22-0B(v1.42r0).zip"
+- [X] Download and install "qt-creator-opensource-windows-x86_64-4.14.2.exe"
+- [X] Download and install "qt-unified-windows-x86-4.3.0-1-online.exe" 
+- [X] Setup user account with QT
+- [X] clone github repo https://github.com/STW-Technic-LP/J1939Plugin
+- [X] start a documentaion journal for onboarding process. 
+Entered on [2024-01-17 Wed 15:18]
+**** Toolchain setup
++ Minor confustion on version.  Text of pdf says 15.5.2, URL in pdf goes to 14.4.2 (newer than 15.5.2?)
++ TG confirmed target version is 15.5.2.  Used web installer to choose 'custom install' and selected 15.5.2
++ Took a couple trie to get install correct. [2024-01-17 Wed 16:29]
++ QT Creator installed, Mingw 8.1 configured, J1939 github project cloned
++ Left off at [2024-01-17 Wed 17:35] with J1939 github project opened inside of QT Creator.  Contact TG for next step.
+Entered on [2024-01-17 Wed 15:31]
+*** 2024-01-18 Thursday
+**** Toolchain setup continued
+***** DONE Next Actions [2/2]
+CLOSED: [2024-01-22 Mon 06:33]
+- [X] Import, Open, and Build openSYDE using Qt Creator
+  + FAILED: 1st attempt would not build, Qt stopped build process, error indicated missing files
+  + FAILED: Per TG, turned off 'Shadow Build' still failed.
+  + PASSED: Possible 260 char limit of path / filenames issue.  Moved project up higher in C:/. Build OK
+  + NOTE: created Qt projects directory under ~C:\stw\qtProjects~ to minimize char length and eliminate spaces in directory name.
+    prior folder was in a OneDrive managed user folder. ~C:\Users\silas.curfman\OneDrive - STW Technic LP\Documents\_PROJECTS>~
+- [X] Run freshly built openSYDE project.
+  + PASSED/FAILED: Application correctly launched an instance of openSYDE but upon viewing About, version was 1.6.0.
+    We needed v1.42.0r.  TG set out to get new files.
+  + PASSED: New .zip project imported, built, and ran successfully
+Entered on [2024-01-18 Thu 15:28]
+*** 2024-01-19 Friday
+**** Plug-in Project Review
++ With current .pro correctly running in Qt Creator, take time to explore both Qt and the code base.
+***** DONE Next Actions [4/4]
+CLOSED: [2024-01-22 Mon 06:32]
+- [X] Complete Qt built in new user tour
+- [X] Explore the file / folder structure of the project
+- [X] Run the compiled binary, explore the version of openSYDE it launches
+- [X] To see the plugin, need to import in some devices, copy over from your production copy of openSYDE.
+***** DONE Topic / Reference Review [7/7]
+CLOSED: [2024-02-26 Mon 07:46]
+- [X] J1939 DBC
+- [X] J1939 PGN
+- [X] J1939 SPN
+- [X] dbc_driver_library on openSYDE github project.
+- [X] visit Vector Informatik, DBC related info
+- [X] where is UI info for J1939 plugin defined?  [2024-01-19 Fri 17:46] 
+- [X] revisit C_Sd_BueComlfDescriptionWidget in Qt, "page" or tab 5/5 is J1939 UI. [2024-01-19 Fri 17:52] 
+Entered on [2024-01-19 Fri 09:06]
+*** 2024-01-22 Monday
+**** Qt Creator 12 onboarding 
+Entered on [2024-01-22 Mon 07:30]
+** 2024-05 May
+*** 2024-05-13 Monday
+**** Weekly Planning
+***** TODO New Flyer [0/3]
+- [ ] Jira review
+- [ ] Meet with KB, monday
+- [ ] Meet with JG, tuesday
+***** TODO GCP+Verifi [/]
+- [ ] Jira review
+***** TODO Distek ISOBUS [0/2]
+- [ ] Jira review
+- [ ] Check for tracking number, display from JG
+***** TODO J1939 Plugin [0/2]
+- [ ] Jira review
+- [ ] Meeting with TG, monday
+***** TODO Misc [0/2]
+- [ ] Meet with AR, paycor Wednesday
+- [ ] Home Office Maint
+  - [ ] misc tooling
+  - [ ] install more shelf space
+  - [ ] replace router / wifi
+  - [ ] segment network
+  - [ ] janitorial (vacuum, etc)
+Entered on [2024-05-13 Mon 07:30]

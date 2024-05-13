@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-05-10 Fri 06:14 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Journal: 4th gen DisTEK ISOBUS Dev</title>
+<meta name="author" content="scurfman" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://0xbadc0fee.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://0xbadc0fee.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script>
+  window.MathJax = {
+    tex: {
+      ams: {
+        multlineWidth: '85%'
+      },
+      tags: 'ams',
+      tagSide: 'right',
+      tagIndent: '.8em'
+    },
+    chtml: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    svg: {
+      scale: 1.0,
+      displayAlign: 'center',
+      displayIndent: '0em'
+    },
+    output: {
+      font: 'mathjax-modern',
+      displayOverflow: 'overflow'
+    }
+  };
+</script>
+
+<script
+  id="MathJax-script"
+  async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">Project Journal: 4th gen DisTEK ISOBUS Dev</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orga6d9af4">1. 2024</a>
+<ul>
+<li><a href="#orgebd6bd7">1.1. 2024-04 April</a>
+<ul>
+<li><a href="#org786b556">1.1.1. 2024-04-29 Monday</a></li>
+<li><a href="#org7041350">1.1.2. 2024-04-30 Tuesday</a></li>
+</ul>
+</li>
+<li><a href="#org35e03b6">1.2. 2024-05 May</a>
+<ul>
+<li><a href="#orgeeb2b6d">1.2.1. 2024-05-07 Tuesday</a></li>
+<li><a href="#orga13a88b">1.2.2. 2024-05-08 Wednesday</a></li>
+<li><a href="#orgfeab649">1.2.3. 2024-05-10 Friday</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga6d9af4" class="outline-2">
+<h2 id="orga6d9af4"><span class="section-number-2">1.</span> 2024</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgebd6bd7" class="outline-3">
+<h3 id="orgebd6bd7"><span class="section-number-3">1.1.</span> 2024-04 April</h3>
+<div class="outline-text-3" id="text-1-1">
+</div>
+<div id="outline-container-org786b556" class="outline-4">
+<h4 id="org786b556"><span class="section-number-4">1.1.1.</span> 2024-04-29 Monday</h4>
+<div class="outline-text-4" id="text-1-1-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgdb967de"></a>Initial Onboarding<br />
+<ol class="org-ol">
+<li><a id="orga6dbc5a"></a><span class="todo TODO">TODO</span> Status Review <code>[5/5]</code><br />
+<div class="outline-text-6" id="text-1-1-1-1-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Teams meeting notes</li>
+<li class="on"><code>[X]</code> Current / Completed Jira Tasks</li>
+<li class="on"><code>[X]</code> Pull current Repo
+<ul class="org-ul">
+<li>most current branch is reorg_github</li>
+<li>branch main does not have git submodule info at this time</li>
+</ul></li>
+<li class="on"><code>[X]</code> <p>
+Capture current tree structure for doc
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">  Folder PATH listing for volume OS
+Volume serial number is <span style="color: #a45bad;">36BC-0D71</span>
+C:.
++---bat
++---doc
++---ESXheaders
+&#166;   +---GEN3
+&#166;   &#166;   +---esx.3cX
+&#166;   &#166;   +---esx.3cX_safety
+&#166;   &#166;   &#166;   +---xs_api
+&#166;   &#166;   &#166;   +---x_api
+&#166;   &#166;   +---esx.3xX
+&#166;   &#166;   +---esx.ioxp
+&#166;   +---GEN4
+&#166;       +---esx.4cl
+&#166;       +---esx.4cm
+&#166;       +---esx.4cs
+&#166;       +---esx.4ct
++---pjt
++---result_libs
+&#166;   +---doc
+&#166;   +---include
+&#166;   +---tools
++---tmp
+&#166;   +---Virtec_3Cx
+&#166;   &#166;   +---VirtecSubModules
+&#166;   &#166;       +---Foundation
+&#166;   &#166;       +---Platform
+&#166;   &#166;       +---TCClient
+&#166;   &#166;       +---VTClient
+&#166;   +---Virtec_3Cx_Safety
+&#166;   &#166;   +---VirtecSubModules
+&#166;   &#166;       +---Foundation
+&#166;   &#166;       +---Platform
+&#166;   &#166;       +---TCClient
+&#166;   &#166;       +---VTClient
+&#166;   +---Virtec_3Xx
+&#166;   &#166;   +---VirtecSubModules
+&#166;   &#166;       +---Foundation
+&#166;   &#166;       +---Platform
+&#166;   &#166;       +---TCClient
+&#166;   &#166;       +---VTClient
+&#166;   +---Virtec_4cl
+&#166;   &#166;   +---VirtecSubModules
+&#166;   &#166;       +---Foundation
+&#166;   &#166;       +---Platform
+&#166;   &#166;       +---TCClient
+&#166;   &#166;       +---VTClient
+&#166;   +---Virtec_4cm
+&#166;   &#166;   +---VirtecSubModules
+&#166;   &#166;       +---Foundation
+&#166;   &#166;       +---Platform
+&#166;   &#166;       +---TCClient
+&#166;   &#166;       +---VTClient
+&#166;   +---Virtec_4cs
+&#166;   &#166;   +---VirtecSubModules
+&#166;   &#166;       +---Foundation
+&#166;   &#166;       +---Platform
+&#166;   &#166;       +---TCClient
+&#166;   &#166;       +---VTClient
+&#166;   +---Virtec_4ct
+&#166;       +---VirtecSubModules
+&#166;           +---Foundation
+&#166;           +---Platform
+&#166;           +---TCClient
+&#166;           +---VTClient
++---VirtecSubModules
+    +---Foundation
+    +---Platform
+    +---TCClient
+    +---VTClient
+
+</pre>
+</div></li>
+<li class="on"><code>[X]</code> Open a knownGood in LogiCAD and confirms build w/o errors
+<ul class="org-ul">
+<li class="on"><code>[X]</code> 4CL</li>
+<li class="on"><code>[X]</code> 4CM</li>
+<li class="on"><code>[X]</code> 4CS</li>
+<li class="on"><code>[X]</code> 4CT</li>
+<li class="on"><code>[X]</code> <p>
+Typical Results
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">Block  Ver  Area   Block-Address  Start-Address End-Address   Signature-Type
+============================================================================
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #a45bad;">0x80014000</span>    <span style="color: #a45bad;">0x80017FFF</span>    CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00001</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #a45bad;">0x80500000</span>    <span style="color: #a45bad;">0x8056DE2B</span>    CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00002</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00003</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00004</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00005</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+
+Validating signature blocks ...
+Filling gaps ...
+Calculating signatures ...
+Patching data ...
+Writing target hex file <span style="color: #2d9574;">"C:\stw\isobus\esx-isobus-example_gen4\ESX_4CM_A/appl_core_release/appl_core.hex"</span> ...
+Target hex file written. Finished.
+
+<span style="color: #a45bad;">13:25:50</span> Build Finished. <span style="color: #a45bad;">0</span> errors, <span style="color: #a45bad;">8</span> warnings. <span style="color: #4f97d7;">(</span>took <span style="color: #a45bad;">6s.443ms</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div></li>
+</ul></li>
+</ul>
+</div>
+</li>
+<li><a id="org928e622"></a>Doc Outline "Getting Started"<br />
+<ol class="org-ol">
+<li><a id="org78a0a2f"></a>Clone Repository<br /></li>
+<li><a id="orgb19f6bf"></a>Open &amp; Build Template Projects<br /></li>
+<li><a id="orgd1afaa8"></a>Open &amp; Build Example Projects<br /></li>
+<li><a id="org8fac653"></a>Modify and Run an Application<br /></li>
+</ol>
+</li>
+<li><a id="org96d1a7c"></a>JOURNAL<br />
+<ol class="org-ol">
+<li><a id="orgc0e192d"></a>Cloning<br />
+<div class="outline-text-7" id="text-1-1-1-1-3-1">
+<ul class="org-ul">
+<li>DO NOT need to pull esx-isobus repo.  Can get started by pulling one of the example repos</li>
+<li>DO update submodules.  After git pull, need to run some variation of submodule update;
+<ul class="org-ul">
+<li>OPTION 1: git submodule update &#x2013;init (init required for first submodule download)</li>
+<li>OPTION 2 (best): get submodule update &#x2013;init &#x2013;recursive (w/o recursive has to be updated in folders that need submodules, recursive search whole tree)</li>
+</ul></li>
+<li>DO LogiCAD-&gt; Open Projects from file System -&gt; select folder esx-isobus-example_gen4</li>
+<li>DO test build any / all of the gen4 examples to confirm no build problems, all files accounted for</li>
+</ul>
+</div>
+</li>
+<li><a id="org9da53b4"></a>Template Projects (gen4 bundle)<br />
+<div class="outline-text-7" id="text-1-1-1-1-3-2">
+<ul class="org-ul">
+<li>NOTE each 4th gen device template, e.g. <code>isobus-esx_G4_esx.4cl</code> links to the common ISOBUS dependencies in the separate LogiCAD project <code>isobus-esxG4</code></li>
+<li>WARNING some known problems when working with submodule repos.  If user is trying to sync first time submodule update via SSH and is presented with need for username and password,
+there may be some problems.  Only noticed when pulling repo into a linux VM being used for note / journal capture.  Most use cases would be pulling repo into
+Win based dev env.  In windows env, just make sure using a git client like GitBash.  No problems syncing submodules this way. Tested mult times, consistent behavior.  Only pull via windows.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7041350" class="outline-4">
+<h4 id="org7041350"><span class="section-number-4">1.1.2.</span> 2024-04-30 Tuesday</h4>
+<div class="outline-text-4" id="text-1-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgadc6a74"></a>ESX template testing continued<br />
+<ol class="org-ol">
+<li><a id="org383c6f8"></a><span class="todo TODO">TODO</span> Individual ESX Template Tests <code>[12/12]</code><br />
+<div class="outline-text-6" id="text-1-1-2-1-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> <code>$ git clone git@github.com:STW-Technic-LP/esx-isobus-example_esx.4cm.git</code></li>
+<li class="on"><code>[X]</code> <code>$ cd esx-isobus-example_esx.4cm</code></li>
+<li class="on"><code>[X]</code> <code>$ git submodule update --init --recursive</code></li>
+<li class="on"><code>[X]</code> Open LogiCAD3 in C perspective</li>
+<li class="on"><code>[X]</code> File-&gt; Open Projects from File System</li>
+<li class="on"><code>[X]</code> select folder "esx-isobus-example_esx.4cm"</li>
+<li class="on"><code>[X]</code> Choose both projects</li>
+<li class="on"><code>[X]</code> Ensure compiler license available</li>
+<li class="on"><code>[X]</code> Select project with tag (in ESX_4CM_A)</li>
+<li class="on"><code>[X]</code> Build Configurations&#x2026; -&gt; Build Selected&#x2026; -&gt; select (e.g. appl_core_release)</li>
+<li class="on"><code>[X]</code> <p>
+Results:
+</p>
+<div class="org-src-container">
+<pre class="src src-shell">Block  Ver  Area   Block-Address  Start-Address End-Address   Signature-Type
+============================================================================
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #a45bad;">0x80014000</span>    <span style="color: #a45bad;">0x80017FFF</span>    CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00001</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #a45bad;">0x80500000</span>    <span style="color: #a45bad;">0x80568D57</span>    CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00002</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00003</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00004</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+<span style="color: #a45bad;">00000</span>  <span style="color: #a45bad;">004</span>  <span style="color: #a45bad;">00005</span>  <span style="color: #a45bad;">0x80014200</span>     <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  <span style="color: #4f97d7;">(</span>empty area<span style="color: #4f97d7;">)</span>  CRC-32Swapped
+
+Validating signature blocks ...
+Filling gaps ...
+Calculating signatures ...
+Patching data ...
+Writing target hex file <span style="color: #2d9574;">"C:\stw\isobus_test_2\esx-isobus-example_esx.4cm\ESX_4CM_A/appl_core_release/appl_core.hex"</span> ...
+Target hex file written. Finished.
+
+<span style="color: #a45bad;">11:06:20</span> Build Finished. <span style="color: #a45bad;">0</span> errors, <span style="color: #a45bad;">8</span> warnings. <span style="color: #4f97d7;">(</span>took <span style="color: #a45bad;">6s.449ms</span><span style="color: #4f97d7;">)</span>
+</pre>
+</div></li>
+<li class="on"><code>[X]</code> END, template valid</li>
+</ul>
+</div>
+</li>
+<li><a id="org82fa7ad"></a><span class="todo TODO">TODO</span> Test included openSYDE projects <code>[0/2]</code><br />
+<div class="outline-text-6" id="text-1-1-2-1-2">
+<ul class="org-ul">
+<li class="trans"><code>[-]</code> Multi-Node Gen4 Kit <code>[4/6]</code>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Launch openSYDE (v1.51r0)</li>
+<li class="on"><code>[X]</code> from repo directory, open <code>isobus-example_gen4.syde</code></li>
+<li class="on"><code>[X]</code> find README's with TSP spec for each node in their project folders
+"C:\&#x2026;\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4cl"
+"C:\&#x2026;\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4cm"
+"C:\&#x2026;\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4cs"
+"C:\&#x2026;\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4ct"</li>
+<li class="on"><code>[X]</code> Test project by running "Generate Files" (no datablocks assigned yet) on each node in project</li>
+<li class="off"><code>[&#xa0;]</code> Q&amp;A Does user make separate copy of local folder for each dev project?
+<ul class="org-ul">
+<li>if so, user needs to make top level copy of whole project, not just a new Save As from within openSYDE (correct?)</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Q&amp;A pros / cons of starting with gen4 kit vs single-node kit?</li>
+</ul></li>
+<li class="trans"><code>[-]</code> Single-Node 4CM Example <code>[5/8]</code>
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Launch openSYDE (v1.51r0)</li>
+<li class="on"><code>[X]</code> from repo directory, open example project <code>isobus-ESX.4cm.syde</code></li>
+<li class="on"><code>[X]</code> Confirm project has (1) Bus Diagnostic (1) Bus ISOBUS (1) Node ESX_4CM_A &amp; (1) Node ISOBUS_UT</li>
+<li class="on"><code>[X]</code> Test project by running "Generate Files" (no datablocks assigned yet) on 4CM node</li>
+<li class="on"><code>[X]</code> OPTIONAL: confirm still builds after last "Generate Files" via LogiCAD</li>
+<li class="off"><code>[&#xa0;]</code> Q: <code>~../src/isobus/</code> includes subfolders for VT_Client_01 &amp; VT_Client_02; which client maps to which openSYDE node?
+<ul class="org-ul">
+<li>A:</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Q: user begins dev of ISOBUS app in VT_Client_0x.c ?
+<ul class="org-ul">
+<li>A:</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> Q: in dev process, should only need openSYDE for flashing recompiled logiCAD results to device, not really using "Generate Files" between iterations?
+<ul class="org-ul">
+<li>A:</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org35e03b6" class="outline-3">
+<h3 id="org35e03b6"><span class="section-number-3">1.2.</span> 2024-05 May</h3>
+<div class="outline-text-3" id="text-1-2">
+</div>
+<div id="outline-container-orgeeb2b6d" class="outline-4">
+<h4 id="orgeeb2b6d"><span class="section-number-4">1.2.1.</span> 2024-05-07 Tuesday</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org1529a35"></a>Create Content for Onboarding DOC<br />
+<ol class="org-ol">
+<li><a id="org1565b9b"></a><span class="todo TODO">TODO</span> Conversion Content <code>[7/7]</code><br />
+<div class="outline-text-6" id="text-1-2-1-1-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Locate 1 example each for CodeSYS 2.3 &amp; 3.5.  Should be very publicly available (codesys forge?)
+<ul class="org-ul">
+<li>use stable projects owned by STW.  Look at stwtechnic.freshdesk.com/support/solutions</li>
+</ul></li>
+<li class="on"><code>[X]</code> Manual Method: Duplicate conversion steps laid out in TSP IEC documentation, record output of each step
+<ul class="org-ul">
+<li>Steps laid out in section 10.5 of TSP docs</li>
+<li>Use this tool lc3_codesys_converter.zip</li>
+<li>Follow steps in How_to_import_code_from_codesys.txt</li>
+<li class="on"><code>[X]</code> completed for 2.3 (CAN Examples)
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Export Objects</li>
+<li class="on"><code>[X]</code> Migrate POU's and data types</li>
+<li class="on"><code>[X]</code> Migrate Global Variable List</li>
+<li class="on"><code>[X]</code> Configure Tasks</li>
+<li class="on"><code>[X]</code> Open in LogiCAD and test compile for errors.</li>
+</ul></li>
+</ul></li>
+<li class="on"><code>[X]</code> Tool Method: use STW converter tool
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Export entire sample CODESYS project into one file, do not rename.</li>
+<li class="on"><code>[X]</code> Open example project in logiCAD based on this TSP</li>
+<li class="on"><code>[X]</code> Confirm bare project compiles, has all libraries in correct places</li>
+<li class="on"><code>[X]</code> Use Import method -&gt; Other -&gt; CodeSYS v2.3; choose .EXP file from above</li>
+<li class="on"><code>[X]</code> Follow dialog, finish import</li>
+<li class="on"><code>[X]</code> Recompile after import and check for errors.</li>
+</ul></li>
+<li class="on"><code>[X]</code> If completed w/o errors, outline a brief summary for onboardind doc</li>
+<li class="on"><code>[X]</code> Edit onboarding doc</li>
+<li class="on"><code>[X]</code> Send copy to KB for checking</li>
+<li class="on"><code>[X]</code> Save to google drive and update Jira</li>
+<li>misc:
+<ul class="org-ul">
+<li>tree struct before EXP export =
+.</li>
+</ul></li>
+</ul>
+<p>
+└── ESXCAN
+    ├── DEFAULT.DFR
+    ├── ESX_CAN_FB.SDB
+    ├── ESX_CAN_FB.SYM
+    ├── ESX_CAN_FB.pro
+    ├── ESX_CAN_FB00005528r.ci
+    └── ESX_CAN_FB00005528r.ri
+</p>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orga13a88b" class="outline-4">
+<h4 id="orga13a88b"><span class="section-number-4">1.2.2.</span> 2024-05-08 Wednesday</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div>
+<ol class="org-ol">
+<li><a id="org6e533d0"></a>Part 2 / Conversion Content<br />
+<ol class="org-ol">
+<li><a id="orgaa90ef1"></a><span class="todo TODO">TODO</span> More notes for conversion testing (round 2)<code>[10/10]</code><br />
+<div class="outline-text-6" id="text-1-2-2-1-1">
+<ul class="org-ul">
+<li class="on"><code>[X]</code> Get matching TSP</li>
+<li class="on"><code>[X]</code> Install logiCAD v2.33</li>
+<li class="on"><code>[X]</code> Check for / Install CodeSYS conversion tool
+<ul class="org-ul">
+<li>already installed in v2.33</li>
+</ul></li>
+<li class="on"><code>[X]</code> Run TSP install utility (esx_4cm_a_logicad3_tsp.exe)</li>
+<li class="on"><code>[X]</code> Follow TSP readme to open example project in logiCAD
+<ul class="org-ul">
+<li>First attempt hung process, 0900hr , wait 10 min, no good, killed process.</li>
+<li>Second attempt, hung process, 0914hr , waitint</li>
+<li>If no good, reboot, try to "update" project via openSYDE, launch logiCAD via openSYDE and see if it still hangs.</li>
+</ul></li>
+<li class="on"><code>[X]</code> Confirm unchanged example project compiles in logiCAD</li>
+<li class="on"><code>[X]</code> Prep a codesys project for import
+<ul class="org-ul">
+<li class="on"><code>[X]</code> (1) .EXP for POU's / Data Types</li>
+<li class="on"><code>[X]</code> (1) .EXP for GLOBAL VARIABLES</li>
+</ul></li>
+<li class="on"><code>[X]</code> Import sample codesys conversion into example project</li>
+<li class="on"><code>[X]</code> Recompile</li>
+<li class="on"><code>[X]</code> Report results / add content to onboarding doc.</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgfeab649" class="outline-4">
+<h4 id="orgfeab649"><span class="section-number-4">1.2.3.</span> 2024-05-10 Friday</h4>
+<div class="outline-text-4" id="text-1-2-3">
+</div>
+<ol class="org-ol">
+<li><a id="orgdd41544"></a>ISOBUS review continued<br />
+<ol class="org-ol">
+<li><a id="org1f97763"></a><span class="todo TODO">TODO</span> Misc <code>[0/6]</code><br />
+<div class="outline-text-6" id="text-1-2-3-1-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Finish reading printed material</li>
+<li class="off"><code>[&#xa0;]</code> review any opensource / github projects</li>
+<li class="off"><code>[&#xa0;]</code> review internal STW documentation</li>
+<li class="off"><code>[&#xa0;]</code> review KB's Jira project on ISOBUS</li>
+<li class="off"><code>[&#xa0;]</code> confirm with JG shipping of display unit</li>
+<li class="off"><code>[&#xa0;]</code> check with dad on any isobus digistar scale heads locally</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: scurfman</p>
+<p class="date">Created: 2024-05-10 Fri 06:14</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

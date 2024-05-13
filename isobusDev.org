@@ -1,0 +1,257 @@
+#+title: Project Journal: 4th gen DisTEK ISOBUS Dev
+#+setupfile: https://0xbadc0fee.github.io/org-html-themes/org/theme-readtheorg.setup
+#+TODO: TODO(t) WAIT(w@/!) Q&A(q) | DONE(d!) CANCELED(c@)
+#+options: ^:nil
+
+* 2024
+** 2024-04 April
+*** 2024-04-29 Monday
+**** Initial Onboarding
+***** TODO Status Review [5/5]
+- [X] Teams meeting notes
+- [X] Current / Completed Jira Tasks
+- [X] Pull current Repo
+  - most current branch is reorg_github
+  - branch main does not have git submodule info at this time
+- [X] Capture current tree structure for doc
+  #+begin_src shell
+  Folder PATH listing for volume OS
+Volume serial number is 36BC-0D71
+C:.
++---bat
++---doc
++---ESXheaders
+¦   +---GEN3
+¦   ¦   +---esx.3cX
+¦   ¦   +---esx.3cX_safety
+¦   ¦   ¦   +---xs_api
+¦   ¦   ¦   +---x_api
+¦   ¦   +---esx.3xX
+¦   ¦   +---esx.ioxp
+¦   +---GEN4
+¦       +---esx.4cl
+¦       +---esx.4cm
+¦       +---esx.4cs
+¦       +---esx.4ct
++---pjt
++---result_libs
+¦   +---doc
+¦   +---include
+¦   +---tools
++---tmp
+¦   +---Virtec_3Cx
+¦   ¦   +---VirtecSubModules
+¦   ¦       +---Foundation
+¦   ¦       +---Platform
+¦   ¦       +---TCClient
+¦   ¦       +---VTClient
+¦   +---Virtec_3Cx_Safety
+¦   ¦   +---VirtecSubModules
+¦   ¦       +---Foundation
+¦   ¦       +---Platform
+¦   ¦       +---TCClient
+¦   ¦       +---VTClient
+¦   +---Virtec_3Xx
+¦   ¦   +---VirtecSubModules
+¦   ¦       +---Foundation
+¦   ¦       +---Platform
+¦   ¦       +---TCClient
+¦   ¦       +---VTClient
+¦   +---Virtec_4cl
+¦   ¦   +---VirtecSubModules
+¦   ¦       +---Foundation
+¦   ¦       +---Platform
+¦   ¦       +---TCClient
+¦   ¦       +---VTClient
+¦   +---Virtec_4cm
+¦   ¦   +---VirtecSubModules
+¦   ¦       +---Foundation
+¦   ¦       +---Platform
+¦   ¦       +---TCClient
+¦   ¦       +---VTClient
+¦   +---Virtec_4cs
+¦   ¦   +---VirtecSubModules
+¦   ¦       +---Foundation
+¦   ¦       +---Platform
+¦   ¦       +---TCClient
+¦   ¦       +---VTClient
+¦   +---Virtec_4ct
+¦       +---VirtecSubModules
+¦           +---Foundation
+¦           +---Platform
+¦           +---TCClient
+¦           +---VTClient
++---VirtecSubModules
+    +---Foundation
+    +---Platform
+    +---TCClient
+    +---VTClient
+
+  #+end_src
+- [X] Open a knownGood in LogiCAD and confirms build w/o errors
+  - [X] 4CL
+  - [X] 4CM
+  - [X] 4CS
+  - [X] 4CT
+  - [X] Typical Results
+    #+begin_src shell
+Block  Ver  Area   Block-Address  Start-Address End-Address   Signature-Type
+============================================================================
+00000  004  00000  0x80014200     0x80014000    0x80017FFF    CRC-32Swapped
+00000  004  00001  0x80014200     0x80500000    0x8056DE2B    CRC-32Swapped
+00000  004  00002  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+00000  004  00003  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+00000  004  00004  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+00000  004  00005  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+
+Validating signature blocks ...
+Filling gaps ...
+Calculating signatures ...
+Patching data ...
+Writing target hex file "C:\stw\isobus\esx-isobus-example_gen4\ESX_4CM_A/appl_core_release/appl_core.hex" ...
+Target hex file written. Finished.
+
+13:25:50 Build Finished. 0 errors, 8 warnings. (took 6s.443ms)
+    #+end_src
+***** Doc Outline "Getting Started"
+****** Clone Repository
+****** Open & Build Template Projects
+****** Open & Build Example Projects
+****** Modify and Run an Application
+***** JOURNAL
+****** Cloning
++ DO NOT need to pull esx-isobus repo.  Can get started by pulling one of the example repos
++ DO update submodules.  After git pull, need to run some variation of submodule update;
+  + OPTION 1: git submodule update --init (init required for first submodule download)
+  + OPTION 2 (best): get submodule update --init --recursive (w/o recursive has to be updated in folders that need submodules, recursive search whole tree)
++ DO LogiCAD-> Open Projects from file System -> select folder esx-isobus-example_gen4
++ DO test build any / all of the gen4 examples to confirm no build problems, all files accounted for
+****** Template Projects (gen4 bundle)
++ NOTE each 4th gen device template, e.g. ~isobus-esx_G4_esx.4cl~ links to the common ISOBUS dependencies in the separate LogiCAD project ~isobus-esxG4~
++ WARNING some known problems when working with submodule repos.  If user is trying to sync first time submodule update via SSH and is presented with need for username and password,
+  there may be some problems.  Only noticed when pulling repo into a linux VM being used for note / journal capture.  Most use cases would be pulling repo into
+  Win based dev env.  In windows env, just make sure using a git client like GitBash.  No problems syncing submodules this way. Tested mult times, consistent behavior.  Only pull via windows.
+*** 2024-04-30 Tuesday
+****  ESX template testing continued
+***** TODO Individual ESX Template Tests [12/12]
+- [X] =$ git clone git@github.com:STW-Technic-LP/esx-isobus-example_esx.4cm.git=
+- [X] =$ cd esx-isobus-example_esx.4cm=
+- [X] =$ git submodule update --init --recursive=
+- [X] Open LogiCAD3 in C perspective
+- [X] File-> Open Projects from File System
+- [X] select folder "esx-isobus-example_esx.4cm"
+- [X] Choose both projects
+- [X] Ensure compiler license available
+- [X] Select project with tag (in ESX_4CM_A)
+- [X] Build Configurations... -> Build Selected... -> select (e.g. appl_core_release)
+- [X] Results:
+  #+begin_src shell
+Block  Ver  Area   Block-Address  Start-Address End-Address   Signature-Type
+============================================================================
+00000  004  00000  0x80014200     0x80014000    0x80017FFF    CRC-32Swapped
+00000  004  00001  0x80014200     0x80500000    0x80568D57    CRC-32Swapped
+00000  004  00002  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+00000  004  00003  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+00000  004  00004  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+00000  004  00005  0x80014200     (empty area)  (empty area)  CRC-32Swapped
+
+Validating signature blocks ...
+Filling gaps ...
+Calculating signatures ...
+Patching data ...
+Writing target hex file "C:\stw\isobus_test_2\esx-isobus-example_esx.4cm\ESX_4CM_A/appl_core_release/appl_core.hex" ...
+Target hex file written. Finished.
+
+11:06:20 Build Finished. 0 errors, 8 warnings. (took 6s.449ms)
+  #+end_src
+- [X] END, template valid
+***** TODO Test included openSYDE projects [0/2]
+- [-] Multi-Node Gen4 Kit [4/6]
+  - [X] Launch openSYDE (v1.51r0)
+  - [X] from repo directory, open ~isobus-example_gen4.syde~
+  - [X] find README's with TSP spec for each node in their project folders
+    "C:\...\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4cl"
+    "C:\...\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4cm"
+    "C:\...\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4cs"
+    "C:\...\esx-isobus-example_gen4\ISOBUS\libs\ESXheaders\GEN4\esx.4ct"
+  - [X] Test project by running "Generate Files" (no datablocks assigned yet) on each node in project
+  - [ ] Q&A Does user make separate copy of local folder for each dev project?
+    - if so, user needs to make top level copy of whole project, not just a new Save As from within openSYDE (correct?)
+  - [ ] Q&A pros / cons of starting with gen4 kit vs single-node kit?
+- [-] Single-Node 4CM Example [5/8]
+  - [X] Launch openSYDE (v1.51r0)
+  - [X] from repo directory, open example project ~isobus-ESX.4cm.syde~
+  - [X] Confirm project has (1) Bus Diagnostic (1) Bus ISOBUS (1) Node ESX_4CM_A & (1) Node ISOBUS_UT
+  - [X] Test project by running "Generate Files" (no datablocks assigned yet) on 4CM node
+  - [X] OPTIONAL: confirm still builds after last "Generate Files" via LogiCAD
+  - [ ] Q: ~~../src/isobus/~ includes subfolders for VT_Client_01 & VT_Client_02; which client maps to which openSYDE node?
+    - A:
+  - [ ] Q: user begins dev of ISOBUS app in VT_Client_0x.c ?
+    - A:
+  - [ ] Q: in dev process, should only need openSYDE for flashing recompiled logiCAD results to device, not really using "Generate Files" between iterations?
+    - A:
+** 2024-05 May
+*** 2024-05-07 Tuesday
+**** Create Content for Onboarding DOC  
+***** TODO Conversion Content [7/7]
+- [X] Locate 1 example each for CodeSYS 2.3 & 3.5.  Should be very publicly available (codesys forge?)
+  - use stable projects owned by STW.  Look at stwtechnic.freshdesk.com/support/solutions
+- [X] Manual Method: Duplicate conversion steps laid out in TSP IEC documentation, record output of each step
+  - Steps laid out in section 10.5 of TSP docs
+  - Use this tool lc3_codesys_converter.zip
+  - Follow steps in How_to_import_code_from_codesys.txt
+  - [X] completed for 2.3 (CAN Examples)
+    - [X] Export Objects
+    - [X] Migrate POU's and data types
+    - [X] Migrate Global Variable List
+    - [X] Configure Tasks
+    - [X] Open in LogiCAD and test compile for errors.
+- [X] Tool Method: use STW converter tool
+  - [X] Export entire sample CODESYS project into one file, do not rename.
+  - [X] Open example project in logiCAD based on this TSP
+  - [X] Confirm bare project compiles, has all libraries in correct places
+  - [X] Use Import method -> Other -> CodeSYS v2.3; choose .EXP file from above
+  - [X] Follow dialog, finish import
+  - [X] Recompile after import and check for errors.
+- [X] If completed w/o errors, outline a brief summary for onboardind doc
+- [X] Edit onboarding doc
+- [X] Send copy to KB for checking
+- [X] Save to google drive and update Jira
+- misc:
+  - tree struct before EXP export =
+    .
+└── ESXCAN
+    ├── DEFAULT.DFR
+    ├── ESX_CAN_FB.SDB
+    ├── ESX_CAN_FB.SYM
+    ├── ESX_CAN_FB.pro
+    ├── ESX_CAN_FB00005528r.ci
+    └── ESX_CAN_FB00005528r.ri
+*** 2024-05-08 Wednesday
+****  Part 2 / Conversion Content
+***** TODO More notes for conversion testing (round 2)[10/10]
+- [X] Get matching TSP
+- [X] Install logiCAD v2.33
+- [X] Check for / Install CodeSYS conversion tool
+  - already installed in v2.33
+- [X] Run TSP install utility (esx_4cm_a_logicad3_tsp.exe)
+- [X] Follow TSP readme to open example project in logiCAD
+  - First attempt hung process, 0900hr , wait 10 min, no good, killed process.
+  - Second attempt, hung process, 0914hr , waitint
+  - If no good, reboot, try to "update" project via openSYDE, launch logiCAD via openSYDE and see if it still hangs.
+- [X] Confirm unchanged example project compiles in logiCAD
+- [X] Prep a codesys project for import
+  - [X] (1) .EXP for POU's / Data Types
+  - [X] (1) .EXP for GLOBAL VARIABLES
+- [X] Import sample codesys conversion into example project
+- [X] Recompile
+- [X] Report results / add content to onboarding doc.
+*** 2024-05-10 Friday
+**** ISOBUS review continued
+***** TODO Misc [0/6]
+- [ ] Finish reading printed material
+- [ ] review any opensource / github projects
+- [ ] review internal STW documentation
+- [ ] review KB's Jira project on ISOBUS
+- [ ] confirm with JG shipping of display unit
+- [ ] check with dad on any isobus digistar scale heads locally

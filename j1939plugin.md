@@ -1,65 +1,72 @@
 
 # Table of Contents
 
-1.  [2024](#orgefeabe1)
-    1.  [2024-01 January](#orgd6457e5)
-        1.  [2024-01-17 Wednesday](#org17bef06)
-        2.  [2024-01-18 Thursday](#org377be14)
-        3.  [2024-01-22 Monday](#org0e39e9e)
-        4.  [2024-01-23 Tuesday](#org5d46399)
-        5.  [2024-01-24 Wednesday](#org498a2e6)
-        6.  [2024-01-25 Thursday](#org54f04c1)
-        7.  [2024-01-26 Friday](#org458bc41)
-        8.  [2024-01-29 Monday](#org18c9682)
-        9.  [2024-01-30 Tuesday](#org3f9f4dc)
-        10. [2024-01-31 Wednesday](#orgb96d0b8)
-    2.  [2024-02 February](#org3f07bae)
-        1.  [2024-02-01 Thursday](#org6eed3e9)
-        2.  [2024-02-02 Friday](#orga3d9a7f)
-        3.  [2024-02-05 Monday](#orgbd4d722)
-        4.  [2024-02-06 Tuesday](#org4724dc2)
-        5.  [2024-02-07 Wednesday](#orga9fb07d)
-        6.  [2024-02-08 Thursday](#org74a5aee)
-        7.  [2024-02-09 Friday](#org3a8e20d)
-        8.  [2024-02-12 Monday](#org2069e54)
-        9.  [2024-02-13 Tuesday](#org0d2a548)
-        10. [2024-02-14 Wednesday](#orga7fa229)
-        11. [2014-02-15 Thursday](#org3d065a0)
-        12. [2024-02-16 Friday](#orgbaa3328)
-        13. [2024-02-19 Monday](#org9d24626)
-        14. [2024-02-22 Thursday](#orgad56ac3)
-        15. [2024-02-23 Friday](#org39b9a50)
-        16. [2024-02-26 Monday](#org7a99296)
-    3.  [2024-03 March](#org6e438ed)
-        1.  [2024-03-01 Friday](#org870850e)
-        2.  [2024-03-08 Friday](#org7529696)
-        3.  [2024-03-11 Monday](#org6207e0b)
-        4.  [2024-03-12 Tuesday](#org0af9729)
-        5.  [2024-03-14 Thursday](#org3c755e7)
-        6.  [2024-03-15 Friday](#orgd6cc62e)
-        7.  [2024-03-18 Monday](#org2acf4c2)
-        8.  [2024-03-19 Tuesday](#org9bda78d)
-        9.  [2024-03-20 Wednesday](#orgc051b18)
-        10. [2024-03-22 Friday](#org3af0f4e)
-        11. [2024-03-25 Monday](#orgde7b662)
-        12. [2024-03-29 Friday](#org67e8a07)
-    4.  [2024-04 April](#orgeca0d44)
-        1.  [2024-04-01 Monday](#org2c4fb14)
-        2.  [2024-04-08 Monday](#orgc5d7d43)
+1.  [2024](#orgb06c1b3)
+    1.  [2024-01 January](#org48f4d6e)
+        1.  [2024-01-17 Wednesday](#orgef89fbb)
+        2.  [2024-01-18 Thursday](#orgb3dd97f)
+        3.  [2024-01-22 Monday](#orgc6b11a6)
+        4.  [2024-01-23 Tuesday](#orgde87118)
+        5.  [2024-01-24 Wednesday](#org20bc765)
+        6.  [2024-01-25 Thursday](#orgc9787b2)
+        7.  [2024-01-26 Friday](#orgd22064f)
+        8.  [2024-01-29 Monday](#org69e44af)
+        9.  [2024-01-30 Tuesday](#orgb698590)
+        10. [2024-01-31 Wednesday](#orgbbdd7fe)
+    2.  [2024-02 February](#org44588cd)
+        1.  [2024-02-01 Thursday](#org4018816)
+        2.  [2024-02-02 Friday](#org9962ab7)
+        3.  [2024-02-05 Monday](#orgabbd1e2)
+        4.  [2024-02-06 Tuesday](#org3370e8b)
+        5.  [2024-02-07 Wednesday](#orgc4c0934)
+        6.  [2024-02-08 Thursday](#orgcf28da3)
+        7.  [2024-02-09 Friday](#org37252ff)
+        8.  [2024-02-12 Monday](#orgdd15b6f)
+        9.  [2024-02-13 Tuesday](#org747eb60)
+        10. [2024-02-14 Wednesday](#org08526e0)
+        11. [2014-02-15 Thursday](#orgf6bb1ab)
+        12. [2024-02-16 Friday](#org3678379)
+        13. [2024-02-19 Monday](#orgb62ec15)
+        14. [2024-02-22 Thursday](#orgf96c1bd)
+        15. [2024-02-23 Friday](#orgd063ccb)
+        16. [2024-02-26 Monday](#org192c967)
+    3.  [2024-03 March](#org5b48a1b)
+        1.  [2024-03-01 Friday](#org75e5cf1)
+        2.  [2024-03-08 Friday](#orgb396068)
+        3.  [2024-03-11 Monday](#orgdb50381)
+        4.  [2024-03-12 Tuesday](#orgd5b69a6)
+        5.  [2024-03-14 Thursday](#orgcbb0318)
+        6.  [2024-03-15 Friday](#orgd0ece2e)
+        7.  [2024-03-18 Monday](#org4e90c76)
+        8.  [2024-03-19 Tuesday](#org959928b)
+        9.  [2024-03-20 Wednesday](#org73ccc41)
+        10. [2024-03-22 Friday](#org2587a0f)
+        11. [2024-03-25 Monday](#org9aec74a)
+        12. [2024-03-29 Friday](#org3c0ad56)
+    4.  [2024-04 April](#orgf504fbf)
+        1.  [2024-04-01 Monday](#org4166827)
+        2.  [2024-04-08 Monday](#orge94048f)
+        3.  [2024-04-09 Tuesday](#org32ba796)
+        4.  [2024-04-12 Friday](#org22759d3)
+        5.  [2024-04-17 Wednesday](#orgc70cea2)
+        6.  [2024-04-18 Thursday](#org6cde673)
+        7.  [2024-04-25 Thursday](#org588c42c)
+    5.  [2024-05 May](#orgdd2b6cb)
+        1.  [2024-05-10 Friday](#orga6feb85)
 
 
 
-<a id="orgefeabe1"></a>
+<a id="orgb06c1b3"></a>
 
 # 2024
 
 
-<a id="orgd6457e5"></a>
+<a id="org48f4d6e"></a>
 
 ## 2024-01 January
 
 
-<a id="org17bef06"></a>
+<a id="orgef89fbb"></a>
 
 ### 2024-01-17 Wednesday
 
@@ -73,7 +80,7 @@
         -   [X] Open and test compile current project state
 
 
-<a id="org377be14"></a>
+<a id="orgb3dd97f"></a>
 
 ### 2024-01-18 Thursday
 
@@ -86,7 +93,7 @@
         -   [X] Explore structure of J1939 plugin project via Qt
 
 
-<a id="org0e39e9e"></a>
+<a id="orgc6b11a6"></a>
 
 ### 2024-01-22 Monday
 
@@ -244,7 +251,7 @@
                 -   [ ] to follow along exactly, had to briefly install msvc compiler (not going to use for STW projects though)
 
 
-<a id="org5d46399"></a>
+<a id="orgde87118"></a>
 
 ### 2024-01-23 Tuesday
 
@@ -379,7 +386,7 @@
     -   stopped here.
 
 
-<a id="org498a2e6"></a>
+<a id="org20bc765"></a>
 
 ### 2024-01-24 Wednesday
 
@@ -499,7 +506,7 @@
                 -   SOLUTION: changed build from DEBUG to RELEASE
 
 
-<a id="org54f04c1"></a>
+<a id="orgc9787b2"></a>
 
 ### 2024-01-25 Thursday
 
@@ -627,7 +634,7 @@
         3.  OPSYD-72 Configurable CANID
 
 
-<a id="org458bc41"></a>
+<a id="orgd22064f"></a>
 
 ### 2024-01-26 Friday
 
@@ -658,7 +665,7 @@
             -   test write out to new xml file.
 
 
-<a id="org18c9682"></a>
+<a id="org69e44af"></a>
 
 ### 2024-01-29 Monday
 
@@ -721,7 +728,7 @@
     -   see org roam notes and paste in here.
 
 
-<a id="org3f9f4dc"></a>
+<a id="orgb698590"></a>
 
 ### 2024-01-30 Tuesday
 
@@ -829,7 +836,7 @@
         -   pushed to github and closed bug story in Jira   <span class="timestamp-wrapper"><span class="timestamp">[2024-01-30 Tue 12:00]</span></span>
 
 
-<a id="orgb96d0b8"></a>
+<a id="orgbbdd7fe"></a>
 
 ### 2024-01-31 Wednesday
 
@@ -1099,12 +1106,12 @@
         -   [ ] Q: lookup QObject, when to use with class and when not.
 
 
-<a id="org3f07bae"></a>
+<a id="org44588cd"></a>
 
 ## 2024-02 February
 
 
-<a id="org6eed3e9"></a>
+<a id="org4018816"></a>
 
 ### 2024-02-01 Thursday
 
@@ -1167,7 +1174,7 @@
 2.  Move definition of new function to J1939Message.cpp
 
 
-<a id="orga3d9a7f"></a>
+<a id="org9962ab7"></a>
 
 ### 2024-02-02 Friday
 
@@ -1277,7 +1284,7 @@
         -   TG changed member function from static to privately defined in header file.  Allowed member function to still be called in one line but not retain memory as in static.  Private members destroyed on class destructor.
 
 
-<a id="orgbd4d722"></a>
+<a id="orgabbd1e2"></a>
 
 ### 2024-02-05 Monday
 
@@ -1388,7 +1395,7 @@
             -
 
 
-<a id="org4724dc2"></a>
+<a id="org3370e8b"></a>
 
 ### 2024-02-06 Tuesday
 
@@ -1493,9 +1500,9 @@
 
 2.  Generate C code changes for PGN
 
-    1.  see here: [1.2.3.1](#org86b0985)
+    1.  see here: [1.2.3.1](#org5a96e51)
     
-    2.  see here: [1](#orgb309fc7)
+    2.  see here: [1](#orgaa82007)
     
     3.  DONE Continue PGN /SPN updates <code>[5/5]</code>
     
@@ -1529,7 +1536,7 @@
             -
 
 
-<a id="orga9fb07d"></a>
+<a id="orgc4c0934"></a>
 
 ### 2024-02-07 Wednesday
 
@@ -1635,7 +1642,7 @@
         -   [X] OPTIONAL: look at making a horizontal ruler between RX - TX grid top and lower message grid.
 
 
-<a id="org74a5aee"></a>
+<a id="orgcf28da3"></a>
 
 ### 2024-02-08 Thursday
 
@@ -1724,7 +1731,7 @@
     1.  NOTES:
 
 
-<a id="org3a8e20d"></a>
+<a id="org37252ff"></a>
 
 ### 2024-02-09 Friday
 
@@ -1879,7 +1886,7 @@
             -   [ ] test code generator in logicad
 
 
-<a id="org2069e54"></a>
+<a id="orgdd15b6f"></a>
 
 ### 2024-02-12 Monday
 
@@ -2045,7 +2052,7 @@
                 -   [ ] spnHighVV
 
 
-<a id="org0d2a548"></a>
+<a id="org747eb60"></a>
 
 ### 2024-02-13 Tuesday
 
@@ -2119,7 +2126,7 @@
                 -   T = Transfer (data length)
 
 
-<a id="orga7fa229"></a>
+<a id="org08526e0"></a>
 
 ### 2024-02-14 Wednesday
 
@@ -2223,14 +2230,14 @@
             -   [ ]
 
 
-<a id="org3d065a0"></a>
+<a id="orgf6bb1ab"></a>
 
 ### 2014-02-15 Thursday
 
 1.  OUT SICk, PTO
 
 
-<a id="orgbaa3328"></a>
+<a id="org3678379"></a>
 
 ### 2024-02-16 Friday
 
@@ -2327,7 +2334,7 @@
         -   DO: ask if input masking vs validator is worse or better
 
 
-<a id="org9d24626"></a>
+<a id="orgb62ec15"></a>
 
 ### 2024-02-19 Monday
 
@@ -2388,7 +2395,7 @@
 1.  Qt Validators for PGN / SPN
 
 
-<a id="orgad56ac3"></a>
+<a id="orgf96c1bd"></a>
 
 ### 2024-02-22 Thursday
 
@@ -2421,7 +2428,7 @@
             -   [X] HighVV
 
 
-<a id="org39b9a50"></a>
+<a id="orgd063ccb"></a>
 
 ### 2024-02-23 Friday
 
@@ -2493,7 +2500,7 @@
 2.  Sprint Wrap Up, Meeting, Update Jira
 
 
-<a id="org7a99296"></a>
+<a id="org192c967"></a>
 
 ### 2024-02-26 Monday
 
@@ -2507,12 +2514,12 @@
     -   [ ] Locate original validator for confirming DLC > 0 before allowing SPN to be added.
 
 
-<a id="org6e438ed"></a>
+<a id="org5b48a1b"></a>
 
 ## 2024-03 March
 
 
-<a id="org870850e"></a>
+<a id="org75e5cf1"></a>
 
 ### 2024-03-01 Friday
 
@@ -2531,14 +2538,14 @@
             -   [X] PGN Name, copy TG's regex and us
 
 
-<a id="org7529696"></a>
+<a id="orgb396068"></a>
 
 ### 2024-03-08 Friday
 
 1.  SPN Wrap Up Tasks
 
 
-<a id="org6207e0b"></a>
+<a id="orgdb50381"></a>
 
 ### 2024-03-11 Monday
 
@@ -2559,7 +2566,7 @@
             -   [ ] WriteCFileNewPGN()
 
 
-<a id="org0af9729"></a>
+<a id="orgd5b69a6"></a>
 
 ### 2024-03-12 Tuesday
 
@@ -2651,7 +2658,7 @@
                                         }
 
 
-<a id="org3c755e7"></a>
+<a id="orgcbb0318"></a>
 
 ### 2024-03-14 Thursday
 
@@ -2728,7 +2735,7 @@
             -   [ ] if passed all above, ok to push.
 
 
-<a id="orgd6cc62e"></a>
+<a id="orgd0ece2e"></a>
 
 ### 2024-03-15 Friday
 
@@ -2753,7 +2760,7 @@
         -   [ ] 
 
 
-<a id="org2acf4c2"></a>
+<a id="org4e90c76"></a>
 
 ### 2024-03-18 Monday
 
@@ -2811,7 +2818,7 @@
             -   h\_RangeCheckFloat()
 
 
-<a id="org9bda78d"></a>
+<a id="org959928b"></a>
 
 ### 2024-03-19 Tuesday
 
@@ -2828,7 +2835,7 @@
         -   [ ] TOMORROW: continue J1939PGNLibrary.cpp @645, get a getValueUnscaled() call working correctly and then modify for data types.
 
 
-<a id="orgc051b18"></a>
+<a id="org73ccc41"></a>
 
 ### 2024-03-20 Wednesday
 
@@ -2847,7 +2854,7 @@
         -   
 
 
-<a id="org3af0f4e"></a>
+<a id="org2587a0f"></a>
 
 ### 2024-03-22 Friday
 
@@ -2871,7 +2878,7 @@
             -   [ ] change validator in validationDBCSPNCheckLib()
 
 
-<a id="orgde7b662"></a>
+<a id="org9aec74a"></a>
 
 ### 2024-03-25 Monday
 
@@ -2881,7 +2888,7 @@
     -   
 
 
-<a id="org67e8a07"></a>
+<a id="org3c0ad56"></a>
 
 ### 2024-03-29 Friday
 
@@ -2922,12 +2929,12 @@
                 -   [ ] recompile
 
 
-<a id="orgeca0d44"></a>
+<a id="orgf504fbf"></a>
 
 ## 2024-04 April
 
 
-<a id="org2c4fb14"></a>
+<a id="org4166827"></a>
 
 ### 2024-04-01 Monday
 
@@ -2964,16 +2971,23 @@
         -   unicode symbols: ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็
 
 
-<a id="orgc5d7d43"></a>
+<a id="orge94048f"></a>
 
 ### 2024-04-08 Monday
 
 1.  Release 2 Misc
 
-    1.  TODO Testing <code>[0/4]</code>
+    1.  TODO Testing (#2dff327) <code>[0/4]</code>
     
         -   [ ] SPN Range
             -   [ ] recreate valid EEC1 Sample PGN with 7 SPN's (see miro)
+                -   think starting bit validator & spin box are off by 1
+                -   see J1939PGNLibrary.h :29
+                -   see j1939generate.cpp :931
+                -   see j1939validateMessage.cpp :624
+                -   see bool J1939validateMessage::checkStartingBit()
+                    -   called by;
+                -   see int J1939validateMessage::setStartingBit()
             -   [ ] confirm XML library EEC1 is correct
             -   [ ] confirm openSYDE datapools EEC1 matches plugin UI and XML
         -   [ ] DBC Export/Import EEC1 (pluginin <-> plugin)
@@ -2997,5 +3011,122 @@
             -   [ ] open sample project generated code in logicad env
             -   [ ] try to compile
     
-    2.  TODO Changes <code>[/]</code>
+    2.  TODO Changes <code>[0/2]</code>
+    
+        -   [ ] Adjust starting bit validator & spinbox for 0 << 8 << 16 << 24 << 32 << 40 << 48 << 56.
+        -   [ ] 
+
+
+<a id="org32ba796"></a>
+
+### 2024-04-09 Tuesday
+
+1.  OPSYD-84 UI Styling
+
+    <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+    <caption class="t-above"><span class="table-number">Table 21:</span> Clock summary at <span class="timestamp-wrapper"><span class="timestamp">[2024-04-09 Tue 16:33]</span></span></caption>
+    
+    <colgroup>
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    
+    <col  class="org-left" />
+    
+    <col  class="org-right" />
+    
+    <col  class="org-left" />
+    </colgroup>
+    <thead>
+    <tr>
+    <th scope="col" class="org-left">Headline</th>
+    <th scope="col" class="org-left">Time</th>
+    <th scope="col" class="org-left">&#xa0;</th>
+    <th scope="col" class="org-left">&#xa0;</th>
+    <th scope="col" class="org-right">&#xa0;</th>
+    <th scope="col" class="org-left">&#xa0;</th>
+    </tr>
+    </thead>
+    
+    <tbody>
+    <tr>
+    <td class="org-left"><b>Total time</b></td>
+    <td class="org-left"><b>8:59</b></td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-right">&#xa0;</td>
+    <td class="org-left">&#xa0;</td>
+    </tr>
+    </tbody>
+    
+    <tbody>
+    <tr>
+    <td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;OPSYD-84 UI Styling</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-right">8:59</td>
+    <td class="org-left">&#xa0;</td>
+    </tr>
+    
+    
+    <tr>
+    <td class="org-left">&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;SPN/PGN consistency, alignment etc [0/1]</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-left">&#xa0;</td>
+    <td class="org-right">&#xa0;</td>
+    <td class="org-left">8:59</td>
+    </tr>
+    </tbody>
+    </table>
+    
+    1.  TODO SPN/PGN consistency, alignment etc <code>[0/1]</code>
+    
+        -   [ ] Add PGN menu
+            -   [ ] remove "Adding PGN" in inner group box
+            -   [ ] change Add PGN to Edit PGN in title bar
+            -   [ ]
+
+
+<a id="org22759d3"></a>
+
+### 2024-04-12 Friday
+
+1.  QDockWidget Sizing
+
+
+<a id="orgc70cea2"></a>
+
+### 2024-04-17 Wednesday
+
+1.  resizing issues
+
+
+<a id="org6cde673"></a>
+
+### 2024-04-18 Thursday
+
+1.  [QDockWidget Sizing](file:///home/scurfman/org/gtd/projects/j1939plugin.md)
+
+
+<a id="org588c42c"></a>
+
+### 2024-04-25 Thursday
+
+1.  [Check the following PGNs and SPNs](file:///home/scurfman/org/gtd/projects/dbcChecklist.md)
+
+
+<a id="orgdd2b6cb"></a>
+
+## 2024-05 May
+
+
+<a id="orga6feb85"></a>
+
+### 2024-05-10 Friday
+
+1.  [Testing (#2dff327)](file:///home/scurfman/org/gtd/projects/j1939plugin.md)
 

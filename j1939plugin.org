@@ -1485,9 +1485,19 @@ CLOSED: [2024-03-11 Mon 12:22]
 - unicode symbols: ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็ ด้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็็้้้้้้้้็็็็็้้้้้็็็็
 *** 2024-04-08 Monday
 **** Release 2 Misc  
-***** TODO Testing [0/4]
+***** TODO Testing (#2dff327) [0/4]
+:LOGBOOK:
+CLOCK: [2024-05-10 Fri 06:19]--[2024-05-10 Fri 09:46] =>  3:27
+:END:
 - [ ] SPN Range
   - [ ] recreate valid EEC1 Sample PGN with 7 SPN's (see miro)
+    + think starting bit validator & spin box are off by 1
+    + see J1939PGNLibrary.h :29
+    + see j1939generate.cpp :931
+    + see j1939validateMessage.cpp :624
+    + see bool J1939validateMessage::checkStartingBit()
+      + called by;
+    + see int J1939validateMessage::setStartingBit()
   - [ ] confirm XML library EEC1 is correct
   - [ ] confirm openSYDE datapools EEC1 matches plugin UI and XML
 - [ ] DBC Export/Import EEC1 (pluginin <-> plugin)
@@ -1510,4 +1520,45 @@ CLOSED: [2024-03-11 Mon 12:22]
   - [ ] confirm logicad env correctly builds template project (no plugin info)
   - [ ] open sample project generated code in logicad env
   - [ ] try to compile
-***** TODO Changes [/]
+***** TODO Changes [0/2]
+- [ ] Adjust starting bit validator & spinbox for 0 << 8 << 16 << 24 << 32 << 40 << 48 << 56.
+- [ ]
+*** 2024-04-09 Tuesday
+****  OPSYD-84 UI Styling
+#+BEGIN: clocktable :scope subtree :maxlevel 5
+#+CAPTION: Clock summary at [2024-04-09 Tue 16:33]
+| Headline                                           | Time   |   |   |      |      |
+|----------------------------------------------------+--------+---+---+------+------|
+| *Total time*                                       | *8:59* |   |   |      |      |
+|----------------------------------------------------+--------+---+---+------+------|
+| \_      OPSYD-84 UI Styling                        |        |   |   | 8:59 |      |
+| \_        SPN/PGN consistency, alignment etc [0/1] |        |   |   |      | 8:59 |
+#+END:
+
+***** TODO SPN/PGN consistency, alignment etc [0/1]
+:LOGBOOK:
+CLOCK: [2024-04-09 Tue 13:00]--[2024-04-09 Tue 16:29] =>  3:29
+CLOCK: [2024-04-09 Tue 06:30]--[2024-04-09 Tue 12:00] =>  5:30
+:END:
+- [ ] Add PGN menu
+  - [ ] remove "Adding PGN" in inner group box
+  - [ ] change Add PGN to Edit PGN in title bar
+  - [ ]
+
+*** 2024-04-12 Friday
+**** QDockWidget Sizing
+*** 2024-04-17 Wednesday
+**** resizing issues
+:LOGBOOK:
+CLOCK: [2024-04-17 Wed 13:43]--[2024-04-17 Wed 18:10] =>  4:27
+:END:
+*** 2024-04-18 Thursday
+****   [[file:~/org/gtd/projects/j1939plugin.org::*QDockWidget Sizing][QDockWidget Sizing]]
+:LOGBOOK:
+CLOCK: [2024-04-18 Thu 13:44]--[2024-04-18 Thu 18:00] =>  4:16
+:END:
+*** 2024-04-25 Thursday
+****   [[file:~/org/gtd/projects/dbcChecklist.org::*Check the following PGNs and SPNs][Check the following PGNs and SPNs]]
+** 2024-05 May
+*** 2024-05-10 Friday
+****   [[file:~/org/gtd/projects/j1939plugin.org::*Testing (#2dff327)][Testing (#2dff327)]]
