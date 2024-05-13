@@ -1,27 +1,28 @@
 
 # Table of Contents
 
-1.  [2024](#org12f387f)
-    1.  [2024-01 January](#org5a32185)
-        1.  [2024-01-17 Wednesday](#orgddaf65f)
-        2.  [2024-01-18 Thursday](#org077a0ef)
-        3.  [2024-01-19 Friday](#org04193d1)
-        4.  [2024-01-22 Monday](#orgf55d0d7)
-    2.  [2024-05 May](#org845d303)
-        1.  [2024-05-13 Monday](#org399545e)
+1.  [2024](#org8a6f130)
+    1.  [2024-01 January](#org541a537)
+        1.  [2024-01-17 Wednesday](#orgbba9d2a)
+        2.  [2024-01-18 Thursday](#orgecd2bb2)
+        3.  [2024-01-19 Friday](#orgb346c7e)
+        4.  [2024-01-22 Monday](#org31d811e)
+    2.  [2024-05 May](#org6ffc0fb)
+        1.  [2024-05-13 Monday](#org8a37fe2)
 
 
-<a id="org12f387f"></a>
+
+<a id="org8a6f130"></a>
 
 # 2024
 
 
-<a id="org5a32185"></a>
+<a id="org541a537"></a>
 
 ## 2024-01 January
 
 
-<a id="orgddaf65f"></a>
+<a id="orgbba9d2a"></a>
 
 ### 2024-01-17 Wednesday
 
@@ -32,9 +33,9 @@
         1.  DONE Next Actions <code>[8/8]</code> <span class="timestamp-wrapper"><span class="timestamp">&lt;2024-01-17 Wed 17:35&gt;</span></span>
         
             -   [X] Refer to the How-to prepared by TG
-            -   [X] Download and install "i686-8.1.0-release-posix-dwarf-rt<sub>v6</sub>-rev0.7z"
-            -   [X] Download and install "openSYDE<sub>Release</sub> 22-0B(v1.42r0).zip"
-            -   [X] Download and install "qt-creator-opensource-windows-x86<sub>64</sub>-4.14.2.exe"
+            -   [X] Download and install "i686-8.1.0-release-posix-dwarf-rt\_v6-rev0.7z"
+            -   [X] Download and install "openSYDE\_Release 22-0B(v1.42r0).zip"
+            -   [X] Download and install "qt-creator-opensource-windows-x86\_64-4.14.2.exe"
             -   [X] Download and install "qt-unified-windows-x86-4.3.0-1-online.exe"
             -   [X] Setup user account with QT
             -   [X] clone github repo <https://github.com/STW-Technic-LP/J1939Plugin>
@@ -53,7 +54,7 @@
     Entered on <span class="timestamp-wrapper"><span class="timestamp">[2024-01-17 Wed 15:31]</span></span>
 
 
-<a id="org077a0ef"></a>
+<a id="orgecd2bb2"></a>
 
 ### 2024-01-18 Thursday
 
@@ -75,7 +76,7 @@
         Entered on <span class="timestamp-wrapper"><span class="timestamp">[2024-01-18 Thu 15:28]</span></span>
 
 
-<a id="org04193d1"></a>
+<a id="orgb346c7e"></a>
 
 ### 2024-01-19 Friday
 
@@ -95,15 +96,15 @@
         -   [X] J1939 DBC
         -   [X] J1939 PGN
         -   [X] J1939 SPN
-        -   [X] dbc<sub>driver</sub><sub>library</sub> on openSYDE github project.
+        -   [X] dbc\_driver\_library on openSYDE github project.
         -   [X] visit Vector Informatik, DBC related info
         -   [X] where is UI info for J1939 plugin defined?  <span class="timestamp-wrapper"><span class="timestamp">[2024-01-19 Fri 17:46] </span></span>
-        -   [X] revisit C<sub>Sd</sub><sub>BueComlfDescriptionWidget</sub> in Qt, "page" or tab 5/5 is J1939 UI. <span class="timestamp-wrapper"><span class="timestamp">[2024-01-19 Fri 17:52] </span></span>
+        -   [X] revisit C\_Sd\_BueComlfDescriptionWidget in Qt, "page" or tab 5/5 is J1939 UI. <span class="timestamp-wrapper"><span class="timestamp">[2024-01-19 Fri 17:52] </span></span>
         
         Entered on <span class="timestamp-wrapper"><span class="timestamp">[2024-01-19 Fri 09:06]</span></span>
 
 
-<a id="orgf55d0d7"></a>
+<a id="org31d811e"></a>
 
 ### 2024-01-22 Monday
 
@@ -112,12 +113,12 @@
     Entered on <span class="timestamp-wrapper"><span class="timestamp">[2024-01-22 Mon 07:30]</span></span>
 
 
-<a id="org845d303"></a>
+<a id="org6ffc0fb"></a>
 
 ## 2024-05 May
 
 
-<a id="org399545e"></a>
+<a id="org8a37fe2"></a>
 
 ### 2024-05-13 Monday
 

@@ -1,4 +1,9 @@
 
+#+title: Journal (unsorted)
+#+setupfile: https://0xbadc0fee.github.io/org-html-themes/org/theme-readtheorg.setup
+#+TODO: TODO(t) WAIT(w@/!) Q&A(q) | DONE(d!) CANCELED(c@)
+#+options: ^:nil
+
 * 2024
 ** 2024-01 January
 *** 2024-01-17 Wednesday
