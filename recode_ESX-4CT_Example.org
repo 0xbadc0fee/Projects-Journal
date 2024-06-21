@@ -1,0 +1,205 @@
+#+title: ESX-4CT_Example Model
+#+author:SGC
+
+* Summary
+
+* Links / Resources
+** Master Model (C)
+*** ESX-4CT_Example.rtf
+*** ESX-4CT_Example.syde
+** IEC FBD Model
+** IEC ST Model
+
+* Model: Abstract
+** Top-Down Program Flow & Checklist [0%]
+- See "@" note for lines in original example
+- [ ] PREPROC [0/0]
+- [ ] INIT TASK(s) [0/2]
+  - [ ] COMMS [0/9]
+    - [ ] Initialize CAN
+    - [ ] Initialize Tx on CAN1
+    - [ ] Build Startup Tx MSG
+    - [ ] Initialize Rx on CAN1
+    - [ ] Start openSYDE Server
+    - [ ] Send Startup Tx MSG
+    - [ ] ?? 134 ??
+    - [ ] ?? Deadlock / ICC Safety Guard ??
+    - [ ] ?? LED physical debug INIT setup ??
+  - [ ] I/O [0/7]
+    - [ ] Initialize Uext (external voltage outpu)
+    - [ ] Allow usage of outputs via MainSwitch flag
+    - [ ] Initialize IO pwm_output
+    - [ ] Initialize IO digital_out
+    - [ ] Initialize IO voltage_in
+    - [ ] Initialize IO digital_in
+    - [ ] Initialize IO voltage_in
+- [ ] CYCLIC TASK(s) [0/2]
+  - [ ] DO 
+    - [ ] SET pwm out
+      - FROM: DataPool / HMI
+      - TO: X_OUT_OPHB4A_4CT_1
+      - ON CONDITION: if no error
+    - [ ] SET digital out
+      - FROM: DataPool / HMI
+      - TO: X_OUT_ODH4A_4CT_1
+      - ON CONDITION: if no error
+    - [ ] SET voltage setpoint
+      - FROM: DataPool / HMI
+      - TO: X_UEXT_ADJ_5V_12V_1
+      - ON CONDITION: if no error
+    - [ ] GET voltage in
+      - FROM: X_IN_IDA35V_1
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] GET digital in
+      - FROM: X_IN_IDA35V_2
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] GET voltage in
+      - FROM: X_IN_IDA35V_4
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] CALC calibration offset correction
+    - [ ] CHECK for RESET message RX'd
+      - create a VALID flag
+      - execute a CAN RX
+      - Check for CAN RX is both VALID and contains RESET message (ie 0xEEu)
+        - if above is true, call RESET
+  - [ ] WHILE
+    - [ ] No RESET request RX'd
+- [ ] TERM TASK(s) [0/0]
+  - N/A.  No TERM tasks included in master model
+- [ ] FUNCTION DEFINITIONS [0/4]
+  - [ ] FUNC Change Color of LED
+  - [ ] FUNC Initialize CAN
+  - [ ] FUNC Initialize CAN TASK for ALIVE SIGNAL
+  - [ ] FUNC Send CAN ALIVE SIGNAL
+
+* Model: C
+(see above, Abstract)
+* Model: IEC FBD
+** Program Flow & Checklist [%]
+- [ ] PREPROC [0/0]
+- [ ] INIT TASK(s) [0/2]
+  - [ ] COMMS [0/9]
+    - [ ] Initialize CAN
+    - [ ] Initialize Tx on CAN1
+    - [ ] Build Startup Tx MSG
+    - [ ] Initialize Rx on CAN1
+    - [ ] Start openSYDE Server
+    - [ ] Send Startup Tx MSG
+    - [ ] ?? 134 ??
+    - [ ] ?? Deadlock / ICC Safety Guard ??
+    - [ ] ?? LED physical debug INIT setup ??
+  - [ ] I/O [0/7]
+    - [ ] Initialize Uext (external voltage outpu)
+    - [ ] Allow usage of outputs via MainSwitch flag
+    - [ ] Initialize IO pwm_output
+    - [ ] Initialize IO digital_out
+    - [ ] Initialize IO voltage_in
+    - [ ] Initialize IO digital_in
+    - [ ] Initialize IO voltage_in
+- [ ] CYCLIC TASK(s) [0/2]
+  - [ ] DO 
+    - [ ] SET pwm out
+      - FROM: DataPool / HMI
+      - TO: X_OUT_OPHB4A_4CT_1
+      - ON CONDITION: if no error
+    - [ ] SET digital out
+      - FROM: DataPool / HMI
+      - TO: X_OUT_ODH4A_4CT_1
+      - ON CONDITION: if no error
+    - [ ] SET voltage setpoint
+      - FROM: DataPool / HMI
+      - TO: X_UEXT_ADJ_5V_12V_1
+      - ON CONDITION: if no error
+    - [ ] GET voltage in
+      - FROM: X_IN_IDA35V_1
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] GET digital in
+      - FROM: X_IN_IDA35V_2
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] GET voltage in
+      - FROM: X_IN_IDA35V_4
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] CALC calibration offset correction
+    - [ ] CHECK for RESET message RX'd
+      - create a VALID flag
+      - execute a CAN RX
+      - Check for CAN RX is both VALID and contains RESET message (ie 0xEEu)
+        - if above is true, call RESET
+  - [ ] WHILE
+    - [ ] No RESET request RX'd
+- [ ] TERM TASK(s) [0/0]
+  - N/A.  No TERM tasks included in master model
+- [ ] FUNCTION DEFINITIONS [0/4]
+  - [ ] FUNC Change Color of LED
+  - [ ] FUNC Initialize CAN
+  - [ ] FUNC Initialize CAN TASK for ALIVE SIGNAL
+  - [ ] FUNC Send CAN ALIVE SIGNAL
+* Model: IEC ST
+** Program Flow & Checklist [%]
+- [ ] PREPROC [0/0]
+- [ ] INIT TASK(s) [0/2]
+  - [ ] COMMS [0/9]
+    - [ ] Initialize CAN
+    - [ ] Initialize Tx on CAN1
+    - [ ] Build Startup Tx MSG
+    - [ ] Initialize Rx on CAN1
+    - [ ] Start openSYDE Server
+    - [ ] Send Startup Tx MSG
+    - [ ] ?? 134 ??
+    - [ ] ?? Deadlock / ICC Safety Guard ??
+    - [ ] ?? LED physical debug INIT setup ??
+  - [ ] I/O [0/7]
+    - [ ] Initialize Uext (external voltage outpu)
+    - [ ] Allow usage of outputs via MainSwitch flag
+    - [ ] Initialize IO pwm_output
+    - [ ] Initialize IO digital_out
+    - [ ] Initialize IO voltage_in
+    - [ ] Initialize IO digital_in
+    - [ ] Initialize IO voltage_in
+- [ ] CYCLIC TASK(s) [0/2]
+  - [ ] DO 
+    - [ ] SET pwm out
+      - FROM: DataPool / HMI
+      - TO: X_OUT_OPHB4A_4CT_1
+      - ON CONDITION: if no error
+    - [ ] SET digital out
+      - FROM: DataPool / HMI
+      - TO: X_OUT_ODH4A_4CT_1
+      - ON CONDITION: if no error
+    - [ ] SET voltage setpoint
+      - FROM: DataPool / HMI
+      - TO: X_UEXT_ADJ_5V_12V_1
+      - ON CONDITION: if no error
+    - [ ] GET voltage in
+      - FROM: X_IN_IDA35V_1
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] GET digital in
+      - FROM: X_IN_IDA35V_2
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] GET voltage in
+      - FROM: X_IN_IDA35V_4
+      - TO: DataPool / HMI
+      - ON CONDITION: if no error
+    - [ ] CALC calibration offset correction
+    - [ ] CHECK for RESET message RX'd
+      - create a VALID flag
+      - execute a CAN RX
+      - Check for CAN RX is both VALID and contains RESET message (ie 0xEEu)
+        - if above is true, call RESET
+  - [ ] WHILE
+    - [ ] No RESET request RX'd
+- [ ] TERM TASK(s) [0/0]
+  - N/A.  No TERM tasks included in master model
+- [ ] FUNCTION DEFINITIONS [0/4]
+  - [ ] FUNC Change Color of LED
+  - [ ] FUNC Initialize CAN
+  - [ ] FUNC Initialize CAN TASK for ALIVE SIGNAL
+  - [ ] FUNC Send CAN ALIVE SIGNAL
