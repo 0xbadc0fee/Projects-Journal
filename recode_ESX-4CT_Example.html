@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-06-21 Fri 14:54 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ESX-4CT_Example Model</title>
+<meta name="author" content="SGC" />
+<meta name="generator" content="Org Mode" />
+<link rel="stylesheet" type="text/css" href="https://0xbadc0fee.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://0xbadc0fee.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">ESX-4CT_Example Model</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#orgcbf9c2f">1. Summary</a></li>
+<li><a href="#org2ba9b0d">2. Links / Resources</a>
+<ul>
+<li><a href="#org93bd41b">2.1. Master Model (C)</a></li>
+<li><a href="#orgd3c22a8">2.2. IEC FBD Model</a></li>
+<li><a href="#org3e14d0c">2.3. IEC ST Model</a></li>
+</ul>
+</li>
+<li><a href="#orgdb342c7">3. Program Model</a>
+<ul>
+<li><a href="#org36251f8">3.1. Model: Abstract</a>
+<ul>
+<li><a href="#orgaccd31e">3.1.1. Top-Down Program Flow &amp; Checklist <code>[0%]</code></a></li>
+</ul>
+</li>
+<li><a href="#org74ceece">3.2. Model: C</a></li>
+<li><a href="#orgf0e635c">3.3. Model: IEC FBD</a>
+<ul>
+<li><a href="#orga082dd6">3.3.1. Program Flow &amp; Checklist <code>[%]</code></a></li>
+</ul>
+</li>
+<li><a href="#orge247954">3.4. Model: IEC ST</a>
+<ul>
+<li><a href="#orga1d1fda">3.4.1. Program Flow &amp; Checklist <code>[%]</code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org2ed74e0">4. Program Code</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgcbf9c2f" class="outline-2">
+<h2 id="orgcbf9c2f"><span class="section-number-2">1.</span> Summary</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Based off of the ESX-4CT_Example that ships with target support package “ESX.4ctC TSP 23-0A”.  It has full logic + hardware + comms + opensyde server functionality (#L3).  Can use this as a model to remake in IEC FBD and IEC ST.  [OPTIONAL] Once running same as C type example, can work backwards, stripping out functions to create #L2 and #L1 type examples if we want.
+</p>
+</div>
+</div>
+<div id="outline-container-org2ba9b0d" class="outline-2">
+<h2 id="org2ba9b0d"><span class="section-number-2">2.</span> Links / Resources</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org93bd41b" class="outline-3">
+<h3 id="org93bd41b"><span class="section-number-3">2.1.</span> Master Model (C)</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>ESX-4CT_Example.rtf</li>
+<li>ESX-4CT_Example.syde</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgd3c22a8" class="outline-3">
+<h3 id="orgd3c22a8"><span class="section-number-3">2.2.</span> IEC FBD Model</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>TBD</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3e14d0c" class="outline-3">
+<h3 id="org3e14d0c"><span class="section-number-3">2.3.</span> IEC ST Model</h3>
+<div class="outline-text-3" id="text-2-3">
+<ul class="org-ul">
+<li>TBD</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orgdb342c7" class="outline-2">
+<h2 id="orgdb342c7"><span class="section-number-2">3.</span> Program Model</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org36251f8" class="outline-3">
+<h3 id="org36251f8"><span class="section-number-3">3.1.</span> Model: Abstract</h3>
+<div class="outline-text-3" id="text-3-1">
+</div>
+<div id="outline-container-orgaccd31e" class="outline-4">
+<h4 id="orgaccd31e"><span class="section-number-4">3.1.1.</span> Top-Down Program Flow &amp; Checklist <code>[0%]</code></h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>See "@" note for lines in original example</li>
+<li class="off"><code>[&#xa0;]</code> PREPROC <code>[0/0]</code></li>
+<li class="off"><code>[&#xa0;]</code> INIT TASK(s) <code>[0/2]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> COMMS <code>[0/9]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Initialize CAN</li>
+<li class="off"><code>[&#xa0;]</code> Initialize Tx on CAN1</li>
+<li class="off"><code>[&#xa0;]</code> Build Startup Tx MSG</li>
+<li class="off"><code>[&#xa0;]</code> Initialize Rx on CAN1</li>
+<li class="off"><code>[&#xa0;]</code> Start openSYDE Server</li>
+<li class="off"><code>[&#xa0;]</code> Send Startup Tx MSG</li>
+<li class="off"><code>[&#xa0;]</code> ?? 134 ??</li>
+<li class="off"><code>[&#xa0;]</code> ?? Deadlock / ICC Safety Guard ??</li>
+<li class="off"><code>[&#xa0;]</code> ?? LED physical debug INIT setup ??</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> I/O <code>[0/7]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Initialize Uext (external voltage outpu)</li>
+<li class="off"><code>[&#xa0;]</code> Allow usage of outputs via MainSwitch flag</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO pwm_output</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO digital_out</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO voltage_in</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO digital_in</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO voltage_in</li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> CYCLIC TASK(s) <code>[0/2]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> DO 
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> SET pwm out
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_OUT_OPHB4A_4CT_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SET digital out
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_OUT_ODH4A_4CT_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SET voltage setpoint
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_UEXT_ADJ_5V_12V_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET voltage in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_1</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET digital in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_2</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET voltage in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_4</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> CALC calibration offset correction</li>
+<li class="off"><code>[&#xa0;]</code> CHECK for RESET message RX'd
+<ul class="org-ul">
+<li>create a VALID flag</li>
+<li>execute a CAN RX</li>
+<li>Check for CAN RX is both VALID and contains RESET message (ie 0xEEu)
+<ul class="org-ul">
+<li>if above is true, call RESET</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> WHILE
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> No RESET request RX'd</li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> TERM TASK(s) <code>[0/0]</code>
+<ul class="org-ul">
+<li>N/A.  No TERM tasks included in master model</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> FUNCTION DEFINITIONS <code>[0/4]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> FUNC Change Color of LED</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Initialize CAN</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Initialize CAN TASK for ALIVE SIGNAL</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Send CAN ALIVE SIGNAL</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org74ceece" class="outline-3">
+<h3 id="org74ceece"><span class="section-number-3">3.2.</span> Model: C</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+(see above, Abstract)
+</p>
+</div>
+</div>
+<div id="outline-container-orgf0e635c" class="outline-3">
+<h3 id="orgf0e635c"><span class="section-number-3">3.3.</span> Model: IEC FBD</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-orga082dd6" class="outline-4">
+<h4 id="orga082dd6"><span class="section-number-4">3.3.1.</span> Program Flow &amp; Checklist <code>[%]</code></h4>
+<div class="outline-text-4" id="text-3-3-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> PREPROC <code>[0/0]</code></li>
+<li class="off"><code>[&#xa0;]</code> INIT TASK(s) <code>[0/2]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> COMMS <code>[0/9]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Initialize CAN</li>
+<li class="off"><code>[&#xa0;]</code> Initialize Tx on CAN1</li>
+<li class="off"><code>[&#xa0;]</code> Build Startup Tx MSG</li>
+<li class="off"><code>[&#xa0;]</code> Initialize Rx on CAN1</li>
+<li class="off"><code>[&#xa0;]</code> Start openSYDE Server</li>
+<li class="off"><code>[&#xa0;]</code> Send Startup Tx MSG</li>
+<li class="off"><code>[&#xa0;]</code> ?? 134 ??</li>
+<li class="off"><code>[&#xa0;]</code> ?? Deadlock / ICC Safety Guard ??</li>
+<li class="off"><code>[&#xa0;]</code> ?? LED physical debug INIT setup ??</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> I/O <code>[0/7]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Initialize Uext (external voltage outpu)</li>
+<li class="off"><code>[&#xa0;]</code> Allow usage of outputs via MainSwitch flag</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO pwm_output</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO digital_out</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO voltage_in</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO digital_in</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO voltage_in</li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> CYCLIC TASK(s) <code>[0/2]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> DO 
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> SET pwm out
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_OUT_OPHB4A_4CT_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SET digital out
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_OUT_ODH4A_4CT_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SET voltage setpoint
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_UEXT_ADJ_5V_12V_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET voltage in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_1</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET digital in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_2</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET voltage in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_4</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> CALC calibration offset correction</li>
+<li class="off"><code>[&#xa0;]</code> CHECK for RESET message RX'd
+<ul class="org-ul">
+<li>create a VALID flag</li>
+<li>execute a CAN RX</li>
+<li>Check for CAN RX is both VALID and contains RESET message (ie 0xEEu)
+<ul class="org-ul">
+<li>if above is true, call RESET</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> WHILE
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> No RESET request RX'd</li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> TERM TASK(s) <code>[0/0]</code>
+<ul class="org-ul">
+<li>N/A.  No TERM tasks included in master model</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> FUNCTION DEFINITIONS <code>[0/4]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> FUNC Change Color of LED</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Initialize CAN</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Initialize CAN TASK for ALIVE SIGNAL</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Send CAN ALIVE SIGNAL</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-orge247954" class="outline-3">
+<h3 id="orge247954"><span class="section-number-3">3.4.</span> Model: IEC ST</h3>
+<div class="outline-text-3" id="text-3-4">
+</div>
+<div id="outline-container-orga1d1fda" class="outline-4">
+<h4 id="orga1d1fda"><span class="section-number-4">3.4.1.</span> Program Flow &amp; Checklist <code>[%]</code></h4>
+<div class="outline-text-4" id="text-3-4-1">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> PREPROC <code>[0/0]</code></li>
+<li class="off"><code>[&#xa0;]</code> INIT TASK(s) <code>[0/2]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> COMMS <code>[0/9]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Initialize CAN</li>
+<li class="off"><code>[&#xa0;]</code> Initialize Tx on CAN1</li>
+<li class="off"><code>[&#xa0;]</code> Build Startup Tx MSG</li>
+<li class="off"><code>[&#xa0;]</code> Initialize Rx on CAN1</li>
+<li class="off"><code>[&#xa0;]</code> Start openSYDE Server</li>
+<li class="off"><code>[&#xa0;]</code> Send Startup Tx MSG</li>
+<li class="off"><code>[&#xa0;]</code> ?? 134 ??</li>
+<li class="off"><code>[&#xa0;]</code> ?? Deadlock / ICC Safety Guard ??</li>
+<li class="off"><code>[&#xa0;]</code> ?? LED physical debug INIT setup ??</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> I/O <code>[0/7]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Initialize Uext (external voltage outpu)</li>
+<li class="off"><code>[&#xa0;]</code> Allow usage of outputs via MainSwitch flag</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO pwm_output</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO digital_out</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO voltage_in</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO digital_in</li>
+<li class="off"><code>[&#xa0;]</code> Initialize IO voltage_in</li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> CYCLIC TASK(s) <code>[0/2]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> DO 
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> SET pwm out
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_OUT_OPHB4A_4CT_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SET digital out
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_OUT_ODH4A_4CT_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> SET voltage setpoint
+<ul class="org-ul">
+<li>FROM: DataPool / HMI</li>
+<li>TO: X_UEXT_ADJ_5V_12V_1</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET voltage in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_1</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET digital in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_2</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> GET voltage in
+<ul class="org-ul">
+<li>FROM: X_IN_IDA35V_4</li>
+<li>TO: DataPool / HMI</li>
+<li>ON CONDITION: if no error</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> CALC calibration offset correction</li>
+<li class="off"><code>[&#xa0;]</code> CHECK for RESET message RX'd
+<ul class="org-ul">
+<li>create a VALID flag</li>
+<li>execute a CAN RX</li>
+<li>Check for CAN RX is both VALID and contains RESET message (ie 0xEEu)
+<ul class="org-ul">
+<li>if above is true, call RESET</li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> WHILE
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> No RESET request RX'd</li>
+</ul></li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> TERM TASK(s) <code>[0/0]</code>
+<ul class="org-ul">
+<li>N/A.  No TERM tasks included in master model</li>
+</ul></li>
+<li class="off"><code>[&#xa0;]</code> FUNCTION DEFINITIONS <code>[0/4]</code>
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> FUNC Change Color of LED</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Initialize CAN</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Initialize CAN TASK for ALIVE SIGNAL</li>
+<li class="off"><code>[&#xa0;]</code> FUNC Send CAN ALIVE SIGNAL</li>
+</ul></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org2ed74e0" class="outline-2">
+<h2 id="org2ed74e0"><span class="section-number-2">4.</span> Program Code</h2>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: SGC</p>
+<p class="date">Created: 2024-06-21 Fri 14:54</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

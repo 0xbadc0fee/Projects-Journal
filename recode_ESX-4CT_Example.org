@@ -1,18 +1,21 @@
 #+title: ESX-4CT_Example Model
 #+author:SGC
-#+options: ^:nil toc:nil
+#+options: ^:nil
+#+setupfile: https://0xbadc0fee.github.io/org-html-themes/org/theme-readtheorg.setup
 
 * Summary
-
+Based off of the ESX-4CT_Example that ships with target support package “ESX.4ctC TSP 23-0A”.  It has full logic + hardware + comms + opensyde server functionality (#L3).  Can use this as a model to remake in IEC FBD and IEC ST.  [OPTIONAL] Once running same as C type example, can work backwards, stripping out functions to create #L2 and #L1 type examples if we want.
 * Links / Resources
 ** Master Model (C)
-*** ESX-4CT_Example.rtf
-*** ESX-4CT_Example.syde
+ + ESX-4CT_Example.rtf
+ + ESX-4CT_Example.syde
 ** IEC FBD Model
+ + TBD
 ** IEC ST Model
-
-* Model: Abstract
-** Top-Down Program Flow & Checklist [0%]
+ + TBD
+* Program Model
+** Model: Abstract
+*** Top-Down Program Flow & Checklist [0%]
 - See "@" note for lines in original example
 - [ ] PREPROC [0/0]
 - [ ] INIT TASK(s) [0/2]
@@ -75,11 +78,10 @@
   - [ ] FUNC Initialize CAN
   - [ ] FUNC Initialize CAN TASK for ALIVE SIGNAL
   - [ ] FUNC Send CAN ALIVE SIGNAL
-
-* Model: C
+** Model: C
 (see above, Abstract)
-* Model: IEC FBD
-** Program Flow & Checklist [%]
+** Model: IEC FBD
+*** Program Flow & Checklist [%]
 - [ ] PREPROC [0/0]
 - [ ] INIT TASK(s) [0/2]
   - [ ] COMMS [0/9]
@@ -141,8 +143,8 @@
   - [ ] FUNC Initialize CAN
   - [ ] FUNC Initialize CAN TASK for ALIVE SIGNAL
   - [ ] FUNC Send CAN ALIVE SIGNAL
-* Model: IEC ST
-** Program Flow & Checklist [%]
+** Model: IEC ST
+*** Program Flow & Checklist [%]
 - [ ] PREPROC [0/0]
 - [ ] INIT TASK(s) [0/2]
   - [ ] COMMS [0/9]
@@ -204,3 +206,5 @@
   - [ ] FUNC Initialize CAN
   - [ ] FUNC Initialize CAN TASK for ALIVE SIGNAL
   - [ ] FUNC Send CAN ALIVE SIGNAL
+* Program Code
+    
