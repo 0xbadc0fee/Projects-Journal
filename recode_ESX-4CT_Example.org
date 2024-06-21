@@ -1,5 +1,6 @@
 #+title: ESX-4CT_Example Model
 #+author:SGC
+#+options: ^:nil toc:nil
 
 * Summary
 
